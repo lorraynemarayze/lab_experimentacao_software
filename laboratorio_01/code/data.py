@@ -50,4 +50,5 @@ def processar_dados_repositorio(repo: dict) -> dict:
         "issues_ratio": (
             repo["closedIssues"]["totalCount"] / repo["issues"]["totalCount"]
             if repo["issues"]["totalCount"] > 0 else 0
-        )
+        ),
+    }
