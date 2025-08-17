@@ -13,3 +13,5 @@ def run_query(query: str, token: str) -> dict:
         raise Exception(f"Query failed: {response.status_code} {response.text}")
 
     return response.json()
+
+

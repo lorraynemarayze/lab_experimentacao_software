@@ -1,32 +1,38 @@
 from datetime import datetime
-from calculos import calcular_tempo_repositorio, calcular_atualizacao_repositorio
+from calculos import calcular_atualizacao_repositorio, calcular_tempo_repositorio
 
-def build_query():
-    """
-    Retorna a query do GraphQL para coletar os 100 repositórios com mais estrelas do Github.
-    """
-    query = """
-    {
-      search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: 100) {
-        nodes {
-          ... on Repository {
-            name
-            owner { login }
-            createdAt
-            updatedAt
-            stargazerCount
-            primaryLanguage { name }
-            releases { totalCount }
-            pullRequests(states: MERGED) { totalCount }
-            issues(states: [OPEN, CLOSED]) { totalCount }
-            closedIssues: issues(states: CLOSED) { totalCount }
-          }
-        }
-      }
-    }
-    """
     
-    return query
+def build_query(after_cursor, first):
+  """
+  Retorna a query do GraphQL para coletar os repositórios de forma paginada.
+  first indica quantos vão ser pegos por vez, e after_cursor indica a partir
+  de quando eles vão ser pegos
+  """
+  after_str = f', after: "{after_cursor}"' if after_cursor else ""
+  return f"""
+  {{
+    search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: {first}{after_str}) {{
+      pageInfo {{
+        endCursor
+        hasNextPage
+      }}
+      nodes {{
+        ... on Repository {{
+          name
+          owner {{ login }}
+          createdAt
+          updatedAt
+          stargazerCount
+          primaryLanguage {{ name }}
+          releases {{ totalCount }}
+          pullRequests(states: MERGED) {{ totalCount }}
+          issues(states: [OPEN, CLOSED]) {{ totalCount }}
+          closedIssues: issues(states: CLOSED) {{ totalCount }}
+        }}
+      }}
+    }}
+  }}
+  """
 
 
 
