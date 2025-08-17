@@ -29,3 +29,8 @@ for i in range(10):
 print("\n\nRepositorios coletados com Sucesso\n\n")
 
 print(result)
+
+processados = [processar_dados_repositorio(repo) for repo in result]
+
+print("\n\n\n")
+print(processados)
