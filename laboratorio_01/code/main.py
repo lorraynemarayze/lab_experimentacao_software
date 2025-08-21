@@ -12,12 +12,15 @@ token = '{COLOQUE_SEU_TOKEN_AQUI}'
 result = [] #Lista que irá armazenar todos os repositórios coletados da API
 after = None #Cursor de paginação que será usado para navegar entre as páginas de resultados. Começa com None (primeira página), depois vai receber o endCursor da página anterior
 
-#Ajustado para coletar 1000 repositórios - API autoriza 100 repositórios por consulta
-print("Os 1000 repositórios serão coletados em 10 páginas diferentes, cada uma com 100 repositórios.")
+num_pages = 100
+ammount_per_page = 10
+
+#Ajustado para coletar 1000 repositórios - API autoriza 10 repositórios por consulta
+print("Os 1000 repositórios serão coletados em 100 páginas diferentes, cada uma com 10 repositórios.")
 
 
-for i in range(10): #Loop de paginação: irá executar 10 vezes para obter 10 páginas
-    query = build_query(after_cursor=after, first=100)  #Constrói a query GraphQL com o cursor atual e quantidade definida
+for i in range(num_pages): #Loop de paginação: irá executar 100 vezes para obter 100 páginas
+    query = build_query(after_cursor=after, first=ammount_per_page)  #Constrói a query GraphQL com o cursor atual e quantidade definida
     print(f'Coletando repositórios da página {i + 1}')
     
     try:
@@ -57,10 +60,13 @@ print(f"\nSalvando dados em {csv_filename}...")
 
 # Fnção para salvar CSV
 def salvar_csv(dados, filename):
-    """
-    Salva os dados processados em um arquivo CSV
-    """
-    # TODO: função salvar CSV
+    with open(filename, "w", newline="") as csvfile:
+        campos = dados[0].keys()  # usa as chaves como cabeçalho
+        writer = csv.DictWriter(csvfile, fieldnames=campos)
+        writer.writeheader()
+        writer.writerows(dados)
 
-#salvar_csv()
-#print(f"\nProcesso concluído! {len(processados)} repositórios salvos em {csv_filename}")
+salvar_csv(processados, csv_filename)
+print(f"\nProcesso concluído! {len(processados)} repositórios salvos em {csv_filename}")
+
+print(processados)
