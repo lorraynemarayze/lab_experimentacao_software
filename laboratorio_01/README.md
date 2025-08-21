@@ -1,5 +1,5 @@
 <div>
-<img alt="GitHub Banner" src="geral/banner_laboratorio_experimentacao.png"/>
+<img alt="GitHub Banner" src="../geral/banner_laboratorio_experimentacao.png"/>
 </div>
 
 # Laboratório de Experimentação de Software
