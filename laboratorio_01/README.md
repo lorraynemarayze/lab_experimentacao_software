@@ -20,4 +20,5 @@ Este repositório contém o código e a documentação desenvolvidos no **Labora
 - **`/code`** → Código-fonte do projeto.  
 - **`/docs`** → Documentação do laboratório, incluindo:  
   - Definição de Métricas e Sprints.  
-  - Relatório de Análise dos dados coletados. (https://www.overleaf.com/project/68a0e04399a65a6e125b9c92)
+  - Relatório de Análise dos dados coletados.
+  - Excel com Resultados Extraídos.
