@@ -28,6 +28,7 @@ def build_query(after_cursor, first):
           pullRequests(states: MERGED) {{ totalCount }}
           issues(states: [OPEN, CLOSED]) {{ totalCount }}
           closedIssues: issues(states: CLOSED) {{ totalCount }}
+          mentionableUsers {{ totalCount }}
         }}
       }}
     }}
@@ -57,4 +58,6 @@ def processar_dados_repositorio(repo: dict) -> dict:
             repo["closedIssues"]["totalCount"] / repo["issues"]["totalCount"]
             if repo["issues"]["totalCount"] > 0 else 0
         ),
+        "stars": repo["stargazerCount"], 
+        "contributors": repo["mentionableUsers"]["totalCount"],
     }
