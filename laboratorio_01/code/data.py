@@ -41,8 +41,8 @@ def processar_dados_repositorio(repo: dict) -> dict:
     """
     Processa os dados de um repositório encontrado e retorna métricas para as RQs serem respondidas.
     """
-    created_at = datetime.fromisoformat(repo["createdAt"][:-1])
-    updated_at = datetime.fromisoformat(repo["updatedAt"][:-1])
+    created_at = datetime.fromisoformat(repo["createdAt"])
+    updated_at = datetime.fromisoformat(repo["updatedAt"])
 
     return {
         "name": repo["name"],
