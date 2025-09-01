@@ -7,6 +7,7 @@
 import csv  #importação para exportar CSV
 from github_api import run_query
 from data import build_query, processar_dados_repositorio
+from auto_cloning import clone_repo, run_metrics
 
 
 token = '{COLOQUE_SEU_TOKEN_AQUI}'
@@ -58,17 +59,28 @@ print("\n\n\n")
 print(f"Repositórios processados: {len(processados)}")
 
 csv_filename = 'repositorios_github_dados.csv'
-print(f"\nSalvando dados em {csv_filename}...")
 
 # Fnção para salvar CSV
 def salvar_csv(dados, filename):
+    print(f"\nSalvando dados em {csv_filename}...")
     with open(filename, "w", newline="") as csvfile:
         campos = dados[0].keys()  # usa as chaves como cabeçalho
         writer = csv.DictWriter(csvfile, fieldnames=campos)
         writer.writeheader()
         writer.writerows(dados)
 
-salvar_csv(processados, csv_filename)
-print(f"\nProcesso concluído! {len(processados)} repositórios salvos em {csv_filename}")
+# salvar_csv(processados, csv_filename)
+# print(f"\nProcesso concluído! {len(processados)} repositórios salvos em {csv_filename}")
 
 print(processados)
+
+for index, repo in enumerate(processados):
+    print(f"\n\nProcessando repositório {index + 1}/{len(processados)}: {repo['name']}")
+    clone_repo(repo['url'])
+    run_metrics(repo['name'])
+    print(f"Repositório {repo['name']} processado com sucesso.\n\n")
+    
+print("\n\nProcesso concluído! Todos os repositórios foram clonados e as métricas foram calculadas.")
+print('Os resultados das métricas estão na pasta java_repositories_results')
+    
+    
