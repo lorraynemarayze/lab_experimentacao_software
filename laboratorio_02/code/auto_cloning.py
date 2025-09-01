@@ -1,9 +1,11 @@
 import os
 
-JAVA_REPOS_PATH = 'C:\MinhasCoisas\Programacao\Workspace\puc\lab_experimentacao_software\laboratorio_02\code\java_repositories'
-CK_TARGET_PATH = 'C:\MinhasCoisas\Programacao\Workspace\puc\lab_experimentacao_software\laboratorio_02\code\ck'
+BASE_PATH = pasta_atual = os.getcwd() + '/laboratorio_02/code'
 
-DEFAULT_JAVA_RESULTS_PATH = 'C:\MinhasCoisas\Programacao\Workspace\puc\lab_experimentacao_software\laboratorio_02\code\java_repositories_results'
+JAVA_REPOS_PATH = os.path.join(BASE_PATH, 'java_repositories')
+CK_TARGET_PATH = os.path.join(BASE_PATH, 'ck')
+
+DEFAULT_JAVA_RESULTS_PATH = os.path.join(BASE_PATH, 'java_repositories_results')
 
 def clone_repo(url: str) -> None:
     """
@@ -11,19 +13,21 @@ def clone_repo(url: str) -> None:
     """
     os.chdir(JAVA_REPOS_PATH)
     os.system(f'git clone {url}')
+    os.chdir(BASE_PATH)
+    
     
 
 def run_metrics(repo_name: str) -> None:
     """
     Executa a ferramenta CK para calcular métricas de código no repositório especificado.
     """
+    os.chdir(BASE_PATH)
     repo_path = JAVA_REPOS_PATH + '/' + repo_name
     output_path = DEFAULT_JAVA_RESULTS_PATH + '/' + repo_name + '/'
 
-    os.chdir(CK_TARGET_PATH)
+    # os.chdir(CK_TARGET_PATH)
     os.makedirs(output_path, exist_ok=True)
-    os.system(f'java -jar target/ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar {repo_path} true 0 True {output_path}')
-    
+    os.system(f'java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar {repo_path} true 0 True {output_path}')
 
 # java -jar ` 
 # target/ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar `
