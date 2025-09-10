@@ -1,6 +1,6 @@
 import os
 
-BASE_PATH = pasta_atual = os.getcwd() + '/laboratorio_02/code'
+BASE_PATH = pasta_atual = os.getcwd()
 
 JAVA_REPOS_PATH = os.path.join(BASE_PATH, 'java_repositories')
 CK_TARGET_PATH = os.path.join(BASE_PATH, 'ck')
@@ -11,6 +11,8 @@ def clone_repo(url: str) -> None:
     """
     Clona um repositório Git na URL especificada para o caminho local fornecido.
     """
+    if not os.path.exists(JAVA_REPOS_PATH):
+        os.makedirs(JAVA_REPOS_PATH)
     os.chdir(JAVA_REPOS_PATH)
     os.system(f'git clone {url}')
     os.chdir(BASE_PATH)
