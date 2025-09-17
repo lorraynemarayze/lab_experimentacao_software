@@ -1,13 +1,12 @@
 """
-    Script para coletar os 1000 repositórios com mais estrelas do GitHub
+    Script para coletar os 1000 repositórios em Java com mais estrelas do GitHub
     e exportar os dados para CSV
 """
-# 
 
 import csv  #importação para exportar CSV
 from github_api import run_query
 from data import build_query, processar_dados_repositorio
-from auto_cloning import clone_repo, run_metrics
+from auto_cloning import clone_repo, run_metrics, count_comment_lines
 
 
 token = '{COLOQUE_SEU_TOKEN_AQUI}'
@@ -108,7 +107,10 @@ for repo in processados:
     pasta_repo = os.path.join(DEFAULT_JAVA_RESULTS_PATH, nome_repo)
     class_csv_path = os.path.join(pasta_repo, 'class.csv')
     
-    # 4. Ler class.csv e calcular métricas
+    # 4. Contar linhas de comentário no repositório Java
+    total_comment_lines = count_comment_lines(nome_repo)
+    
+    # 5. Ler class.csv e calcular métricas
     if os.path.exists(class_csv_path):
         cbo_values = []
         dit_values = []
@@ -148,19 +150,33 @@ for repo in processados:
             'cbo_media': round(cbo_media, 2),
             'dit_media': round(dit_media, 2),
             'lcom_media': round(lcom_media, 2),
-            'loc_total': loc_total
+            'loc_total': loc_total,
+            'comment_lines_total': total_comment_lines
         }
         
         resultados_finais.append(resultado)
 
     else:
         print(f"Arquivo class.csv não encontrado para {nome_repo}")
+        # Mesmo sem class.csv, adiciona repositório com métricas zeradas mas com contagem de comentários
+        resultado = {
+            'name': repo['name'],
+            'stars': repo['stars'],
+            'releases': repo['releases'],
+            'age_years': repo['age_years'],
+            'cbo_media': 0,
+            'dit_media': 0,
+            'lcom_media': 0,
+            'loc_total': 0,
+            'comment_lines_total': total_comment_lines
+        }
+        resultados_finais.append(resultado)
 
 # 7. Criar arquivo resultado_final.csv
 resultado_csv_path = os.path.join(BASE_PATH, 'resultado_final.csv')
 if resultados_finais:
     with open(resultado_csv_path, 'w', newline='', encoding='utf-8') as file:
-        fieldnames = ['name', 'stars', 'releases', 'age_years', 'cbo_media', 'dit_media', 'lcom_media', 'loc_total']
+        fieldnames = ['name', 'stars', 'releases', 'age_years', 'cbo_media', 'dit_media', 'lcom_media', 'loc_total', 'comment_lines_total']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(resultados_finais)
