@@ -2,11 +2,11 @@ from datetime import datetime
 from calculos import calcular_atualizacao_repositorio, calcular_tempo_repositorio
 
     
-def build_query(after_cursor, first):
+def build_repo_query(after_cursor, first):
   """
-  Retorna a query do GraphQL para coletar os repositórios de forma paginada.
-  first indica quantos vão ser pegos por vez, e after_cursor indica a partir
-  de quando eles vão ser pegos
+  Retorna a query para coletar os repositórios mais populares (apenas nome).
+  - first: quantos repositórios por vez
+  - after_cursor: cursor da paginação
   """
   after_str = f', after: "{after_cursor}"' if after_cursor else ""
   return f"""
@@ -18,32 +18,57 @@ def build_query(after_cursor, first):
       }}
       nodes {{
         ... on Repository {{
-          name
-          pullRequests(first: 5, states: [CLOSED, MERGED]) {{
-            nodes {{
-              body
-              state
-              createdAt
-              closedAt              
-              additions
-              deletions
-              changedFiles
-              participants {{
-                totalCount
-              }}
-              comments {{
-                totalCount
-              }}
-
-            }}
-            
-            totalCount
-          }}
+          nameWithOwner
         }}
       }}
     }}
   }}
   """
 
+
+def build_pr_query(owner, name, after_cursor=None, first=100):
+  """
+  Retorna a query para coletar PRs (paginados) de um repositório específico.
+  - owner: dono do repositório
+  - name: nome do repositório
+  - first: número de PRs por requisição (máx 100)
+  - after_cursor: cursor da paginação de PRs
+  """
+  after_str = f', after: "{after_cursor}"' if after_cursor else ""
+  return f"""
+  {{
+    repository(owner: "{owner}", name: "{name}") {{
+      nameWithOwner
+      pullRequests(states: [CLOSED, MERGED], first: {first}{after_str}) {{
+        pageInfo {{
+          endCursor
+          hasNextPage
+        }}
+        nodes {{
+          body
+          state
+          createdAt
+          closedAt              
+          additions
+          deletions
+          changedFiles
+          participants {{
+            totalCount
+          }}
+          comments {{
+            totalCount
+          }}
+          reviews {{
+            totalCount
+          }}
+        }}
+        totalCount
+      }}
+    }}
+  }}
+  """
+ 
+
+
 def processar_dados_repositorio(repo: dict) -> dict:
-  return repo['pullRequests']
+  return repo

@@ -4,23 +4,30 @@
 """
 
 import csv  #importação para exportar CSV
+import json
 from github_api import run_query
-from data import build_query, processar_dados_repositorio
+from data import build_repo_query, build_pr_query, processar_dados_repositorio
 
 token = '{COLOQUE_SEU_TOKEN_AQUI}'
 
-result = [] #Lista que irá armazenar todos os repositórios coletados da API
+result = [] #Lista que irá armazenar todos os prs coletados da API
+repoNameWithOwnerList = [] #Lista que irá armazenar os 'nameWithOwner' dos repositórios coletados
 after = None #Cursor de paginação que será usado para navegar entre as páginas de resultados. Começa com None (primeira página), depois vai receber o endCursor da página anterior
 
-num_pages = 1
-ammount_per_page = 3
+repo_num_pages = 25
+repo_ammount_per_page = 10
+
+pr_num_pages = 1
+pr_ammount_per_page = 2
+
+filtered_repo_names_with_owner = []
 
 #Ajustado para coletar 1000 repositórios - API autoriza 10 repositórios por consulta
-print(f"Os {num_pages * ammount_per_page} repositórios serão coletados em {num_pages} páginas diferentes, cada uma com {ammount_per_page} repositórios.")
+print(f"Os {repo_num_pages * repo_ammount_per_page} repositórios serão coletados em {repo_num_pages} páginas diferentes, cada uma com {repo_ammount_per_page} repositórios.")
 
 
-for i in range(num_pages): #Loop de paginação: irá executar 100 vezes para obter 100 páginas
-    query = build_query(after_cursor=after, first=ammount_per_page)  #Constrói a query GraphQL com o cursor atual e quantidade definida
+for i in range(repo_num_pages): #Loop de paginação: irá executar 100 vezes para obter 100 páginas
+    query = build_repo_query(after_cursor=after, first=repo_ammount_per_page)  #Constrói a query GraphQL com o cursor atual e quantidade definida
     print(f'Coletando repositórios da página {i + 1}')
     
     try:
@@ -36,15 +43,46 @@ for i in range(num_pages): #Loop de paginação: irá executar 100 vezes para ob
         break
 
     nodes = query_result['data']['search']['nodes'] #Extrai os dados dos repositórios da resposta JSON
-    result.extend(nodes) # Adiciona os novos repositórios à lista principal
+    repoNameWithOwnerList.extend([repo['nameWithOwner'] for repo in nodes]) # Adiciona apenas o atributo nameWithOwner de cada repositório à lista principal
     
-    print(f"Coletados {len(nodes)} repositórios. Total até agora: {len(result)}")
+    print(f"Coletados {len(nodes)} repositórios. Total até agora: {len(repoNameWithOwnerList)}")
 
     page_info = query_result['data']['search']['pageInfo']
     if not page_info['hasNextPage']:   # Verifica se há próxima página disponível
         print("Não há mais páginas disponíveis.") 
         break
     after = page_info['endCursor']
+    
+# Agora coleta PRs de cada repositório
+for repo in repoNameWithOwnerList:
+    owner, name = repo.split("/")
+    prs = []
+    current_page = 1
+    print(f"\nColetando PRs do repositório {repo}")
+
+    pr_after = None
+    while current_page <= 10:
+        print(f"repositório {repo}: coletando página {current_page} de PRs")
+        current_page += 1
+        pr_query = build_pr_query(owner, name, after_cursor=pr_after, first=10)
+        pr_result = run_query(pr_query, token)
+
+        if "errors" in pr_result:
+            print(f"Erro nos PRs de {repo}: {pr_result['errors']}")
+            break
+
+        prs.extend(pr_result["data"]["repository"]["pullRequests"]["nodes"])
+
+        pr_page_info = pr_result["data"]["repository"]["pullRequests"]["pageInfo"]
+        if pr_page_info["hasNextPage"]:
+            pr_after = pr_page_info["endCursor"]
+        else:
+            break
+
+    if len(prs) >= 100:
+        filtered_repo_names_with_owner.append(repo)
+        
+    result.append({"name": repo, "pullRequests": prs})
 
 print("\n\nRepositórios coletados com Sucesso\n\n")
 
@@ -65,6 +103,18 @@ def salvar_csv(dados, filename):
         writer = csv.DictWriter(csvfile, fieldnames=campos)
         writer.writeheader()
         writer.writerows(dados)
+        
+def salvar_json(dados, filename):
+    print(f"\nSalvando dados em {filename}...")
+    with open(filename, "w") as jsonfile:
+        json.dump(dados, jsonfile, indent=4)
+        
+def salvar_lista_em_arquivo(lista, nome_arquivo):
+    with open(nome_arquivo, 'w', encoding='utf-8') as f:
+        for item in lista:
+            f.write(str(item) + '\n')
 
 salvar_csv(processados, csv_filename)
+salvar_json(processados, 'repositorios_github_dados.json')
+salvar_lista_em_arquivo(filtered_repo_names_with_owner, 'repositorios_filtrados.txt')
 print(processados)
