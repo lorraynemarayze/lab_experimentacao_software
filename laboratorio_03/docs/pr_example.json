@@ -1,0 +1,61 @@
+{
+    "id": "MDExOlB1bGxSZXF1ZXN0MjY1Njg1NTg=",
+    "number": 2,
+    "title": "Add AirBnB setting to jshint settings file.",
+    "body": "",
+    "state": "MERGED",
+    "merged": true,
+    "createdAt": "2014-12-24T20:43:10Z",
+    "updatedAt": "2018-10-20T09:40:28Z",
+    "mergedAt": "2014-12-27T06:16:17Z",
+    "closedAt": "2014-12-27T06:16:17Z",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/2",
+    "isDraft": false,
+    "additions": 100,
+    "deletions": 1,
+    "changedFiles": 2,
+    "baseRefName": "master",
+    "headRefName": "jshint",
+    "assignees": {
+        "nodes": []
+    },
+    "comments": {
+        "totalCount": 2,
+        "nodes": [
+            {
+                "author": null,
+                "body": "Nice. Yes, this will make it easier for people to conform to AirBnB s coding style guide. \n",
+                "createdAt": "2014-12-27T06:16:19Z"
+            },
+            {
+                "author": {
+                    "login": "skarletini"
+                },
+                "body": "Add the text 'My changes' to article (#22593)",
+                "createdAt": "2018-10-19T12:21:30Z"
+            }
+        ]
+    },
+    "commits": {
+        "totalCount": 1,
+        "nodes": [
+            {
+                "commit": {
+                    "message": "Add AirBnB setting to jshint settings file.",
+                    "committedDate": "2014-12-24T20:37:16Z",
+                    "author": {
+                        "name": "Berkeley Martinez",
+                        "email": "Berkeley@robotie.com"
+                    }
+                }
+            }
+        ]
+    },
+    "reviews": {
+        "totalCount": 0,
+        "nodes": []
+    },
+    "labels": {
+        "nodes": []
+    }
+}
