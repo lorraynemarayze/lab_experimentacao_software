@@ -7,6 +7,8 @@ import csv  #importação para exportar CSV
 import json
 from github_api import run_query
 from data import build_repo_query, build_pr_query, processar_dados_repositorio
+from itertools import chain
+
 
 token = '{COLOQUE_SEU_TOKEN_AQUI}'
 
@@ -14,11 +16,17 @@ result = [] #Lista que irá armazenar todos os prs coletados da API
 repoNameWithOwnerList = [] #Lista que irá armazenar os 'nameWithOwner' dos repositórios coletados
 after = None #Cursor de paginação que será usado para navegar entre as páginas de resultados. Começa com None (primeira página), depois vai receber o endCursor da página anterior
 
-repo_num_pages = 25
-repo_ammount_per_page = 10
+# repo_num_pages = 25
+# repo_ammount_per_page = 10
+
+# pr_num_pages = 1
+# pr_ammount_per_page = 2
+
+repo_num_pages = 1
+repo_ammount_per_page = 5
 
 pr_num_pages = 1
-pr_ammount_per_page = 2
+pr_ammount_per_page = 5
 
 filtered_repo_names_with_owner = []
 
@@ -61,10 +69,10 @@ for repo in repoNameWithOwnerList:
     print(f"\nColetando PRs do repositório {repo}")
 
     pr_after = None
-    while current_page <= 10:
+    while current_page <= pr_num_pages:
         print(f"repositório {repo}: coletando página {current_page} de PRs")
         current_page += 1
-        pr_query = build_pr_query(owner, name, after_cursor=pr_after, first=10)
+        pr_query = build_pr_query(owner, name, after_cursor=pr_after, first=pr_ammount_per_page)
         pr_result = run_query(pr_query, token)
 
         if "errors" in pr_result:
@@ -88,7 +96,8 @@ print("\n\nRepositórios coletados com Sucesso\n\n")
 
 print(f"Total de repositórios coletados: {len(result)}")
 
-processados = [processar_dados_repositorio(repo) for repo in result]
+processados = [processar_dados_repositorio(repo) for repo in result[:100]]
+processados = list(chain.from_iterable(processados))  
 
 print("\n\n\n")
 print(f"Repositórios processados: {len(processados)}")
