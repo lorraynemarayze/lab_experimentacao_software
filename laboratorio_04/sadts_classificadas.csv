@@ -1,0 +1,61 @@
+file_path,matched_keyword,tipo_de_divida
+Dados_Tabulares\house-prices-advanced-regression-techniques\advanced-reg-techniques-linear-models-top-6\advanced-reg-techniques-linear-models-top-6.ipynb,todo,Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\advanced-reg-techniques-linear-models-top-6\advanced-reg-techniques-linear-models-top-6.ipynb,todo,Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb,todo,Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb,todo,Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb,Todo,Awareness (Consciência/Conhecimento)
+Dados_Tabulares\house-prices-advanced-regression-techniques\automatic-hyperparameter-tuning-with-optuna\automatic-hyperparameter-tuning-with-optuna.ipynb,TODO,Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\automl-tables-tutorial-notebook\automl-tables-tutorial-notebook.ipynb,"TODO: File bug: if you run this right after the last step, when data import isn't complete, you get a list index out of range",Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\exercise-intro-to-automl\exercise-intro-to-automl.ipynb,TODO,Configurável/Configuração Temporária
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-eda-to-ml-beginner\house-prices-eda-to-ml-beginner.ipynb,TODO,Modularity (Modularidade)
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-eda-to-ml-beginner\house-prices-eda-to-ml-beginner.ipynb,TODO,Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-plotly-pipelines-and-ensembles\house-prices-plotly-pipelines-and-ensembles.ipynb,ToDo,Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-prediction-using-tfdf\house-prices-prediction-using-tfdf.ipynb,TODO,Readability (Legibilidade)
+Dados_Tabulares\house-prices-advanced-regression-techniques\houseprice-end-to-end-project\houseprice-end-to-end-project.ipynb,hack,Workaround / Código temporário
+Dados_Tabulares\house-prices-advanced-regression-techniques\houseprice-end-to-end-project\houseprice-end-to-end-project.ipynb,todo: apparently dropping the extra columns to transform to ordinal gives problems. It has to be fixed,Data Dependency (Dependência de Dados)
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb,Todo,Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb,Todo,Data Dependency (Dependência de Dados)
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb,Todo,Data Dependency (Dependência de Dados)
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb,Todo,Code Dependency (Dependência de Código)
+Dados_Tabulares\house-prices-advanced-regression-techniques\top-5-house-price-prediction\top-5-house-price-prediction.ipynb,TODO,Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\understand-and-use-a-pipeline\understand-and-use-a-pipeline.ipynb,hack,Readability
+Dados_Tabulares\santander-customer-transaction-prediction\0-923-in-n-5-aug\0-923-in-n-5-aug.ipynb,TODO,Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\catboosting-to-0-896\catboosting-to-0-896.ipynb,TODO,Data Dependency (Dependência de Dados)
+Dados_Tabulares\santander-customer-transaction-prediction\dnn-keras-santander\dnn-keras-santander.ipynb,TODO,Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\dnn-keras-santander\dnn-keras-santander.ipynb,TODO,Configurable Options
+Dados_Tabulares\santander-customer-transaction-prediction\feature-binning-using-bayesian-blocks\feature-binning-using-bayesian-blocks.ipynb,ToDo,Awareness (Consciência/Conhecimento)
+Dados_Tabulares\santander-customer-transaction-prediction\kernel-density-estimation\kernel-density-estimation.ipynb,TODO,Scalability (Escalabilidade)
+Dados_Tabulares\santander-customer-transaction-prediction\radius-neighbors-naive-bayes\radius-neighbors-naive-bayes.ipynb,hack,Code Dependency (Dependência de Código)
+Dados_Tabulares\santander-customer-transaction-prediction\rosegold-eda-pca-and-lightgbm-baseline\rosegold-eda-pca-and-lightgbm-baseline.ipynb,TODO,Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\yh-eda-i-want-to-see-all\yh-eda-i-want-to-see-all.ipynb,TODO,Readability
+Dados_Tabulares\titanic\10-simple-hacks-to-speed-up-your-data-analysis\10-simple-hacks-to-speed-up-your-data-analysis.ipynb,hack,workaround
+Dados_Tabulares\titanic\10-simple-hacks-to-speed-up-your-data-analysis\10-simple-hacks-to-speed-up-your-data-analysis.ipynb,hack,Scalability (Escalabilidade)
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb,TODO,Readability
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb,TODO,Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb,TODO,Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb,TODO,Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb,TODO,Data Dependency
+Dados_Tabulares\titanic\introduction-to-ensembling-stacking-in-python\introduction-to-ensembling-stacking-in-python.ipynb,hack,Workaround temporário
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb,TODO,Awareness
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb,TODO,Awareness
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb,TODO,Awareness (Consciência/Conhecimento)
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb,TODO: Say something about the contributions and follow up with some ANOVA-like analysis,Awareness (Consciência/Conhecimento)
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb,TODO,Modularity
+Dados_Tabulares\titanic\titanic-survival-seaborn-and-ensembles\titanic-survival-seaborn-and-ensembles.ipynb,TODO,Performance
+Dados_Tabulares\titanic\titanic-survival-seaborn-and-ensembles\titanic-survival-seaborn-and-ensembles.ipynb,TODO,Readability
+NLP\commonlitreadabilityprize\7-entrenamiento-transformer\7-entrenamiento-transformer.ipynb,todo,Data Dependency
+NLP\commonlitreadabilityprize\7-entrenamiento-transformer\7-entrenamiento-transformer.ipynb,todo,Scalability
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb,TODO,Awareness
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb,TODO,Awareness
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb,TODO,Awareness (Consciência/Conhecimento)
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb,Hack,Workaround
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb,Hack,workaround
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb,Hack,workaround
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb,Hack,Workaround temporário
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb,Hack,workaround
+NLP\commonlitreadabilityprize\comlit-tryst-with-han\comlit-tryst-with-han.ipynb,hack,Workaround
+NLP\commonlitreadabilityprize\commonlit-3-computer-vision-inference\commonlit-3-computer-vision-inference.ipynb,hack,Workaround temporário
+NLP\commonlitreadabilityprize\ii-commonlit-bert-vs-roberta-w-b-testing\ii-commonlit-bert-vs-roberta-w-b-testing.ipynb,TODO,Configurable Options (Opções Configuráveis)
+NLP\commonlitreadabilityprize\ii-commonlit-bert-vs-roberta-w-b-testing\ii-commonlit-bert-vs-roberta-w-b-testing.ipynb,TODO: Save model to W&B,Modularity
+NLP\commonlitreadabilityprize\linear-regression\linear-regression.ipynb,TODO,Falta de implementação/pendência
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb,TODO,Performance
