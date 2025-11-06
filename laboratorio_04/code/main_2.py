@@ -1,6 +1,3 @@
-# Esse script é o responsável pela obtenção
-# dos notbooks que são usados como base por
-# todo esse trabalho. 
 
 
 # Dados Tabulares
@@ -29,7 +26,7 @@
 # hubmap-kidney-segmentation
 # nlp-getting-started
 # jigsaw-unintended-bias-in-toxicity-classification
-# commonlitreadabilityprize
+# commonlitreadabilityprizez
 
 # kaggle kernels list --competition titanic
 
@@ -104,9 +101,9 @@ for competition in competitions:
     competition_path = os.path.join(competition_dir, competition_name)
     os.makedirs(competition_path, exist_ok=True)
     
-    # Buscar 4 páginas de notebooks (100 por página)
+    # Buscar 40 páginas de notebooks (100 por página = 4000 notebooks)
     print(f"Buscando notebooks para {competition_name}...")
-    for page in range(1, 5):
+    for page in range(1, 41):
         csv_filename = os.path.join(competition_path, f"page-{page}.csv")
         
         # Comando para buscar notebooks
@@ -127,7 +124,7 @@ for competition in competitions:
     # Coletar dados dos CSVs e criar lista seguindo o plain_schema
     print(f"\nProcessando CSVs para {competition_name}...")
     
-    for page in range(1, 5):
+    for page in range(1, 41):
         csv_filename = os.path.join(competition_path, f"page-{page}.csv")
         
         if not os.path.exists(csv_filename):
@@ -211,23 +208,39 @@ for competition in competitions:
     
     # Clonar cada notebook com sistema de retry
     for i, notebook in enumerate(competition_notebooks):
+        expoente = 1
         ref = notebook['ref']
         if not ref:
             continue
             
         print(f"  Clonando {i+1}/{len(competition_notebooks)}: {ref}")
         clone_cmd = f"kaggle kernels pull {ref} -p {clone_dir}/{ref.split('/')[-1]}"
+        
 
         while True:
+            wait = 5 ** expoente
+            expoente += 1
             result = subprocess.run(clone_cmd, shell=True, capture_output=True, text=True)
             
             if result.returncode == 0:
                 print(f"    ✓ Clonado com sucesso")
                 break
             else:
+                if expoente >= 6:
+                    print(f"    ✗ Falha ao clonar após várias tentativas. Pulando notebook.")
+                    
+                    # Registrar falha no arquivo falhas.txt
+                    try:
+                        with open("falhas.txt", "a", encoding="utf-8") as f:
+                            f.write(f"{ref}\n")
+                        print(f"    📝 Falha registrada em falhas.txt")
+                    except Exception as e:
+                        print(f"    ⚠ Erro ao registrar falha: {e}")
+                    
+                    break
                 print(f"    ✗ Erro: {result.stderr[:80]}")
-                print(f"    ⏳ Aguardando 30 segundos antes de tentar novamente...")
-                time.sleep(30)
+                print(f"    ⏳ Aguardando {wait} segundos antes de tentar novamente...")
+                time.sleep(wait)
 
 
 print(f"\n{'='*80}")
