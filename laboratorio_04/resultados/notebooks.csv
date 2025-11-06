@@ -1,0 +1,939 @@
+ref;title;author;lastRunTime;totalVotes;competition;domain;dataDependency;codeDependency;awareness;modularity;configurableOptions;scalability;readability;performance;duplicateCodeElimination;total
+pmarcelino/comprehensive-data-exploration-with-python;comprehensive-data-exploration-with-python;pmarcelino;489;1985;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+serigne/stacked-regressions-top-4-on-leaderboard;stacked-regressions-top-4-on-leaderboard;serigne;1251;4812;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+alexisbcook/exercise-intro-to-automl;exercise-intro-to-automl;alexisbcook;352;34;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+gusthema/house-prices-prediction-using-tfdf;house-prices-prediction-using-tfdf;gusthema;884;1102;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+dansbecker/handling-missing-values;handling-missing-values;dansbecker;210;2455;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+rtatman/welcome-to-data-science-in-r-workbook;welcome-to-data-science-in-r-workbook;rtatman;150;677;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+ryanholbrook/feature-engineering-for-house-prices;feature-engineering-for-house-prices;ryanholbrook;732;2421;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+apapiu/regularized-linear-models;regularized-linear-models;apapiu;455;2389;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+dansbecker/submitting-from-a-kernel;submitting-from-a-kernel;dansbecker;88;1890;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+dansbecker/selecting-and-filtering-in-pandas;selecting-and-filtering-in-pandas;dansbecker;180;1788;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+dansbecker/xgboost;xgboost;dansbecker;330;1780;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+erikbruin/house-prices-lasso-xgboost-and-a-detailed-eda;house-prices-lasso-xgboost-and-a-detailed-eda;erikbruin;1402;1750;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+dansbecker/using-categorical-data-with-one-hot-encoding;using-categorical-data-with-one-hot-encoding;dansbecker;250;1650;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+agileteam/py-t1-4-expected-questions;py-t1-4-expected-questions;agileteam;55;15;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+pavansanagapati/knowledge-graph-nlp-tutorial-bert-spacy-nltk;knowledge-graph-nlp-tutorial-bert-spacy-nltk;pavansanagapati;2888;1612;Titanic;Social Science/History;1;0;0;0;0;0;0;0;0;1
+juliencs/a-study-on-regression-applied-to-the-ames-dataset;a-study-on-regression-applied-to-the-ames-dataset;juliencs;950;1580;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+jesucristo/1-house-prices-solution-top-1;1-house-prices-solution-top-1;jesucristo;1850;1550;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+lavanyashukla01/how-i-made-top-0-3-on-a-kaggle-competition;how-i-made-top-0-3-on-a-kaggle-competition;lavanyashukla01;650;1540;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+ekami66/detailed-exploratory-data-analysis-with-python;detailed-exploratory-data-analysis-with-python;ekami66;1100;1450;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+faressayah/practical-introduction-to-10-regression-algorithm;practical-introduction-to-10-regression-algorithm;faressayah;850;1430;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+dansbecker/finding-your-files-in-kaggle-kernels;finding-your-files-in-kaggle-kernels;dansbecker;75;1400;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+dgawlik/house-prices-eda;house-prices-eda;dgawlik;700;1380;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+masumrumi/a-detailed-regression-guide-with-house-pricing;a-detailed-regression-guide-with-house-pricing;masumrumi;1300;1350;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+nareshbhat/outlier-the-silent-killer;outlier-the-silent-killer;nareshbhat;450;1345;Titanic;Social Science/History;1;0;0;0;0;0;0;0;0;1
+bsivavenu/house-price-calculation-methods-for-beginners;house-price-calculation-methods-for-beginners;bsivavenu;550;1320;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+emrearslan123/house-price-prediction;house-price-prediction;emrearslan123;600;1300;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+marsggbo/kaggle;kaggle;marsggbo;25;1280;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+akhabash/cheatsheet-70-ggplot-charts;cheatsheet-70-ggplot-charts;akhabash;350;1275;Titanic;Social Science/History;1;0;0;0;0;0;0;0;0;1
+prashant111/comprehensive-guide-on-feature-selection;comprehensive-guide-on-feature-selection;prashant111;950;1250;General Data Science;General Data Science;1;0;0;0;0;0;0;0;0;1
+agileteam/t2-4-house-prices-regression;t2-4-house-prices-regression;agileteam;120;12;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+neviadomski/how-to-get-to-top-25-with-simple-model-sklearn;how-to-get-to-top-25-with-simple-model-sklearn;neviadomski;400;1230;House Prices;Real Estate;1;0;0;0;0;0;0;0;0;1
+pavansanagapati/ensemble-learning-techniques-tutorial;ensemble-learning-techniques-tutorial;pavansanagapati;1100;1225;Titanic;Social Science/History;1;0;0;0;0;0;0;0;0;1
+notaapple/detailed-exploratory-data-analysis-using-r;detailed-exploratory-data-analysis-using-r;notaapple;800;1200;General Data Science;General Data Science;0;1;0;0;0;0;0;0;0;1
+dejavu23/house-prices-eda-to-ml-beginner;house-prices-eda-to-ml-beginner;dejavu23;900;1180;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+kenjee/housing-prices-example-with-video-walkthrough;housing-prices-example-with-video-walkthrough;kenjee;750;1175;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+parulpandey/useful-python-libraries-for-data-science;useful-python-libraries-for-data-science;parulpandey;500;1170;Titanic;Social Science/History;0;1;0;0;0;0;0;0;0;1
+erick5/predicting-house-prices-with-machine-learning;predicting-house-prices-with-machine-learning;erick5;650;1150;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+angqx95/data-science-workflow-top-2-with-tuning;data-science-workflow-top-2-with-tuning;angqx95;1500;1140;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+skirmer/fun-with-real-estate-data;fun-with-real-estate-data;skirmer;450;1130;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+agodwinp/stacking-house-prices-walkthrough-to-top-5;stacking-house-prices-walkthrough-to-top-5;agodwinp;1200;1120;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+pavansanagapati/14-simple-tips-to-save-ram-memory-for-1-gb-dataset;14-simple-tips-to-save-ram-memory-for-1-gb-dataset;pavansanagapati;300;1115;Titanic;Social Science/History;0;1;0;0;0;0;0;0;0;1
+massquantity/all-you-need-is-pca-lb-0-11421-top-4;all-you-need-is-pca-lb-0-11421-top-4;massquantity;1100;1100;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+frtgnn/pycaret-introduction-classification-regression;pycaret-introduction-classification-regression;frtgnn;700;1095;Titanic;Social Science/History;0;1;0;0;0;0;0;0;0;1
+tannercarbonati/detailed-data-analysis-ensemble-modeling;detailed-data-analysis-ensemble-modeling;tannercarbonati;1300;1080;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+zoupet/neural-network-model-for-house-prices-tensorflow;neural-network-model-for-house-prices-tensorflow;zoupet;1000;1070;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+humananalog/xgboost-lasso;xgboost-lasso;humananalog;550;1060;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+fedi1996/house-prices-data-cleaning-viz-and-modeling;house-prices-data-cleaning-viz-and-modeling;fedi1996;1200;1050;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+ryannolan1/kaggle-housing-youtube-video;kaggle-housing-youtube-video;ryannolan1;400;1040;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+keithfish/kaggle-7-xgbst-enet;kaggle-7-xgbst-enet;keithfish;800;1030;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+mgmarques/houses-prices-complete-solution;houses-prices-complete-solution;mgmarques;1600;1020;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+fatmakursun/house-price-some-of-regression-models;house-price-some-of-regression-models;fatmakursun;900;1010;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+marto24/beginners-prediction-top3;beginners-prediction-top3;marto24;500;1000;House Prices;Real Estate;0;1;0;0;0;0;0;0;0;1
+spscientist/a-simple-tutorial-on-exploratory-data-analysis;a-simple-tutorial-on-exploratory-data-analysis;spscientist;700;990;General Data Science;General Data Science;0;0;1;0;0;0;0;0;0;1
+pavansanagapati/automated-hyperparameter-tuning;automated-hyperparameter-tuning;pavansanagapati;1400;985;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+gaetanlopez/how-to-make-clean-visualizations;how-to-make-clean-visualizations;gaetanlopez;400;980;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+agehsbarg/top-10-0-10943-stacking-mice-and-brutal-force;top-10-0-10943-stacking-mice-and-brutal-force;agehsbarg;2500;970;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+desalegngeb/plotly-guide-customize-for-better-visualizations;plotly-guide-customize-for-better-visualizations;desalegngeb;600;965;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+rtatman/example-submission;example-submission;rtatman;50;960;General Data Science;General Data Science;0;0;1;0;0;0;0;0;0;1
+heyrobin/house-price-prediction-beginner-s-notebook;house-price-prediction-beginner-s-notebook;heyrobin;700;950;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+shaygu/house-prices-begginer-top-7;house-prices-begginer-top-7;shaygu;800;940;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+darkside92/detailed-examination-for-house-price-top-10;detailed-examination-for-house-price-top-10;darkside92;1500;930;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+shaoyingzhang/data-exploration-and-prediction-of-house-price;data-exploration-and-prediction-of-house-price;shaoyingzhang;1100;920;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+jimthompson/ensemble-model-stacked-model-example;ensemble-model-stacked-model-example;jimthompson;900;910;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+tentotheminus9/linear-regression-from-scratch-gradient-descent;linear-regression-from-scratch-gradient-descent;tentotheminus9;500;900;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+chanakyavivekkapoor/house-price-prediction;house-price-prediction;chanakyavivekkapoor;700;890;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+niteshx2/top-50-beginners-stacking-lgb-xgb;top-50-beginners-stacking-lgb-xgb;niteshx2;1000;880;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+rajmehra03/a-complete-pandas-tutorial;a-complete-pandas-tutorial;rajmehra03;600;875;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+nkitgupta/feature-engineering-and-feature-selection;feature-engineering-and-feature-selection;nkitgupta;800;870;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+surya635/house-price-prediction;house-price-prediction;surya635;600;860;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+wouldyoujustfocus/llama3-8b-llm20-questions-lb-750;llama3-8b-llm20-questions-lb-750;wouldyoujustfocus;4500;855;Titanic;Social Science/History;0;0;1;0;0;0;0;0;0;1
+allunia/house-prices-tutorial-with-catboost;house-prices-tutorial-with-catboost;allunia;700;850;House Prices;Real Estate;0;0;1;0;0;0;0;0;0;1
+carlmcbrideellis/an-introduction-to-xgboost-regression;an-introduction-to-xgboost-regression;carlmcbrideellis;500;840;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+gcdatkin/top-10-house-price-regression-competition-nb;top-10-house-price-regression-competition-nb;gcdatkin;1200;830;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+satishgunjal/tutorial-k-fold-cross-validation;tutorial-k-fold-cross-validation;satishgunjal;400;825;Titanic;Social Science/History;0;0;0;1;0;0;0;0;0;1
+kareem3egm/learn-machine-learning-faster-1;learn-machine-learning-faster-1;kareem3egm;300;820;Titanic;Social Science/History;0;0;0;1;0;0;0;0;0;1
+vjgupta/reach-top-10-with-simple-model-on-housing-prices;reach-top-10-with-simple-model-on-housing-prices;vjgupta;800;810;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+poonaml/house-prices-data-exploration-and-visualisation;house-prices-data-exploration-and-visualisation;poonaml;1000;800;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+timolee/a-home-for-pandas-and-sklearn-beginner-how-tos;a-home-for-pandas-and-sklearn-beginner-how-tos;timolee;600;790;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+miguelangelnieto/pca-and-regression;pca-and-regression;miguelangelnieto;500;780;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+janiobachmann/house-prices-useful-regression-techniques;house-prices-useful-regression-techniques;janiobachmann;900;770;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+frtgnn/ml-101-beginner-s-stop-xgb-lgbm-blend;ml-101-beginner-s-stop-xgb-lgbm-blend;frtgnn;800;760;House Prices;Real Estate;0;0;0;1;0;0;0;0;0;1
+ohseokkim/house-price-all-about-house-price;house-price-all-about-house-price;ohseokkim;1200;750;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+diegosiebra/neural-network-model-for-house-prices-keras;neural-network-model-for-house-prices-keras;diegosiebra;900;740;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+bextuychiev/model-explainability-with-shap-only-guide-u-need;model-explainability-with-shap-only-guide-u-need;bextuychiev;1100;735;Titanic;Social Science/History;0;0;0;0;1;0;0;0;0;1
+marianadeem755/house-price-prediction-ml-models-deepneuralnetwork;house-price-prediction-ml-models-deepneuralnetwork;marianadeem755;1300;730;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+serkanp/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;serkanp;1000;720;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+gomes555/xgboost-bayes-opt-with-tidymodels;xgboost-bayes-opt-with-tidymodels;gomes555;1500;710;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+katotaka/kaggle-prediction-house-prices;kaggle-prediction-house-prices;katotaka;600;700;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+rbyron/simple-linear-regression-models;simple-linear-regression-models;rbyron;400;690;House Prices;Real Estate;0;0;0;0;1;0;0;0;0;1
+adamml/how-to-be-in-top-10-for-beginner;how-to-be-in-top-10-for-beginner;adamml;800;680;House Prices;Real Estate;0;0;0;0;0;1;0;0;0;1
+pablocastilla/predict-house-prices-with-xgboost-regression;predict-house-prices-with-xgboost-regression;pablocastilla;700;670;House Prices;Real Estate;0;0;0;0;0;1;0;0;0;1
+tahmidmir/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;tahmidmir;900;660;House Prices;Real Estate;0;0;0;0;0;0;1;0;0;1
+alaasedeeq/object-oriented-programming-for-data-science;object-oriented-programming-for-data-science;alaasedeeq;500;650;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+debarshichanda/handling-missing-values;handling-missing-values;debarshichanda;300;640;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+paultimothymooney/get-your-model-ready-to-submit;get-your-model-ready-to-submit;paultimothymooney;100;630;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+itslek/blend-stack-lr-gb-0-10649-house-prices-v57;blend-stack-lr-gb-0-10649-house-prices-v57;itslek;2000;620;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/tableau-intro-use-cases;tableau-intro-use-cases;pavansanagapati;400;615;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+adachowicz/house-prices-random-forest-regression-analysis;house-prices-random-forest-regression-analysis;adachowicz;800;610;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jack89roberts/top-7-using-elasticnet-with-interactions;top-7-using-elasticnet-with-interactions;jack89roberts;1100;600;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+agileteam/house-prices-starter-xgb;house-prices-starter-xgb;agileteam;300;10;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/what-is-adversarial-validation;what-is-adversarial-validation;carlmcbrideellis;600;595;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/pandas-bokeh-visualization-tutorial;pandas-bokeh-visualization-tutorial;pavansanagapati;500;590;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+arunkumarramanan/tensorflow-tutorial-and-housing-price-prediction;tensorflow-tutorial-and-housing-price-prediction;arunkumarramanan;1000;580;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+datajameson/advance-regression-house-price-prediction-top-2;advance-regression-house-price-prediction-top-2;datajameson;1800;570;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jiashenliu/updated-xgboost-with-parameter-tuning;updated-xgboost-with-parameter-tuning;jiashenliu;1300;560;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+emmanueldjegou/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;emmanueldjegou;1100;550;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+laurenstc/top-2-of-leaderboard-advanced-fe;top-2-of-leaderboard-advanced-fe;laurenstc;2200;540;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+satishgunjal/ensemble-learning-bagging-boosting-stacking;ensemble-learning-bagging-boosting-stacking;satishgunjal;900;530;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kishkun/house-pricing-analysis-model;house-pricing-analysis-model;kishkun;800;520;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rebeccaysteboe/regression-algorithms-compared;regression-algorithms-compared;rebeccaysteboe;1000;510;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jongbeompark/house-prices-with-pytorch;house-prices-with-pytorch;jongbeompark;900;500;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pradeeptripathi/predicting-house-prices-using-r;predicting-house-prices-using-r;pradeeptripathi;700;490;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+alfathterry/house-price-prediction;house-price-prediction;alfathterry;600;480;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kartushovdanil/econometrics-is-all-you-need;econometrics-is-all-you-need;kartushovdanil;800;475;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+blighpark/t2-4-house-prices-regression;t2-4-house-prices-regression;blighpark;150;8;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mekhdigakhramanian/first-place-top-1-with-leakage;first-place-top-1-with-leakage;mekhdigakhramanian;3000;470;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+odaymourad/detailed-full-solution-step-by-step-top-3;detailed-full-solution-step-by-step-top-3;odaymourad;2000;460;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ravi20076/houseprice-bootstrappingensembles-pipelines;houseprice-bootstrappingensembles-pipelines;ravi20076;1400;450;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hardikgarg03/house-price-random-forest-linear-regression;house-price-random-forest-linear-regression;hardikgarg03;900;440;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lovroselic/houseprices-ls;houseprices-ls;lovroselic;500;430;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vanguarde/study-series-uplift-modeling;study-series-uplift-modeling;vanguarde;1200;425;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+couyang/hybrid-svm-benchmark-approach-0-11180-lb-top-2;hybrid-svm-benchmark-approach-0-11180-lb-top-2;couyang;2500;420;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+alaasedeeq/house-price-prediction-top-8;house-price-prediction-top-8;alaasedeeq;1100;410;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/7-coolest-packages-top-kagglers-are-using;7-coolest-packages-top-kagglers-are-using;bextuychiev;600;405;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/tabnet-a-very-simple-regression-example;tabnet-a-very-simple-regression-example;carlmcbrideellis;800;400;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+code1110/houseprice-data-cleaning-visualization;houseprice-data-cleaning-visualization;code1110;900;390;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+klyusba/lasso-model-for-regression-problem;lasso-model-for-regression-problem;klyusba;600;380;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+eisgandar/house-prices-predictions-jump-top-1;house-prices-predictions-jump-top-1;eisgandar;2800;370;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+fedesoriano/house-prices-what-s-a-good-score;house-prices-what-s-a-good-score;fedesoriano;500;360;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+andreshg/house-price-eda-and-prediction;house-price-eda-and-prediction;andreshg;1000;350;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/feature-selection-using-the-boruta-shap-package;feature-selection-using-the-boruta-shap-package;carlmcbrideellis;800;340;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+samanfatima7/house-prediction-adv-regression-v1-r2-0-9337;house-prediction-adv-regression-v1-r2-0-9337;samanfatima7;1200;330;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+miguelfzzz/house-price-prediction-lasso-ridge-and-more;house-price-prediction-lasso-ridge-and-more;miguelfzzz;900;320;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+siddheshpujari/eda-and-prediction-of-house-price;eda-and-prediction-of-house-price;siddheshpujari;1100;310;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+wkevin/house-prices;house-prices;wkevin;400;300;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+fiorenza2/journey-to-the-top-10;journey-to-the-top-10;fiorenza2;1500;290;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+abhinand05/predicting-housingprices-simple-approach;predicting-housingprices-simple-approach;abhinand05;700;280;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+janvichokshi/random-forest-xgb-ridge-lasso-all-in-one;random-forest-xgb-ridge-lasso-all-in-one;janvichokshi;1000;270;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bwboerman/r-data-table-glmnet-xgboost-with-caret;r-data-table-glmnet-xgboost-with-caret;bwboerman;1300;260;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+faressayah/data-science-best-practices-with-pandas-part-1;data-science-best-practices-with-pandas-part-1;faressayah;600;255;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vikassingh1996/extensive-data-preprocessing-and-modeling;extensive-data-preprocessing-and-modeling;vikassingh1996;1200;250;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/beautiful-umap-tutorial-on-100-dimensional-data;beautiful-umap-tutorial-on-100-dimensional-data;bextuychiev;900;245;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+eraaz1/a-comprehensive-guide-to-advanced-regression;a-comprehensive-guide-to-advanced-regression;eraaz1;1400;240;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+khashayarrahimi94/gold-price-forecasting-using-lstm-cnn-gru;gold-price-forecasting-using-lstm-cnn-gru;khashayarrahimi94;1100;230;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+serkanpeldek/ev-fiyatlar-n-n-tahmini;ev-fiyatlar-n-n-tahmini;serkanpeldek;800;220;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lucabasa/houseprice-end-to-end-project;houseprice-end-to-end-project;lucabasa;1600;210;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hugosjoberg/house-prices-prediction-using-keras;house-prices-prediction-using-keras;hugosjoberg;1000;200;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bhatnagardaksh/gradient-descent-from-scratch;gradient-descent-from-scratch;bhatnagardaksh;600;195;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ilyapozdnyakov/house-prices-prediction-pyspark-guide;house-prices-prediction-pyspark-guide;ilyapozdnyakov;1200;190;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+daniilkrasnoproshin/comparison-xgbregressor-vs-ridgecv;comparison-xgbregressor-vs-ridgecv;daniilkrasnoproshin;700;180;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+shilongzhuang/statistical-testing-guide-for-beginners;statistical-testing-guide-for-beginners;shilongzhuang;500;175;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sonalisingh1411/price-prediction-train-test-data-analysis;price-prediction-train-test-data-analysis;sonalisingh1411;800;170;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+adibouayjan/house-price-step-by-step-modeling;house-price-step-by-step-modeling;adibouayjan;1100;160;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kutlukatalay/house-prices-advanced-models-top-1-lgbm-regressor;house-prices-advanced-models-top-1-lgbm-regressor;kutlukatalay;2500;150;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lasmith/house-price-regression-with-lightgbm;house-price-regression-with-lightgbm;lasmith;900;140;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hamzaben/eda-feature-eng-and-model-blending-top-20;eda-feature-eng-and-model-blending-top-20;hamzaben;1800;130;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nareshbhat/starter-guide-to-build-nlp-ml-model-in-pycaret;starter-guide-to-build-nlp-ml-model-in-pycaret;nareshbhat;1000;125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dfitzgerald3/randomforestregressor;randomforestregressor;dfitzgerald3;600;120;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lavanyashukla01/getting-started-with-kaggle-explore-the-dataset;getting-started-with-kaggle-explore-the-dataset;lavanyashukla01;400;110;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+bextuychiev/25-pandas-functions-you-didn-t-know-existed;25-pandas-functions-you-didn-t-know-existed;bextuychiev;300;105;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+shweta2407/house-prices-regression-predictive-analysis;house-prices-regression-predictive-analysis;shweta2407;1100;100;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ohseokkim/house-prices-are-you-a-real-estate-agent;house-prices-are-you-a-real-estate-agent;ohseokkim;1300;90;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+arootda/eda-fe-stacking-for-beginner-top-4;eda-fe-stacking-for-beginner-top-4;arootda;1600;80;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+samsonqian/predicting-house-prices-with-regression;predicting-house-prices-with-regression;samsonqian;800;70;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+desalegngeb/a-short-tutorial-in-r-easy-start;a-short-tutorial-in-r-easy-start;desalegngeb;300;65;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nareshbhat/eda-within-snap-of-fingers;eda-within-snap-of-fingers;nareshbhat;200;60;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+datafan07/beginner-eda-with-feature-eng-and-blending-models;beginner-eda-with-feature-eng-and-blending-models;datafan07;1400;50;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+josh24990/simple-stacking-approach-top-12-score;simple-stacking-approach-top-12-score;josh24990;1200;40;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/no-bs-guide-to-hyperparameter-tuning-with-optuna;no-bs-guide-to-hyperparameter-tuning-with-optuna;bextuychiev;1500;35;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+caicell/fun-python-eda-step-by-step;fun-python-eda-step-by-step;caicell;700;30;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kartushovdanil/mlops-how-to-be-rock-of-ml;mlops-how-to-be-rock-of-ml;kartushovdanil;900;25;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+zikazika/ensamble-methods-on-regression;ensamble-methods-on-regression;zikazika;1000;20;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nextbigwhat/eda-for-categorical-variables-a-beginner-s-way;eda-for-categorical-variables-a-beginner-s-way;nextbigwhat;600;10;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+yassineghouzam/eda-introduction-to-ensemble-regression;eda-introduction-to-ensemble-regression;yassineghouzam;1100;1500;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+meikegw/filling-up-missing-values;filling-up-missing-values;meikegw;350;1480;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+darrylljk/predict-housing-prices;predict-housing-prices;darrylljk;750;1460;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+abdullahdahabre23/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;abdullahdahabre23;1250;1440;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pelkoja/visual-xgboost-tuning-with-caret;visual-xgboost-tuning-with-caret;pelkoja;950;1420;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+computervisi/eda-house-prices;eda-house-prices;computervisi;850;1400;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+firstbloody/an-uncomplicated-model-top-2-or-top-1;an-uncomplicated-model-top-2-or-top-1;firstbloody;2500;1380;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ohseokkim/linear-nonlinear-scaling;linear-nonlinear-scaling;ohseokkim;550;1360;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mehmetisik/house-price-prediction;house-price-prediction;mehmetisik;850;1340;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kdsharma/predicting-house-price-90-accuracy;predicting-house-price-90-accuracy;kdsharma;1050;1320;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rohan1506/optimizing-pandas-like-a-pro;optimizing-pandas-like-a-pro;rohan1506;450;1310;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+data13/predicting-house-prices-with-linear-regression;predicting-house-prices-with-linear-regression;data13;650;1300;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+shashwatwork/guide-to-statistical-hypothesis-tests-in-python;guide-to-statistical-hypothesis-tests-in-python;shashwatwork;550;1280;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+abonaplata/analisis-exploratorio-de-datos-con-python;analisis-exploratorio-de-datos-con-python;abonaplata;950;1260;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rohan1506/pandas-tips-tricks-tutorial;pandas-tips-tricks-tutorial;rohan1506;350;1250;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+amrelsayyad/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;amrelsayyad;1150;1240;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+desalegngeb/bokeh-visualization-library-guide-for-beginners;bokeh-visualization-library-guide-for-beginners;desalegngeb;650;1220;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vipin20/house-prices-eda-feature-engineering;house-prices-eda-feature-engineering;vipin20;1350;1200;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mysarahmadbhat/types-of-transformations-for-better-distribution;types-of-transformations-for-better-distribution;mysarahmadbhat;450;1190;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mysarahmadbhat/python-from-zero-to;python-from-zero-to;mysarahmadbhat;250;1185;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kongnyooong/house-price-tutorial-for-korean-beginners;house-price-tutorial-for-korean-beginners;kongnyooong;950;1180;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jimthompson/regularized-linear-models-in-r;regularized-linear-models-in-r;jimthompson;750;1160;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+joshuahiller/comprehensive-data-exploration-with-python;comprehensive-data-exploration-with-python;joshuahiller;1050;1140;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+eliotbarr/stacking-starter;stacking-starter;eliotbarr;850;1120;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+markmedhat/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;markmedhat;1250;1100;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rajmehra03/python-for-dsa-interviews;python-for-dsa-interviews;rajmehra03;450;1080;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+chocozzz/beginner-challenge-house-prices;beginner-challenge-house-prices;chocozzz;650;1060;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nadzmiagthomas/pytorch-regression;pytorch-regression;nadzmiagthomas;950;1040;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+brendan45774/house-predict-solution;house-predict-solution;brendan45774;550;1020;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+maheshnanavare/housing-prices2-xgboost-gridsearch;housing-prices2-xgboost-gridsearch;maheshnanavare;1450;1000;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vikumsw/house-prices-solution-beginner;house-prices-solution-beginner;vikumsw;850;980;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ekrembayar/house-price-prediction-lgbm-lb-24;house-price-prediction-lgbm-lb-24;ekrembayar;1150;960;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+adnanzaidi/basic-tutorial-exploratory-data-analysis;basic-tutorial-exploratory-data-analysis;adnanzaidi;750;940;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+limyenwee/stacked-ensemble-models-top-3-on-leaderboard;stacked-ensemble-models-top-3-on-leaderboard;limyenwee;2250;920;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kabure/houseprices-pipeline-featuretools-tpot;houseprices-pipeline-featuretools-tpot;kabure;1850;900;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+suvroo/wrapper-feature-selection-and-pca;wrapper-feature-selection-and-pca;suvroo;950;880;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+faressayah/xgboost-vs-lightgbm-vs-catboost-vs-adaboost;xgboost-vs-lightgbm-vs-catboost-vs-adaboost;faressayah;1350;860;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+dmkravtsov/3-2-house-prices;3-2-house-prices;dmkravtsov;450;840;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vikumsw/guide-for-comprehensive-data-exploration-in-python;guide-for-comprehensive-data-exploration-in-python;vikumsw;1050;820;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+plasticgrammer/house-prices-prediction-playground;house-prices-prediction-playground;plasticgrammer;750;800;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jimthompson/boruta-feature-importance-analysis;boruta-feature-importance-analysis;jimthompson;950;780;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+sandipan001/hitting-top-10-as-a-beginner;hitting-top-10-as-a-beginner;sandipan001;1250;760;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+niketanmoon/house-prices-prediction-part-2-with-fe;house-prices-prediction-part-2-with-fe;niketanmoon;1550;740;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/tensorboard-visualisation-of-fashion-mnist;tensorboard-visualisation-of-fashion-mnist;pavansanagapati;1150;720;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+chasek123/starter-notebook-building-a-model-in-kaggle;starter-notebook-building-a-model-in-kaggle;chasek123;550;700;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sisharaneranjana/house-price-prediction-advanced-analysis;house-price-prediction-advanced-analysis;sisharaneranjana;1350;680;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mandypham/house-prices-prediction;house-prices-prediction;mandypham;850;660;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hemingwei/top-2-from-laurenstc-on-house-price-prediction;top-2-from-laurenstc-on-house-price-prediction;hemingwei;2350;640;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+meeratif/housing-price-prediction-randomforest-and-eda;housing-price-prediction-randomforest-and-eda;meeratif;1050;620;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zwartfreak/easiest-price-prediction-full-explanation;easiest-price-prediction-full-explanation;zwartfreak;750;600;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+dejavu23/house-prices-plotly-pipelines-and-ensembles;house-prices-plotly-pipelines-and-ensembles;dejavu23;1450;580;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+marweni/house-prices-complete-solution-with-guidance;house-prices-complete-solution-with-guidance;marweni;1750;560;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ahmedmahmoud16/house-prices-regression;house-prices-regression;ahmedmahmoud16;950;540;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+akhileshthite/house-prices-solution-for-beginners;house-prices-solution-for-beginners;akhileshthite;850;520;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jamiexujiu/house-prediction;house-prediction;jamiexujiu;650;500;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+aniruddhachakraborty/lasso-gbm-xgboost-top-20-0-12039-using-r;lasso-gbm-xgboost-top-20-0-12039-using-r;aniruddhachakraborty;1650;480;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+iamsouravbanerjee/unveiling-the-secrets-of-house-prices;unveiling-the-secrets-of-house-prices;iamsouravbanerjee;1250;460;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+xiefei/feature-engineering-for-house-prices;feature-engineering-for-house-prices;xiefei;1050;440;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ohseokkim/house-price-simple-but-not-simpler;house-price-simple-but-not-simpler;ohseokkim;750;420;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+walzer55/house-prices;house-prices;walzer55;550;400;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jolasa/blending-high-scores-top-1-8th-place;blending-high-scores-top-1-8th-place;jolasa;2850;380;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ahmedgaitani/top-3-advanced-house-prices-with-gboost;top-3-advanced-house-prices-with-gboost;ahmedgaitani;2150;360;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zabihullah18/canada-capita-income-prediction-94;canada-capita-income-prediction-94;zabihullah18;450;340;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+srivignesh/data-preprocessing-for-house-price-prediction;data-preprocessing-for-house-price-prediction;srivignesh;950;320;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+abdelrahman16/preidiction-house-price;preidiction-house-price;abdelrahman16;750;300;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+faressayah/predicting-houses-prices-using-anns;predicting-houses-prices-using-anns;faressayah;1150;280;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+axelderomblay/running-mlbox-auto-ml-package-on-house-prices;running-mlbox-auto-ml-package-on-house-prices;axelderomblay;1450;260;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+adnanzaidi/learn-house-prices-prediction-using-keras;learn-house-prices-prediction-using-keras;adnanzaidi;1050;240;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nareshbhat/data-visualization-in-just-one-line-of-code;data-visualization-in-just-one-line-of-code;nareshbhat;350;220;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+captcalculator/imputing-missing-data-with-the-mice-package-in-r;imputing-missing-data-with-the-mice-package-in-r;captcalculator;850;200;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zoupet/xgboost-ridge-lasso;xgboost-ridge-lasso;zoupet;950;180;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gaganmaahi224/seaborn-tutorial-17-plots;seaborn-tutorial-17-plots;gaganmaahi224;650;160;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+ishivinal/machine-learning-model-evaluation-metrics;machine-learning-model-evaluation-metrics;ishivinal;550;140;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nobodymartin/practice-with-visualization-eda-xgb-in-ds;practice-with-visualization-eda-xgb-in-ds;nobodymartin;1250;120;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+avikumart/regression-end-to-end-project-xgb-rf-ridge-kmeans;regression-end-to-end-project-xgb-rf-ridge-kmeans;avikumart;1550;100;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/recursive-feature-elimination-rfe-example;recursive-feature-elimination-rfe-example;carlmcbrideellis;750;80;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+devvret/automl-tables-tutorial-notebook;automl-tables-tutorial-notebook;devvret;1050;60;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+katotaka/prediction-house-prices-eda;prediction-house-prices-eda;katotaka;950;40;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+orhankaramancode/ensemble-stacked-regressors-top-3-91-acc;ensemble-stacked-regressors-top-3-91-acc;orhankaramancode;2450;20;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+javohirtoshqorgonov/house-price-prediction-eda-analysis;house-price-prediction-eda-analysis;javohirtoshqorgonov;1150;0;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hadeux/simple-regressor-baseline;simple-regressor-baseline;hadeux;450;1490;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+muhammadimran112233/a-regression-tutorial-for-beginners;a-regression-tutorial-for-beginners;muhammadimran112233;750;1470;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pythonkumar/houseprice-solution-easiest-way-90-accuracy;houseprice-solution-easiest-way-90-accuracy;pythonkumar;950;1450;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+burakergene/predict-house-prices-with-using-randomforest;predict-house-prices-with-using-randomforest;burakergene;850;1430;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gunesevitan/house-prices-advanced-stacking-tutorial;house-prices-advanced-stacking-tutorial;gunesevitan;1650;1410;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+alicanpayasli/90-r2-score-ensemble-model-feature-selection-eng;90-r2-score-ensemble-model-feature-selection-eng;alicanpayasli;1950;1390;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gaganmaahi224/everything-you-need-to-know-in-plotly;everything-you-need-to-know-in-plotly;gaganmaahi224;750;1370;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+swimmingwhale/xgboost-house-prices;xgboost-house-prices;swimmingwhale;650;1350;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jimmyyeung/house-regression-beginner-catboost-top-2;house-regression-beginner-catboost-top-2;jimmyyeung;1250;1330;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mehrdadsadeghi/house-price-advanced-regression-techniques;house-price-advanced-regression-techniques;mehrdadsadeghi;1150;1310;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+satishgunjal/advanced-reg-techniques-linear-models-top-6;advanced-reg-techniques-linear-models-top-6;satishgunjal;1450;1290;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+dumanmesut/house-prices-prediction-cat-lgbm-xgb;house-prices-prediction-cat-lgbm-xgb;dumanmesut;1350;1270;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zhukovoleksiy/house-prices-detailed-top-5-solution;house-prices-detailed-top-5-solution;zhukovoleksiy;2050;1250;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vshantam/house-prices-prediction;house-prices-prediction;vshantam;850;1230;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/lasso-regression-with-pipelines-tutorial;lasso-regression-with-pipelines-tutorial;bextuychiev;750;1210;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lucabasa/understand-and-use-a-pipeline;understand-and-use-a-pipeline;lucabasa;650;1190;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ayberkural/house-prices-advanced-regression-techniques;house-prices-advanced-regression-techniques;ayberkural;1250;1170;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ashfakyeafi/data-exploration-with-python;data-exploration-with-python;ashfakyeafi;950;1150;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+venkatapadavala/house-prices-advanced-regression-practice;house-prices-advanced-regression-practice;venkatapadavala;1150;1130;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+limmyoungjin/r-t1-4-expected-questions-2;r-t1-4-expected-questions-2;limmyoungjin;85;1110;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+ahmedmohameddawoud/house-price-prediction-complete-beginner-guide;house-price-prediction-complete-beginner-guide;ahmedmohameddawoud;1050;1090;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+qq853108389/python;python;qq853108389;50;1070;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+xirudieyi/house-prices;house-prices;xirudieyi;450;1050;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hobeomlee/prediction-stacked-regressions;prediction-stacked-regressions;hobeomlee;1350;1030;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+khashayarrahimi94/automated-problem-solver-house-price;automated-problem-solver-house-price;khashayarrahimi94;1650;1010;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+suprematism/ml-house-prices-top-7-encoding-techniques;ml-house-prices-top-7-encoding-techniques;suprematism;1550;990;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+sidharth178/top-5-house-price-prediction;top-5-house-price-prediction;sidharth178;1850;970;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+syedmuhmmadzain/house-price-prediction-ipynb;house-price-prediction-ipynb;syedmuhmmadzain;950;950;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kalelpark/useful-visualization;useful-visualization;kalelpark;550;930;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+foolofatook/tutorial-plotly-for-data-analysis;tutorial-plotly-for-data-analysis;foolofatook;750;910;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+leeclemmer/exploratory-data-analysis-of-housing-in-ames-iowa;exploratory-data-analysis-of-housing-in-ames-iowa;leeclemmer;1050;890;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+josephchan524/housepricesregressor-using-lightgbm;housepricesregressor-using-lightgbm;josephchan524;850;870;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+pratsiuk/valueerror-unknown-label-type-continuous;valueerror-unknown-label-type-continuous;pratsiuk;350;850;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+rushikeshdane20/plotly-tutorial-how-to-make-plotly-visuals-better;plotly-tutorial-how-to-make-plotly-visuals-better;rushikeshdane20;650;830;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+alicanpayasli/first-try-top-30-feature-selection;first-try-top-30-feature-selection;alicanpayasli;1250;810;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+redaabdou/house-prices-solution-data-cleaning-ml;house-prices-solution-data-cleaning-ml;redaabdou;1450;790;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gaganmaahi224/4-auto-eda-and-3-auto-ml-libraries;4-auto-eda-and-3-auto-ml-libraries;gaganmaahi224;950;770;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+pralabhpoudel/house-price-prediction-regression-models-and-dl;house-price-prediction-regression-models-and-dl;pralabhpoudel;1350;750;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+stefanschulmeister87/price-prediction-with-model-stacking-tensorflow;price-prediction-with-model-stacking-tensorflow;stefanschulmeister87;1750;730;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+goldens/house-prices-on-the-top-with-simple-model;house-prices-on-the-top-with-simple-model;goldens;1050;710;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gallo33henrique/house-price-ml-regression-lgbm;house-price-ml-regression-lgbm;gallo33henrique;950;690;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+harvindarjunrai/predicting-house-prices-v1;predicting-house-prices-v1;harvindarjunrai;750;670;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+xiefei/02-house;02-house;xiefei;250;650;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/25-numpy-functions-you-never-knew-existed;25-numpy-functions-you-never-knew-existed;bextuychiev;350;630;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+bakar31/eda-house-price-prediction;eda-house-price-prediction;bakar31;1150;610;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+lavanyashukla01/picking-the-best-model-a-whirlwind-tour-of-model;picking-the-best-model-a-whirlwind-tour-of-model;lavanyashukla01;850;590;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+zeeshanyounas001/house-price-predictions;house-price-predictions;zeeshanyounas001;750;570;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bravo03/predicting-house-prices-with-logistic-regression;predicting-house-prices-with-logistic-regression;bravo03;650;550;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ruthgn/house-prices-top-8-featengineering-xgb-optuna;house-prices-top-8-featengineering-xgb-optuna;ruthgn;1950;530;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+fatihyavuzz/house-price-prediction-advanced-regression;house-price-prediction-advanced-regression;fatihyavuzz;1350;510;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/20-burning-xgboost-faqs-answered-to-use-like-a-pro;20-burning-xgboost-faqs-answered-to-use-like-a-pro;bextuychiev;950;490;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+leeyj0511/model-evaluation-1-classification-metrics;model-evaluation-1-classification-metrics;leeyj0511;550;470;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+krutarthhd/houseprices-data-exploration-and-prediction;houseprices-data-exploration-and-prediction;krutarthhd;1250;450;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+santibermejo/xgboost-for-house-price-prediction;xgboost-for-house-price-prediction;santibermejo;850;430;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mikhailsukhanov55/house-prices-data-cleaning-feature-engineering;house-prices-data-cleaning-feature-engineering;mikhailsukhanov55;1550;410;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+bextuychiev/write-powerful-code-w-custom-sklearn-transformers;write-powerful-code-w-custom-sklearn-transformers;bextuychiev;750;390;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+felipefiorini/xgboost-hyper-parameter-tuning;xgboost-hyper-parameter-tuning;felipefiorini;1450;370;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+jankoch/scikit-learn-pipelines-and-pandas;scikit-learn-pipelines-and-pandas;jankoch;650;350;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+abdelrahmantarek13/houseprice-step-by-step;houseprice-step-by-step;abdelrahmantarek13;1050;330;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gaganmaahi224/cutevizz-seaborn-self-written-code;cutevizz-seaborn-self-written-code;gaganmaahi224;550;310;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kevinmorgado/house-prices-cleaning-and-eda;house-prices-cleaning-and-eda;kevinmorgado;1150;290;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rushikeshdane20/build-recommendation-system-app-with-streamlit;build-recommendation-system-app-with-streamlit;rushikeshdane20;950;270;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+johnwill225/extensive-exploratory-data-analysis;extensive-exploratory-data-analysis;johnwill225;1350;250;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+harinuu/house-price-prediction-using-randomforest;house-price-prediction-using-randomforest;harinuu;850;230;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+akouaorsot/house-price-prediction;house-price-prediction;akouaorsot;750;210;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+harshkothari21/beginners-notebook-all-ml-models-eda;beginners-notebook-all-ml-models-eda;harshkothari21;1250;190;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+getanmolgupta01/regression-model;regression-model;getanmolgupta01;650;170;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+anushreek15/house-price-prediction;house-price-prediction;anushreek15;850;150;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hoangphamviet/house-price-stacked-regression-top-3;house-price-stacked-regression-top-3;hoangphamviet;2250;130;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rushikeshdarge/handle-missing-values-only-notebook-you-need;handle-missing-values-only-notebook-you-need;rushikeshdarge;550;110;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+anuragbantu/stacking-ensemble-learning-beginner-s-guide;stacking-ensemble-learning-beginner-s-guide;anuragbantu;1050;90;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+aishwaryapalit/house-price-prediction-for-beginners;house-price-prediction-for-beginners;aishwaryapalit;950;70;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kritidoneria/automl-beginner-housing-prices-using-pycaret;automl-beginner-housing-prices-using-pycaret;kritidoneria;1150;50;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hossamahmedsalah/house-pricing-regression;house-pricing-regression;hossamahmedsalah;850;30;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+izammohammed/all-ml-algos;all-ml-algos;izammohammed;1350;10;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+chazzer/ml-grandmaster-decision-tree-regressor;ml-grandmaster-decision-tree-regressor;chazzer;750;1485;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+rajmehra03/a-complete-guide-to-numpy;a-complete-guide-to-numpy;rajmehra03;450;1465;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+abrahamanderson/house-price-competition-advanced-regression;house-price-competition-advanced-regression;abrahamanderson;1250;1445;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hansjoerg/glmnet-xgboost-and-svm-using-tidymodels;glmnet-xgboost-and-svm-using-tidymodels;hansjoerg;1550;1425;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+seanchen607/house-prices-ensemble-7models;house-prices-ensemble-7models;seanchen607;1850;1405;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mjidiba/a-beginner-s-guide-to-his-first-kaggle-project;a-beginner-s-guide-to-his-first-kaggle-project;mjidiba;950;1385;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+serdarsozturk/house-price-analysis;house-price-analysis;serdarsozturk;1050;1365;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+noussaons/linear-regression;linear-regression;noussaons;550;1345;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+patrycjawalicka/r-house-prices-decision-tree-random-forest-pca;r-house-prices-decision-tree-random-forest-pca;patrycjawalicka;1150;1325;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+youngseoklee/house-price-prediction-with-numeric-only-dataset;house-price-prediction-with-numeric-only-dataset;youngseoklee;850;1305;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mohamedsameh0410/linear-regression-ridge-and-lasso-house-prices;linear-regression-ridge-and-lasso-house-prices;mohamedsameh0410;950;1285;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+usamabalochhh/solving-house-price-problem;solving-house-price-problem;usamabalochhh;750;1265;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+georgyzubkov/house-prices-feature-engeneering-eda;house-prices-feature-engeneering-eda;georgyzubkov;1350;1245;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+niekvanderzwaag/housing-price-prediction-regression;housing-price-prediction-regression;niekvanderzwaag;850;1225;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+omkaarp/house-prices-regression-techniques-submission;house-prices-regression-techniques-submission;omkaarp;1150;1205;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+gaganmaahi224/top-30-houseprice-prediction-with-auto-eval-ml;top-30-houseprice-prediction-with-auto-eval-ml;gaganmaahi224;1450;1185;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+dhananjaysawarkar/house-price-prediction-for-beginners;house-price-prediction-for-beginners;dhananjaysawarkar;950;1165;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ankitverma2010/house-price-prediction-ensemble-methods;house-price-prediction-ensemble-methods;ankitverma2010;1250;1145;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+faressayah/automatic-hyperparameter-tuning-with-optuna;automatic-hyperparameter-tuning-with-optuna;faressayah;1050;1125;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vikumsw/guide-on-hyperparameter-tuning-using-gridsearchcv;guide-on-hyperparameter-tuning-using-gridsearchcv;vikumsw;850;1105;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+vhrique/simple-house-price-prediction-stacking;simple-house-price-prediction-stacking;vhrique;750;1085;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+liyenhsu/feature-selection-and-ensemble-of-5-models;feature-selection-and-ensemble-of-5-models;liyenhsu;1650;1065;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mustafaoz158/house-prices-eda-prediction-with-ml;house-prices-eda-prediction-with-ml;mustafaoz158;1350;1045;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+miftahuladib/housing-price-regression-top-4;housing-price-regression-top-4;miftahuladib;1950;1025;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+validmodel/comprehensive-exploratory-data-analysis;comprehensive-exploratory-data-analysis;validmodel;1150;1005;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+dhirendra73/house-price-advance-regression-90-accuracy;house-price-advance-regression-90-accuracy;dhirendra73;1450;985;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+faressayah/outlier-detection-using-pdf-and-z-score;outlier-detection-using-pdf-and-z-score;faressayah;650;965;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+sidraina89/regularized-regression-housing-pricing;regularized-regression-housing-pricing;sidraina89;950;945;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+rizkia14/visualisasi-data-ggplot2-cheatsheet;visualisasi-data-ggplot2-cheatsheet;rizkia14;450;925;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+mschuer/house-price-predicitons;house-price-predicitons;mschuer;750;905;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+odins0n/h2o-ai-automl-regression-house-price-prediction;h2o-ai-automl-regression-house-price-prediction;odins0n;1250;885;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mitramir5/anomaly-detection-skewed-features-and-stories;anomaly-detection-skewed-features-and-stories;mitramir5;850;865;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+twinkle0705/a-comprehensive-guide-to-handle-missing-values;a-comprehensive-guide-to-handle-missing-values;twinkle0705;650;845;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+anologicon/my-house-prices-forecasting-model;my-house-prices-forecasting-model;anologicon;1050;825;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+abdoashraf90/house-price;house-price;abdoashraf90;450;805;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+youssifhassan/house-price-prediction;house-price-prediction;youssifhassan;750;785;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nandomartinez/house-prices-in-progress;house-prices-in-progress;nandomartinez;950;765;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zlfnurdilaradodu/house-price-prediction;house-price-prediction;zlfnurdilaradodu;850;745;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+munmun2004/house-prices-for-begginers;house-prices-for-begginers;munmun2004;750;725;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+risabbiswas19/ensembling-for-regression-top-6-on-lb;ensembling-for-regression-top-6-on-lb;risabbiswas19;1850;705;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+laurae2/plotting-all-data;plotting-all-data;laurae2;550;685;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+hanyjr/house-price-analysis-preprocessing-and-prediction;house-price-analysis-preprocessing-and-prediction;hanyjr;1350;665;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+usamabalochhh/comparison-of-tree-based-models-with-explanation;comparison-of-tree-based-models-with-explanation;usamabalochhh;1050;645;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+ahmedmohamedmahrous/house-price-prediction-99-5-acc;house-price-prediction-99-5-acc;ahmedmohamedmahrous;1250;625;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zayanmakar/high-score-predictions-for-house-prices;high-score-predictions-for-house-prices;zayanmakar;950;605;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+paulrohan2020/eda-and-simple-linear-regression-for-house-price;eda-and-simple-linear-regression-for-house-price;paulrohan2020;850;585;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+medyasun/house-price-all-regressor-algorithms;house-price-all-regressor-algorithms;medyasun;1150;565;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+darshanjain29/house-price-prediction-top-in-94-to-top-in-28;house-price-prediction-top-in-94-to-top-in-28;darshanjain29;1550;545;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+zavodrobotov/lasso-model-for-regression-problem;lasso-model-for-regression-problem;zavodrobotov;750;525;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+devbilalkhan/house-price-hidden-secret-in-the-data;house-price-hidden-secret-in-the-data;devbilalkhan;1050;505;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+mojtabaameri/house-prices-advanced-regression-challenge;house-prices-advanced-regression-challenge;mojtabaameri;1350;485;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+alawdisoft/advance-house-pricing;advance-house-pricing;alawdisoft;950;465;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+waldemar/super-easy-introduction-to-kaggle-directories;super-easy-introduction-to-kaggle-directories;waldemar;350;445;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+mmellinger66/house-prices-eda-linear-regression;house-prices-eda-linear-regression;mmellinger66;1050;425;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+sathyakrishnan12/advanced-regression-analysis-feb-2022;advanced-regression-analysis-feb-2022;sathyakrishnan12;1250;405;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+modassirafzal/housing-top-3;housing-top-3;modassirafzal;1850;385;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+thiagopanini/exploring-and-modeling-housing-prices;exploring-and-modeling-housing-prices;thiagopanini;1150;365;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+anand0427/regression-algorithms-for-beginners;regression-algorithms-for-beginners;anand0427;950;345;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+kalelpark/hey-kaggler-merry-christmas-see-christmas-tree;hey-kaggler-merry-christmas-see-christmas-tree;kalelpark;650;325;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+himaoka/house-simple-svr-support-vector-regression;house-simple-svr-support-vector-regression;himaoka;850;305;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+piyras23/an-approach-with-statistical-learning-regress;an-approach-with-statistical-learning-regress;piyras23;1050;285;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+virtonos/housing-prices-forecasts;housing-prices-forecasts;virtonos;750;265;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+nlprunner/housing-prices-prediction-with-scikit-learn;housing-prices-prediction-with-scikit-learn;nlprunner;850;245;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+chazzer/ml-grandmaster-gradient-boosting-xgboost;ml-grandmaster-gradient-boosting-xgboost;chazzer;950;225;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+huseyincosgun/eda-visualization-skills;eda-visualization-skills;huseyincosgun;750;205;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+eavannan/house-price-prediction-simple-ml;house-price-prediction-simple-ml;eavannan;650;185;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+yuyougnchan/look-at-this-note-numeric-variable-is-easy;look-at-this-note-numeric-variable-is-easy;yuyougnchan;550;165;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+limmyoungjin/r-t2-4-house-prices;r-t2-4-house-prices;limmyoungjin;250;145;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+celniker/house-prices-lgbm-tuned-stacked-model-0-12;house-prices-lgbm-tuned-stacked-model-0-12;celniker;1750;125;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+anuragbantu/target-encoding-beginner-s-guide;target-encoding-beginner-s-guide;anuragbantu;850;105;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+jeevikasharma2003/ultimate-guide-to-data-cleaning-techniques;ultimate-guide-to-data-cleaning-techniques;jeevikasharma2003;750;85;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nathanbitu/top-12-my-approach-to-house-price-regression;top-12-my-approach-to-house-price-regression;nathanbitu;1450;65;House Prices;Real Estate;0;0;0;0;0;0;0;0;0;0
+alexisbcook/exercise-arithmetic-and-variables;exercise-arithmetic-and-variables;alexisbcook;45;45;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+alexisbcook/titanic-tutorial;titanic-tutorial;alexisbcook;250;25;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+startupsci/titanic-data-science-solutions;titanic-data-science-solutions;startupsci;1250;5;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arthurtok/introduction-to-ensembling-stacking-in-python;introduction-to-ensembling-stacking-in-python;arthurtok;1050;4985;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ldfreeman3/a-data-science-framework-to-achieve-99-accuracy;a-data-science-framework-to-achieve-99-accuracy;ldfreeman3;1550;4965;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mrisdal/exploring-survival-on-the-titanic;exploring-survival-on-the-titanic;mrisdal;950;4945;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+omarelgabry/a-journey-through-titanic;a-journey-through-titanic;omarelgabry;1150;4925;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+gusthema/titanic-competition-w-tensorflow-decision-forests;titanic-competition-w-tensorflow-decision-forests;gusthema;850;4905;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+helgejo/an-interactive-data-science-tutorial;an-interactive-data-science-tutorial;helgejo;750;4885;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ash316/eda-to-prediction-dietanic;eda-to-prediction-dietanic;ash316;1450;4865;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-01-first-submission;upura-kaggle-tutorial-01-first-submission;sishihara;350;4845;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+yassineghouzam/titanic-top-4-with-ensemble-modeling;titanic-top-4-with-ensemble-modeling;yassineghouzam;1850;4825;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jhoward/linear-model-and-neural-net-from-scratch;linear-model-and-neural-net-from-scratch;jhoward;950;4805;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+gunesevitan/titanic-advanced-feature-engineering-tutorial;titanic-advanced-feature-engineering-tutorial;gunesevitan;1250;4785;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+agileteam/py-t1-1-iqr-expected-questions;py-t1-1-iqr-expected-questions;agileteam;65;4765;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nadintamer/titanic-survival-predictions-beginner;titanic-survival-predictions-beginner;nadintamer;850;4745;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kenjee/titanic-project-example;titanic-project-example;kenjee;1050;4725;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-01;python-kaggle-start-book-ch02-01;sishihara;450;4705;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jhoward/how-random-forests-really-work;how-random-forests-really-work;jhoward;750;4685;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-1-getting-started;python-for-data-1-getting-started;hamelg;150;4665;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+masumrumi/a-statistical-analysis-ml-workflow-of-titanic;a-statistical-analysis-ml-workflow-of-titanic;masumrumi;1350;4645;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/knowledge-graph-nlp-tutorial-bert-spacy-nltk;knowledge-graph-nlp-tutorial-bert-spacy-nltk;pavansanagapati;2888;1612;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sinakhorami/titanic-best-working-classifier;titanic-best-working-classifier;sinakhorami;1150;4605;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+agileteam/t2-1-titanic-simple-baseline;t2-1-titanic-simple-baseline;agileteam;250;4585;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jeffd23/scikit-learn-ml-from-start-to-finish;scikit-learn-ml-from-start-to-finish;jeffd23;950;4565;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mnassrib/titanic-logistic-regression-with-python;titanic-logistic-regression-with-python;mnassrib;750;4545;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jhoward/why-you-should-use-a-framework;why-you-should-use-a-framework;jhoward;350;4525;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hiteshp/head-start-for-data-scientist;head-start-for-data-scientist;hiteshp;1050;4505;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+brendan45774/titanic-top-solution;titanic-top-solution;brendan45774;1650;4485;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+subinium/simple-matplotlib-visualization-tips;simple-matplotlib-visualization-tips;subinium;550;4465;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-2-python-arithmetic;python-for-data-2-python-arithmetic;hamelg;150;4445;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+benhamner/random-forest-benchmark-r;random-forest-benchmark-r;benhamner;650;4425;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nareshbhat/outlier-the-silent-killer;outlier-the-silent-killer;nareshbhat;450;1345;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-02-overview;upura-kaggle-tutorial-02-overview;sishihara;450;4385;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dmilla/introduction-to-decision-trees-titanic-dataset;introduction-to-decision-trees-titanic-dataset;dmilla;850;4365;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+tarunpaparaju/titanic-competition-how-top-lb-got-their-score;titanic-competition-how-top-lb-got-their-score;tarunpaparaju;1150;4345;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pmarcelino/data-analysis-and-feature-extraction-with-python;data-analysis-and-feature-extraction-with-python;pmarcelino;950;4325;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+headsortails/pytanic;pytanic;headsortails;750;4305;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+akhabash/cheatsheet-70-ggplot-charts;cheatsheet-70-ggplot-charts;akhabash;350;1275;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dansbecker/partial-dependence-plots;partial-dependence-plots;dansbecker;550;4265;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+parulpandey/a-guide-to-handling-missing-values-in-python;a-guide-to-handling-missing-values-in-python;parulpandey;650;4245;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-03-feature-engineering;upura-kaggle-tutorial-03-feature-engineering;sishihara;1050;4225;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+imoore/titanic-the-only-notebook-you-need-to-see;titanic-the-only-notebook-you-need-to-see;imoore;1350;4205;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-3-basic-data-types;python-for-data-3-basic-data-types;hamelg;150;4185;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+parulpandey/10-simple-hacks-to-speed-up-your-data-analysis;10-simple-hacks-to-speed-up-your-data-analysis;parulpandey;450;4165;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kanncaa1/dataiteam-titanic-eda;dataiteam-titanic-eda;kanncaa1;950;4145;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/decision-trees-random-forest-for-beginners;decision-trees-random-forest-for-beginners;faressayah;850;4125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-04-lightgbm;upura-kaggle-tutorial-04-lightgbm;sishihara;750;4105;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+niklasdonges/end-to-end-project-with-python;end-to-end-project-with-python;niklasdonges;1250;4085;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-03;python-kaggle-start-book-ch02-03;sishihara;550;4065;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+erikbruin/titanic-2nd-degree-families-and-majority-voting;titanic-2nd-degree-families-and-majority-voting;erikbruin;1150;4045;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+poonaml/titanic-survival-prediction-end-to-end-ml-pipeline;titanic-survival-prediction-end-to-end-ml-pipeline;poonaml;1450;4025;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+shivamb/semi-supervised-classification-using-autoencoders;semi-supervised-classification-using-autoencoders;shivamb;1050;4005;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/ensemble-learning-techniques-tutorial;ensemble-learning-techniques-tutorial;pavansanagapati;1100;1225;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-5-lists;python-for-data-5-lists;hamelg;150;3965;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+cdeotte/titanic-wcg-xgboost-0-84688;titanic-wcg-xgboost-0-84688;cdeotte;1950;3945;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pedrodematos/titanic-a-complete-approach-for-data-scientists;titanic-a-complete-approach-for-data-scientists;pedrodematos;1550;3925;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-4-variables;python-for-data-4-variables;hamelg;150;3905;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+zlatankr/titanic-random-forest-82-78;titanic-random-forest-82-78;zlatankr;850;3885;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vinothan/titanic-model-with-90-accuracy;titanic-model-with-90-accuracy;vinothan;1050;3865;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+datacanary/xgboost-example-python;xgboost-example-python;datacanary;650;3845;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-05;python-kaggle-start-book-ch02-05;sishihara;650;3825;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-05-tuning;upura-kaggle-tutorial-05-tuning;sishihara;1250;3805;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+werooring/ch0-titanic-basic-solution-using-randomforest;ch0-titanic-basic-solution-using-randomforest;werooring;750;3785;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-04;python-kaggle-start-book-ch02-04;sishihara;650;3765;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+parulpandey/useful-python-libraries-for-data-science;useful-python-libraries-for-data-science;parulpandey;500;1170;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-01;py310-python-kaggle-start-book-ch02-01;sishihara;550;3725;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+subinium/awesome-visualization-with-titanic-dataset;awesome-visualization-with-titanic-dataset;subinium;850;3705;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+soham1024/titanic-data-science-eda-with-meme-solution;titanic-data-science-eda-with-meme-solution;soham1024;1150;3685;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-06-validation;upura-kaggle-tutorial-06-validation;sishihara;950;3665;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kabure/titanic-eda-model-pipeline-keras-nn;titanic-eda-model-pipeline-keras-nn;kabure;1350;3645;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+funxexcel/titanic-basic-solution-using-adaboost;titanic-basic-solution-using-adaboost;funxexcel;750;3625;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nkitgupta/advance-data-preprocessing;advance-data-preprocessing;nkitgupta;1050;3605;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+yildirimarda/decision-tree-visualization-submission;decision-tree-visualization-submission;yildirimarda;650;3585;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/14-simple-tips-to-save-ram-memory-for-1-gb-dataset;14-simple-tips-to-save-ram-memory-for-1-gb-dataset;pavansanagapati;300;1115;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-8-numpy-arrays;python-for-data-8-numpy-arrays;hamelg;250;3545;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-6-tuples-and-strings;python-for-data-6-tuples-and-strings;hamelg;150;3525;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+andreshg/automatic-eda-libraries-comparisson;automatic-eda-libraries-comparisson;andreshg;850;3505;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-analysis-index;python-for-data-analysis-index;hamelg;50;3485;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+konstantinmasich/titanic-0-82-0-83;titanic-0-82-0-83;konstantinmasich;1250;3465;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+frtgnn/pycaret-introduction-classification-regression;pycaret-introduction-classification-regression;frtgnn;700;1095;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-14-data-exploration-and-cleaning;python-for-data-14-data-exploration-and-cleaning;hamelg;950;3425;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-9-pandas-dataframes;python-for-data-9-pandas-dataframes;hamelg;250;3405;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+preejababu/titanic-data-science-solutions;titanic-data-science-solutions;preejababu;1150;3385;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+fatmakursun/titanic-classification-models;titanic-classification-models;fatmakursun;1050;3365;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+tientd95/pyspark-for-data-science;pyspark-for-data-science;tientd95;1350;3345;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-06;python-kaggle-start-book-ch02-06;sishihara;750;3325;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pliptor/how-am-i-doing-with-my-score;how-am-i-doing-with-my-score;pliptor;450;3305;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sandragracenelson/titanic-dataset-prediction;titanic-dataset-prediction;sandragracenelson;850;3285;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+eraaz1/a-comprehensive-guide-to-titanic-machine-learning;a-comprehensive-guide-to-titanic-machine-learning;eraaz1;1550;3265;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jamesleslie/titanic-neural-network-for-beginners;titanic-neural-network-for-beginners;jamesleslie;950;3245;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+joshuajhchoi/titanic-tutorial-for-beginners-2020;titanic-tutorial-for-beginners-2020;joshuajhchoi;750;3225;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+rochellesilva/simple-tutorial-for-beginners;simple-tutorial-for-beginners;rochellesilva;650;3205;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+szamil/where-is-my-output-file;where-is-my-output-file;szamil;150;3185;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+pliptor/divide-and-conquer-0-82296;divide-and-conquer-0-82296;pliptor;1250;3165;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-10-reading-and-writing-data;python-for-data-10-reading-and-writing-data;hamelg;350;3145;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+chapagain/titanic-solution-a-beginner-s-guide;titanic-solution-a-beginner-s-guide;chapagain;1050;3125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/upura-kaggle-tutorial-07-ensemble;upura-kaggle-tutorial-07-ensemble;sishihara;1450;3105;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-7-dictionaries-and-sets;python-for-data-7-dictionaries-and-sets;hamelg;150;3085;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vincentlugat/titanic-data-analysis-rf-prediction-0-81818;titanic-data-analysis-rf-prediction-0-81818;vincentlugat;1150;3065;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+isaienkov/top-3-efficient-ensembling-in-few-lines-of-code;top-3-efficient-ensembling-in-few-lines-of-code;isaienkov;1750;3045;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dejavu23/titanic-eda-to-ml-beginner;titanic-eda-to-ml-beginner;dejavu23;950;3025;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-07;python-kaggle-start-book-ch02-07;sishihara;850;3005;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/logistic-regression-for-binary-classification-task;logistic-regression-for-binary-classification-task;faressayah;750;2985;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/automated-hyperparameter-tuning;automated-hyperparameter-tuning;pavansanagapati;1400;985;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/support-vector-machine-pca-tutorial-for-beginner;support-vector-machine-pca-tutorial-for-beginner;faressayah;950;2945;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-02;python-kaggle-start-book-ch02-02;sishihara;550;2925;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ydalat/titanic-a-step-by-step-intro-to-machine-learning;titanic-a-step-by-step-intro-to-machine-learning;ydalat;1150;2905;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+marcovasquez/useful-html-for-jupyter-notebook;useful-html-for-jupyter-notebook;marcovasquez;250;2885;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+odaymourad/detailed-and-typical-solution-ensemble-modeling;detailed-and-typical-solution-ensemble-modeling;odaymourad;1650;2865;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+gaetanlopez/how-to-make-clean-visualizations;how-to-make-clean-visualizations;gaetanlopez;400;980;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/data-science-best-practices-with-pandas-2-0-p2;data-science-best-practices-with-pandas-2-0-p2;faressayah;750;2825;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+ialimustufa/titanic-beginner-s-guide-with-sklearn;titanic-beginner-s-guide-with-sklearn;ialimustufa;950;2805;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+desalegngeb/plotly-guide-customize-for-better-visualizations;plotly-guide-customize-for-better-visualizations;desalegngeb;600;965;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+cdeotte/titanic-using-name-only-0-81818;titanic-using-name-only-0-81818;cdeotte;1050;2765;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+headsortails/tidy-titarnic;tidy-titarnic;headsortails;850;2745;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nicapotato/titanic-voting-pipeline-stack-and-guide;titanic-voting-pipeline-stack-and-guide;nicapotato;1350;2725;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/python-kaggle-start-book-ch02-08;python-kaggle-start-book-ch02-08;sishihara;950;2705;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+michaelee/cs-100-data-science;cs-100-data-science;michaelee;550;2685;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+samsonqian/titanic-guide-with-sklearn-and-eda;titanic-guide-with-sklearn-and-eda;samsonqian;1150;2665;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+alexisbcook/getting-started-with-titanic;getting-started-with-titanic;alexisbcook;350;2645;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nirmalvignu/titanic-machine-learning-from-disaster;titanic-machine-learning-from-disaster;nirmalvignu;1050;2625;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-21-descriptive-statistics;python-for-data-21-descriptive-statistics;hamelg;450;2605;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-15-working-with-text-data;python-for-data-15-working-with-text-data;hamelg;550;2585;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+computervisi/titanic-eda;titanic-eda;computervisi;850;2565;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+reighns/titanic-a-complete-beginner-s-guide;titanic-a-complete-beginner-s-guide;reighns;1250;2545;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+linxinzhe/tensorflow-deep-learning-to-solve-titanic;tensorflow-deep-learning-to-solve-titanic;linxinzhe;950;2525;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-1-getting-started;intro-to-r-part-1-getting-started;hamelg;150;2505;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+frtgnn/introduction-to-pytorch-a-very-gentle-start;introduction-to-pytorch-a-very-gentle-start;frtgnn;850;2485;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sashr07/kaggle-titanic-tutorial;kaggle-titanic-tutorial;sashr07;750;2465;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/ensemble-ml-algorithms-bagging-boosting-voting;ensemble-ml-algorithms-bagging-boosting-voting;faressayah;1050;2445;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+androbomb/simple-nn-with-python-multi-layer-perceptron;simple-nn-with-python-multi-layer-perceptron;androbomb;850;2425;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ihelon/titanic-hyperparameter-tuning-with-gridsearchcv;titanic-hyperparameter-tuning-with-gridsearchcv;ihelon;1150;2405;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+prashant111/a-reference-guide-to-feature-engineering-methods;a-reference-guide-to-feature-engineering-methods;prashant111;950;2385;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-27-linear-regression;python-for-data-27-linear-regression;hamelg;650;2365;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+caesarmario/data-to-destiny-titanic-survival-prediction;data-to-destiny-titanic-survival-prediction;caesarmario;1350;2345;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jlawman/complete-beginner-your-first-titanic-submission;complete-beginner-your-first-titanic-submission;jlawman;850;2325;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+goldens/titanic-on-the-top-with-a-simple-model;titanic-on-the-top-with-a-simple-model;goldens;1050;2305;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-11-control-flow;python-for-data-11-control-flow;hamelg;250;2285;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+rajmehra03/a-complete-pandas-tutorial;a-complete-pandas-tutorial;rajmehra03;600;875;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-22-probability-distributions;python-for-data-22-probability-distributions;hamelg;450;2245;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+campusx/filter-based-feature-selection;filter-based-feature-selection;campusx;750;2225;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nkitgupta/feature-engineering-and-feature-selection;feature-engineering-and-feature-selection;nkitgupta;800;870;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+farzadnekouei/titanic-feature-extraction-xgboost-classifier;titanic-feature-extraction-xgboost-classifier;farzadnekouei;1150;2185;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+philippsp/interactive-dashboards-in-r;interactive-dashboards-in-r;philippsp;950;2165;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+neviadomski/titanic-data-exploration-starter;titanic-data-exploration-starter;neviadomski;850;2145;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-16-preparing-numeric-data;python-for-data-16-preparing-numeric-data;hamelg;550;2125;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+wouldyoujustfocus/llama3-8b-llm20-questions-lb-750;llama3-8b-llm20-questions-lb-750;wouldyoujustfocus;4500;855;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-2-r-arithmetic;intro-to-r-part-2-r-arithmetic;hamelg;150;2085;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+dejavu23/titanic-survival-seaborn-and-ensembles;titanic-survival-seaborn-and-ensembles;dejavu23;1250;2065;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-12-functions;python-for-data-12-functions;hamelg;250;2045;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-26-anova;python-for-data-26-anova;hamelg;550;2025;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sociopath00/random-forest-using-gridsearchcv;random-forest-using-gridsearchcv;sociopath00;950;2005;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+datafan07/titanic-eda-and-several-modelling-approaches;titanic-eda-and-several-modelling-approaches;datafan07;1450;1985;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jafarib/titanic-competition-how-to-get-top-score-100;titanic-competition-how-to-get-top-score-100;jafarib;1150;1965;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nikitakudriashov/top-1-titanic-solution;top-1-titanic-solution;nikitakudriashov;2550;1945;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-25-chi-squared-tests;python-for-data-25-chi-squared-tests;hamelg;550;1925;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+ravi20076/titanic-eda-model-custompipelines;titanic-eda-model-custompipelines;ravi20076;1350;1905;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pyim59/2-titanic-v3-6-test;2-titanic-v3-6-test;pyim59;850;1885;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+anaskad/step-by-step-solving-titanic-problem;step-by-step-solving-titanic-problem;anaskad;1050;1865;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+satishgunjal/tutorial-k-fold-cross-validation;tutorial-k-fold-cross-validation;satishgunjal;400;825;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+abhishekmamidi/titanic-data-preprocessing-and-visualization;titanic-data-preprocessing-and-visualization;abhishekmamidi;950;1825;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+themlphdstudent/cheatsheet-matplotlib-charts;cheatsheet-matplotlib-charts;themlphdstudent;450;1805;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kareem3egm/learn-machine-learning-faster-1;learn-machine-learning-faster-1;kareem3egm;300;820;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+limmyoungjin/r-t1-1-iqr-expected-questions-2;r-t1-1-iqr-expected-questions-2;limmyoungjin;75;1765;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+drgilermo/a-tutorial-for-complete-beginners;a-tutorial-for-complete-beginners;drgilermo;850;1745;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+zhukovoleksiy/get-started-with-kaggle-legacy-guide;get-started-with-kaggle-legacy-guide;zhukovoleksiy;650;1725;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+cdeotte/titantic-mega-model-0-84210;titantic-mega-model-0-84210;cdeotte;2250;1705;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+blurredmachine/titanic-survival-a-complete-guide-for-beginners;titanic-survival-a-complete-guide-for-beginners;blurredmachine;1450;1685;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+abhijitdahatonde/titanic-passenger-survival-prediction;titanic-passenger-survival-prediction;abhijitdahatonde;1150;1665;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vin1234/best-titanic-survival-prediction-for-beginners;best-titanic-survival-prediction-for-beginners;vin1234;950;1645;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+octavianwr/dsf-day-3-titanic;dsf-day-3-titanic;octavianwr;750;1625;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dmitrykonovalov/fastai-lesson-5-linear-model-and-neural-net;fastai-lesson-5-linear-model-and-neural-net;dmitrykonovalov;1050;1605;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-13-list-comprehensions;python-for-data-13-list-comprehensions;hamelg;250;1585;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+dmitrykonovalov/fastai-lesson-6a-random-forests;fastai-lesson-6a-random-forests;dmitrykonovalov;850;1565;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+theblackmamba31/titanic-tutorial-neural-network;titanic-tutorial-neural-network;theblackmamba31;950;1545;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+akhileshthite/titanic-solution-top-8;titanic-solution-top-8;akhileshthite;1250;1525;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+liyenhsu/titanic-neural-network;titanic-neural-network;liyenhsu;1050;1505;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sgus1318/titanic-analysis-learning-to-swim-with-python;titanic-analysis-learning-to-swim-with-python;sgus1318;850;1485;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+harshkothari21/100-accurate-results-with-eda-all-ml-models;100-accurate-results-with-eda-all-ml-models;harshkothari21;1350;1465;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+garethjns/microsoft-lightgbm-with-parameter-tuning-0-823;microsoft-lightgbm-with-parameter-tuning-0-823;garethjns;1150;1445;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-23-confidence-intervals;python-for-data-23-confidence-intervals;hamelg;450;1425;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-20-plotting-with-pandas;python-for-data-20-plotting-with-pandas;hamelg;350;1405;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+zephyrzhan522/titanic-prediction-dl-vs-ml;titanic-prediction-dl-vs-ml;zephyrzhan522;1050;1385;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bextuychiev/model-explainability-with-shap-only-guide-u-need;model-explainability-with-shap-only-guide-u-need;bextuychiev;1100;735;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nhlr21/complete-titanic-tutorial-with-ml-nn-ensembling;complete-titanic-tutorial-with-ml-nn-ensembling;nhlr21;1550;1345;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+biswajee/titanic-dataset;titanic-dataset;biswajee;250;1325;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kpacocha/top-5-titanic-machine-learning-from-disaster;top-5-titanic-machine-learning-from-disaster;kpacocha;1850;1305;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arthurlu/exploratory-tutorial-titanic;exploratory-tutorial-titanic;arthurlu;950;1285;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-03;py310-python-kaggle-start-book-ch02-03;sishihara;650;1265;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vivovinco/titanic-real-1-0;titanic-real-1-0;vivovinco;1150;1245;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sisharaneranjana/titanic-complete-guide-ml-dl-models;titanic-complete-guide-ml-dl-models;sisharaneranjana;1450;1225;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aselad/exploratory-data-analysis-on-the-titanic-dataset;exploratory-data-analysis-on-the-titanic-dataset;aselad;1050;1205;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-19-frequency-tables;python-for-data-19-frequency-tables;hamelg;350;1185;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+tanmay111999/titanic-submission-0-79904-using-knn;titanic-submission-0-79904-using-knn;tanmay111999;850;1165;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+andreipaulavets/titanic-prediction-0-794-score;titanic-prediction-0-794-score;andreipaulavets;750;1145;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/titanic-leaderboard-a-score-0-8-is-great;titanic-leaderboard-a-score-0-8-is-great;carlmcbrideellis;550;1125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-17-dealing-with-dates;python-for-data-17-dealing-with-dates;hamelg;450;1105;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kiranscaria/titanic-pytorch;titanic-pytorch;kiranscaria;950;1085;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+francksylla/titanic-machine-learning-from-disaster;titanic-machine-learning-from-disaster;francksylla;1250;1065;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jamesleslie/titanic-eda-wrangling-imputation;titanic-eda-wrangling-imputation;jamesleslie;1050;1045;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+swamysm/beginners-titanic;beginners-titanic;swamysm;650;1025;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+parulpandey/deep-dive-into-logistic-regression-for-beginners;deep-dive-into-logistic-regression-for-beginners;parulpandey;850;1005;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+cbrogan/xgboost-example-python;xgboost-example-python;cbrogan;750;985;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+masumrumi/a-pyspark-tutorial-with-titanic;a-pyspark-tutorial-with-titanic;masumrumi;1150;965;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vbmokin/titanic-0-83253-comparison-20-popular-models;titanic-0-83253-comparison-20-popular-models;vbmokin;1750;945;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+octavianwr/dsf-day-4-titanic-supervised;dsf-day-4-titanic-supervised;octavianwr;950;925;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dmitrykonovalov/fastai-lesson-5b-use-a-framework;fastai-lesson-5b-use-a-framework;dmitrykonovalov;550;905;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+chalkalan/04a-naive;04a-naive;chalkalan;350;885;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aymanlafaz/titanic-feature-engineering-and-random-forests;titanic-feature-engineering-and-random-forests;aymanlafaz;1250;865;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavlofesenko/selling-life-insurance-to-titanic-passengers;selling-life-insurance-to-titanic-passengers;pavlofesenko;850;845;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hyeonho/taitanic-machine-learning-from-disaster;taitanic-machine-learning-from-disaster;hyeonho;1150;825;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavansanagapati/tableau-intro-use-cases;tableau-intro-use-cases;pavansanagapati;400;615;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+wikaiqi/titaniclearningqi;titaniclearningqi;wikaiqi;750;785;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mviola/titanic-eda-simple-model-0-80622;titanic-eda-simple-model-0-80622;mviola;950;765;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+diaaessam/titanic-problem-tutorial;titanic-problem-tutorial;diaaessam;850;745;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+osemds/first-titanic-and-also-kaggle-attempt;first-titanic-and-also-kaggle-attempt;osemds;650;725;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+stefanschulmeister87/titanic-competition-top-1;titanic-competition-top-1;stefanschulmeister87;2350;705;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+damienpark/artificial-neural-network-using-keras;artificial-neural-network-using-keras;damienpark;1050;685;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+thilakshasilva/predicting-titanic-survival-using-five-algorithms;predicting-titanic-survival-using-five-algorithms;thilakshasilva;1250;665;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ryannolan1/titanic-voting-classifier-0-78947;titanic-voting-classifier-0-78947;ryannolan1;950;645;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+funxexcel/titanic-solution-using-random-forest-tool-r;titanic-solution-using-random-forest-tool-r;funxexcel;750;625;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vikumsw/explaining-random-forest-model-with-shapely-values;explaining-random-forest-model-with-shapely-values;vikumsw;950;605;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+abhishek0032/titanic-survival-prediction-feature-engineering;titanic-survival-prediction-feature-engineering;abhishek0032;1150;585;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+chuanguy/titanic-data-processing-with-python-0-813;titanic-data-processing-with-python-0-813;chuanguy;850;565;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-05;py310-python-kaggle-start-book-ch02-05;sishihara;750;545;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/what-is-adversarial-validation;what-is-adversarial-validation;carlmcbrideellis;600;595;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vbmokin/titanic-top-score-one-line-of-the-prediction;titanic-top-score-one-line-of-the-prediction;vbmokin;450;505;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+andreshg/automl-libraries-comparison;automl-libraries-comparison;andreshg;1350;485;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+mashimo/a-very-simple-logistic-regression-model;a-very-simple-logistic-regression-model;mashimo;650;465;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vikumsw/beginners-basic-workflow-introduction;beginners-basic-workflow-introduction;vikumsw;750;445;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+davidcoxon/titanic-practice-by-davidcoxon;titanic-practice-by-davidcoxon;davidcoxon;550;425;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-04;py310-python-kaggle-start-book-ch02-04;sishihara;750;405;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-3-atomic-data-types;intro-to-r-part-3-atomic-data-types;hamelg;150;385;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+enerrio/scikit-learn-ml-from-start-to-finish;scikit-learn-ml-from-start-to-finish;enerrio;1050;365;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+javiervallejos/titanic-simple-decision-tree-model-score-top-3;titanic-simple-decision-tree-model-score-top-3;javiervallejos;950;345;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+currypurin/titanic-lightgbm;titanic-lightgbm;currypurin;850;325;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+shivadumnawar/titanic-a-complete-tutorial-for-beginners;titanic-a-complete-tutorial-for-beginners;shivadumnawar;1250;305;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dmkravtsov/4-1-titanic-with-acc-91-and-f1-87;4-1-titanic-with-acc-91-and-f1-87;dmkravtsov;1150;285;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aleksandrmorozov123/machine-learning-excercises;machine-learning-excercises;aleksandrmorozov123;650;265;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kartushovdanil/econometrics-is-all-you-need;econometrics-is-all-you-need;kartushovdanil;800;475;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vbmokin/autoselection-from-20-classifier-models-l-curves;autoselection-from-20-classifier-models-l-curves;vbmokin;1850;225;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+abhishek0032/data-science-toolkit-codes-skills-to-succeed;data-science-toolkit-codes-skills-to-succeed;abhishek0032;750;205;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+kagleo123/titanic-eda-machine-deep-learning;titanic-eda-machine-deep-learning;kagleo123;1450;185;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+korfanakis/titanic-a-beginner-friendly-approach-to-top-3;titanic-a-beginner-friendly-approach-to-top-3;korfanakis;1350;165;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vahidehdashti/titanic-prediction-model-eda;titanic-prediction-model-eda;vahidehdashti;1050;145;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hasanburakavci/titanic-eda-and-classification-top-5;titanic-eda-and-classification-top-5;hasanburakavci;1650;125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+amerwafiy/titanic-competition-journey-to-100-accuracy;titanic-competition-journey-to-100-accuracy;amerwafiy;1250;105;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+demidova/titanic-eda-tutorial;titanic-eda-tutorial;demidova;950;85;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+little7/titanic-data-science-solutions;titanic-data-science-solutions;little7;1150;65;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+saife245/titanic-deep-learning-model-with-80-accuracy;titanic-deep-learning-model-with-80-accuracy;saife245;950;45;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arunkumarramanan/data-science-in-r-and-titanic-survival-prediction;data-science-in-r-and-titanic-survival-prediction;arunkumarramanan;850;25;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+niteshranjansingh/titanic-top-solution-which-leads-you-into-top-2;titanic-top-solution-which-leads-you-into-top-2;niteshranjansingh;2050;5;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+tanmayunhale/titanic-top-4-hyperparameter-tuning;titanic-top-4-hyperparameter-tuning;tanmayunhale;1550;4980;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+funxexcel/titanic-solution-random-forest;titanic-solution-random-forest;funxexcel;750;4960;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kushal1506/titanic-81-1-leader-board-score-guaranteed;titanic-81-1-leader-board-score-guaranteed;kushal1506;950;4940;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+parulpandey/intrepreting-machine-learning-models;intrepreting-machine-learning-models;parulpandey;850;4920;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-29-decision-trees;python-for-data-29-decision-trees;hamelg;650;4900;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+jasonm/large-families-not-good-for-survival;large-families-not-good-for-survival;jasonm;550;4880;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+anandhuh/titanic-simple-solution-top-12;titanic-simple-solution-top-12;anandhuh;1150;4860;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jamesleslie/titanic-random-forest-grid-search;titanic-random-forest-grid-search;jamesleslie;1350;4840;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+shivan118/pandas-100-tricks;pandas-100-tricks;shivan118;450;4820;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+frtgnn/a-simple-guide-to-titanic-survival-classifier;a-simple-guide-to-titanic-survival-classifier;frtgnn;950;4800;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vanguarde/study-series-uplift-modeling;study-series-uplift-modeling;vanguarde;1200;425;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+adavydenko/titanic-solution-a-beginner-s-guide-russian;titanic-solution-a-beginner-s-guide-russian;adavydenko;1050;4760;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-4-variables;intro-to-r-part-4-variables;hamelg;150;4740;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vbmokin/50-tips-data-science-tabular-data-for-beginner;50-tips-data-science-tabular-data-for-beginner;vbmokin;650;4720;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+marcovasquez/machine-learning-on-board-titanic-17-algothim;machine-learning-on-board-titanic-17-algothim;marcovasquez;1750;4700;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+priyankdl/titanic-eda-demo-for-students;titanic-eda-demo-for-students;priyankdl;850;4680;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bextuychiev/7-coolest-packages-top-kagglers-are-using;7-coolest-packages-top-kagglers-are-using;bextuychiev;600;405;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-5-vectors;intro-to-r-part-5-vectors;hamelg;150;4640;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+hillabehar/titanic-analysis-with-r;titanic-analysis-with-r;hillabehar;950;4620;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+beiqiwang/predictive-analysis-of-survival-rate-on-titanic;predictive-analysis-of-survival-rate-on-titanic;beiqiwang;1150;4600;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+anour98/in-lab2-scikit-learn;in-lab2-scikit-learn;anour98;350;4580;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vbmokin/titanic-predict-using-a-simple-bayesian-network;titanic-predict-using-a-simple-bayesian-network;vbmokin;850;4560;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+plasticgrammer/kaggle-titanic;kaggle-titanic;plasticgrammer;550;4540;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+pavlofesenko/simplest-top-10-titanic-0-80861;simplest-top-10-titanic-0-80861;pavlofesenko;1050;4520;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+marianadeem755/titanic-competition-neuralnetwork-gradiantboosting;titanic-competition-neuralnetwork-gradiantboosting;marianadeem755;1450;4500;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mauriciocap/pytanic;pytanic;mauriciocap;750;4480;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+salmaokishk/lab-4-notebook-manual;lab-4-notebook-manual;salmaokishk;250;4460;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+rishavnandi/titanic-prediction;titanic-prediction;rishavnandi;850;4440;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+niteshyadav3103/titanic-eda-prediction-top-8;titanic-eda-prediction-top-8;niteshyadav3103;1250;4420;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+serkanpeldek/object-oriented-titanics;object-oriented-titanics;serkanpeldek;950;4400;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-06;py310-python-kaggle-start-book-ch02-06;sishihara;850;4380;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+motohiro/notebooke9b25a365d;notebooke9b25a365d;motohiro;150;4360;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+odins0n/plotly-ultimate-guide-for-beginners;plotly-ultimate-guide-for-beginners;odins0n;750;4340;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+faressayah/data-science-best-practices-with-pandas-part-1;data-science-best-practices-with-pandas-part-1;faressayah;600;255;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vikumsw/explaining-random-forest-model-with-lime;explaining-random-forest-model-with-lime;vikumsw;1050;4300;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ashishpatel26/advance-pandas-tricks-and-techniques;advance-pandas-tricks-and-techniques;ashishpatel26;550;4280;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+sachinkulkarni/an-interactive-data-science-tutorial;an-interactive-data-science-tutorial;sachinkulkarni;850;4260;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bextuychiev/beautiful-umap-tutorial-on-100-dimensional-data;beautiful-umap-tutorial-on-100-dimensional-data;bextuychiev;900;245;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+faressayah/k-means-clustering-private-vs-public-universities;k-means-clustering-private-vs-public-universities;faressayah;850;4220;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+onedatareader/titanic-data-analysis;titanic-data-analysis;onedatareader;1050;4200;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hardikgarg03/titanic-using-random-forest;titanic-using-random-forest;hardikgarg03;850;4180;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+rafalplis/my-approach-to-titanic-competition;my-approach-to-titanic-competition;rafalplis;1150;4160;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+wei10117/titanic-machine-learning-from-disaster;titanic-machine-learning-from-disaster;wei10117;1350;4140;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dantefilu/keras-neural-network-a-hitchhiker-s-guide-to-nn;keras-neural-network-a-hitchhiker-s-guide-to-nn;dantefilu;1050;4120;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+plasticgrammer/titanic-predict-survivors;titanic-predict-survivors;plasticgrammer;650;4100;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arthurtok/0-808-with-simple-stacking;0-808-with-simple-stacking;arthurtok;1250;4080;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+corazon17/titanic-data-analysis-and-classification;titanic-data-analysis-and-classification;corazon17;1050;4060;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+massquantity/end-to-end-process-for-titanic-problem;end-to-end-process-for-titanic-problem;massquantity;1450;4040;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jeremyd/titanic-logistic-regression-in-r;titanic-logistic-regression-in-r;jeremyd;750;4020;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+danishyousuf19/titanic-machine-learning-from-disaster;titanic-machine-learning-from-disaster;danishyousuf19;1150;4000;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+rohan1506/fastai-tutorial-detailed;fastai-tutorial-detailed;rohan1506;950;3980;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+ruchi798/break-the-ice;break-the-ice;ruchi798;450;3960;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+samratp/beginner-tutorial-using-votingclassifier-82-27;beginner-tutorial-using-votingclassifier-82-27;samratp;1050;3940;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ohseokkim/titanic-missing-and-small-data-are-disaster;titanic-missing-and-small-data-are-disaster;ohseokkim;950;3920;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jiuzhang/titanic-framework;titanic-framework;jiuzhang;650;3900;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+nobodymartin/lightgbm-explanation-practice-with-dataset;lightgbm-explanation-practice-with-dataset;nobodymartin;1150;3880;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bhatnagardaksh/gradient-descent-from-scratch;gradient-descent-from-scratch;bhatnagardaksh;600;195;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+campusx/titanic-single-sample-t-test;titanic-single-sample-t-test;campusx;450;3840;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vbmokin/50-advanced-tips-data-science-for-tabular-data;50-advanced-tips-data-science-for-tabular-data;vbmokin;750;3820;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+mdmahmudferdous/titanic-survivor-prediction-0-804-top-8;titanic-survivor-prediction-0-804-top-8;mdmahmudferdous;1350;3800;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+subinium/subinium-tutorial-titanic-beginner;subinium-tutorial-titanic-beginner;subinium;950;3780;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+dimitreoliveira/naive-bayes-probabilistic-ml-titanic-survival;naive-bayes-probabilistic-ml-titanic-survival;dimitreoliveira;850;3760;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-07;py310-python-kaggle-start-book-ch02-07;sishihara;950;3740;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+eu1234/titanic-81-57-leaderboard-top-1-no-cheating;titanic-81-57-leaderboard-top-1-no-cheating;eu1234;2450;3720;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sandhyakrishnan02/logistic-regression-titanic-dataset;logistic-regression-titanic-dataset;sandhyakrishnan02;750;3700;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+currypurin/tutorial-of-kaggle-ver3-ch5;tutorial-of-kaggle-ver3-ch5;currypurin;650;3680;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+alexryzhkov/lightautoml-titanic-love;lightautoml-titanic-love;alexryzhkov;1050;3660;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+shilongzhuang/statistical-testing-guide-for-beginners;statistical-testing-guide-for-beginners;shilongzhuang;500;175;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+roshan77/pyspark-classification-model;pyspark-classification-model;roshan77;1150;3620;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+aimack/how-to-handle-outliers;how-to-handle-outliers;aimack;550;3600;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vaishvik25/titanic-eda-fe-3-model-decision-tree-viz;titanic-eda-fe-3-model-decision-tree-viz;vaishvik25;1350;3580;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+campusx/titanic-clt;titanic-clt;campusx;450;3560;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+lordozvlad/leaky-relu-dropout-sigmoid-pytorch;leaky-relu-dropout-sigmoid-pytorch;lordozvlad;950;3540;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+chumajin/pytorch-neural-network-starter-detail;pytorch-neural-network-starter-detail;chumajin;1050;3520;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bcruise/matplotlib-basics-tutorial;matplotlib-basics-tutorial;bcruise;550;3500;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vbmokin/automatic-eda-with-pandas-profiling;automatic-eda-with-pandas-profiling;vbmokin;650;3480;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nareshbhat/starter-guide-to-build-nlp-ml-model-in-pycaret;starter-guide-to-build-nlp-ml-model-in-pycaret;nareshbhat;1000;125;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bijucyborg/day-1-30-days-of-kaggle;day-1-30-days-of-kaggle;bijucyborg;250;3440;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+boss0ayush/extensive-eda-plus-top2;extensive-eda-plus-top2;boss0ayush;1550;3420;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/python-for-data-28-logistic-regression;python-for-data-28-logistic-regression;hamelg;650;3400;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+limmyoungjin/r-t2-1-titanic;r-t2-1-titanic;limmyoungjin;350;3380;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bextuychiev/25-pandas-functions-you-didn-t-know-existed;25-pandas-functions-you-didn-t-know-existed;bextuychiev;300;105;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vahidehdashti/loan-prediction-case-study-dt-rf;loan-prediction-case-study-dt-rf;vahidehdashti;1050;3340;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vbmokin/merging-fe-prediction-xgb-lgb-logr-linr;merging-fe-prediction-xgb-lgb-logr-linr;vbmokin;1850;3320;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vaibhavsagar/titanic-by-a-beginner;titanic-by-a-beginner;vaibhavsagar;850;3300;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vipin20/titanic-prediction-eda-hyperparameter;titanic-prediction-eda-hyperparameter;vipin20;1250;3280;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+lvpeiyuan/titaniclvpeiyuan;titaniclvpeiyuan;lvpeiyuan;550;3260;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+adamml/titanic-to-beginner;titanic-to-beginner;adamml;750;3240;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+vbmokin/titanic-top-3-cluster-analysis;titanic-top-3-cluster-analysis;vbmokin;1450;3220;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+desalegngeb/a-short-tutorial-in-r-easy-start;a-short-tutorial-in-r-easy-start;desalegngeb;300;65;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sonalisingh1411/survival-forecasting-with-eda-prediction-model;survival-forecasting-with-eda-prediction-model;sonalisingh1411;1150;3180;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-index;intro-to-r-index;hamelg;50;3160;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+michielkalkman/kaggle-titanic-001;kaggle-titanic-001;michielkalkman;450;3140;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+subinium/how-to-use-pycaret-with-feature-engineering;how-to-use-pycaret-with-feature-engineering;subinium;950;3120;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nareshbhat/eda-within-snap-of-fingers;eda-within-snap-of-fingers;nareshbhat;200;60;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+simulacra/titanic-with-xgboost;titanic-with-xgboost;simulacra;750;3080;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+jiuzhang/titanic-ninechapter;titanic-ninechapter;jiuzhang;650;3060;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+abdmental01/embark-on-titanic-a-beginner-s-journey-through-ml;embark-on-titanic-a-beginner-s-journey-through-ml;abdmental01;1050;3040;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hamelg/intro-to-r-part-6-matrices;intro-to-r-part-6-matrices;hamelg;150;3020;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+wissams/titanic-competition-step-by-step-using-xgboost;titanic-competition-step-by-step-using-xgboost;wissams;1250;3000;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+xiefei/01-titanic;01-titanic;xiefei;350;2980;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+bextuychiev/no-bs-guide-to-hyperparameter-tuning-with-optuna;no-bs-guide-to-hyperparameter-tuning-with-optuna;bextuychiev;1500;35;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kartushovdanil/mlops-how-to-be-rock-of-ml;mlops-how-to-be-rock-of-ml;kartushovdanil;900;25;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+awwalmalhi/titanic-eda-and-feature-engineering;titanic-eda-and-feature-engineering;awwalmalhi;1150;2920;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+annastasy/your-guide-to-data-visualization;your-guide-to-data-visualization;annastasy;850;2900;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+manrunning/catboost-for-titanic-top-7;catboost-for-titanic-top-7;manrunning;1050;2880;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+hadeux/titanic-survivor-predict-eda-lightgbm-kor-eng;titanic-survivor-predict-eda-lightgbm-kor-eng;hadeux;1350;2860;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+karolmc/getting-started-with-titanic;getting-started-with-titanic;karolmc;750;2840;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ramsesmdlc/titanic-logistic-regression-model;titanic-logistic-regression-model;ramsesmdlc;650;2820;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+madhurpant/beautiful-titanic-eda-with-ml;beautiful-titanic-eda-with-ml;madhurpant;1250;2800;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aldemuro/comparing-ml-algorithms-train-accuracy-90;comparing-ml-algorithms-train-accuracy-90;aldemuro;1050;2780;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arunjangir245/titanic-machine-learning-decisiontreeclassifier;titanic-machine-learning-decisiontreeclassifier;arunjangir245;850;2760;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mrbisht/plotly-visual-plots-first-notebook;plotly-visual-plots-first-notebook;mrbisht;650;2740;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+surajkumar88/titanic-machine-learning-from-disaster-eda;titanic-machine-learning-from-disaster-eda;surajkumar88;1150;2720;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+rohan1506/optimizing-pandas-like-a-pro;optimizing-pandas-like-a-pro;rohan1506;450;1310;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+kkjira/titanic-with-pycaret;titanic-with-pycaret;kkjira;850;2680;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+drbeane/abc-titanic-v01;abc-titanic-v01;drbeane;450;2660;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+saadmuhammad17/a-beginners-guide-to-data-science-top-3;a-beginners-guide-to-data-science-top-3;saadmuhammad17;1350;2640;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+elcaiseri/titanic-getting-starts-with-kaggle-competitions;titanic-getting-starts-with-kaggle-competitions;elcaiseri;950;2620;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+computervisi/all-best-models;all-best-models;computervisi;1550;2600;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+rohan1506/pandas-tips-tricks-tutorial;pandas-tips-tricks-tutorial;rohan1506;350;1250;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+michaelmorr/titanic-survival-with-random-forest-classification;titanic-survival-with-random-forest-classification;michaelmorr;950;2560;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+arunjangir245/titanic-machine-learning-logistic-regression;titanic-machine-learning-logistic-regression;arunjangir245;850;2540;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+guesejustin/91-genetic-algorithms-explained-using-geap;91-genetic-algorithms-explained-using-geap;guesejustin;1250;2520;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+maheshnanavare/titanic-using-pipelined-xgboost-gridsearch;titanic-using-pipelined-xgboost-gridsearch;maheshnanavare;1450;2500;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aminizahra/titanic-prediction-90-accuracy;titanic-prediction-90-accuracy;aminizahra;1050;2480;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+subinium/dark-mode-visualization-apple-version;dark-mode-visualization-apple-version;subinium;650;2460;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+josh24990/simple-end-to-end-ml-workflow-top-5-score;simple-end-to-end-ml-workflow-top-5-score;josh24990;1350;2440;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sishihara/py310-python-kaggle-start-book-ch02-02;py310-python-kaggle-start-book-ch02-02;sishihara;650;2420;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+sagarlokesh/titanic-model-accuracy-82;titanic-model-accuracy-82;sagarlokesh;950;2400;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+aimack/complete-guide-to-feature-scaling;complete-guide-to-feature-scaling;aimack;650;2380;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+alaasedeeq/predicting-the-survival-of-titanic-top-6;predicting-the-survival-of-titanic-top-6;alaasedeeq;1250;2360;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+frankmollard/interactive-eda;interactive-eda;frankmollard;850;2340;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+nitindatta/first-kaggle-submission;first-kaggle-submission;nitindatta;550;2320;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+scirpus/genetic-programming-lb-0-88;genetic-programming-lb-0-88;scirpus;1850;2300;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mysarahmadbhat/types-of-transformations-for-better-distribution;types-of-transformations-for-better-distribution;mysarahmadbhat;450;1190;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+ccastleberry/titanic-cabin-features;titanic-cabin-features;ccastleberry;750;2260;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+yaheaal/zinc-titanic;zinc-titanic;yaheaal;650;2240;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+khashayarrahimi94/votingclassifier-ensemble-with-just-5-feature;votingclassifier-ensemble-with-just-5-feature;khashayarrahimi94;1050;2220;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+javigallego/top-3-fe-tuning-ensembling;top-3-fe-tuning-ensembling;javigallego;1950;2200;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+mysarahmadbhat/python-from-zero-to;python-from-zero-to;mysarahmadbhat;250;1185;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+carlmcbrideellis/overfitting-and-underfitting-the-titanic;overfitting-and-underfitting-the-titanic;carlmcbrideellis;750;2160;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+matthewdahbar/assignment-0;assignment-0;matthewdahbar;150;2140;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+vahidehdashti/let-s-go-first-step-guideline;let-s-go-first-step-guideline;vahidehdashti;850;2120;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+lezhili/vis-ds;vis-ds;lezhili;550;2100;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+suvroo/automl-and-autoeda-using-h20-tpot-and-more;automl-and-autoeda-using-h20-tpot-and-more;suvroo;1450;2080;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+raghavgarg12/titanic-baseline;titanic-baseline;raghavgarg12;650;2060;Titanic;Social Science/History;0;0;0;0;0;0;0;0;0;0
+gpreda/santander-eda-and-prediction;santander-eda-and-prediction;gpreda;1250;4990;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jiweiliu/lgb-2-leaves-augment;lgb-2-leaves-augment;jiweiliu;1050;4970;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+yag320/list-of-fake-samples-and-public-private-lb-split;list-of-fake-samples-and-public-private-lb-split;yag320;850;4950;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+cdeotte/200-magical-models-santander-0-920;200-magical-models-santander-0-920;cdeotte;2550;4930;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mjbahmani/santander-ml-explainability;santander-ml-explainability;mjbahmani;1450;4910;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+cdeotte/modified-naive-bayes-santander-0-899;modified-naive-bayes-santander-0-899;cdeotte;950;4890;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jesucristo/santander-magic-lgb-0-901;santander-magic-lgb-0-901;jesucristo;1150;4870;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+roydatascience/eda-pca-simple-lgbm-on-kfold-technique;eda-pca-simple-lgbm-on-kfold-technique;roydatascience;1350;4850;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+vinhnguyen/gpu-acceleration-for-lightgbm;gpu-acceleration-for-lightgbm;vinhnguyen;850;4830;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fl2ooo/nn-wo-pseudo-1-fold-seed;nn-wo-pseudo-1-fold-seed;fl2ooo;1550;4810;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+felipemello/why-your-model-is-overfitting-not-making-progress;why-your-model-is-overfitting-not-making-progress;felipemello;750;4790;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+brandenkmurray/nothing-works;nothing-works;brandenkmurray;450;4770;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+allunia/santander-customer-transaction-eda;santander-customer-transaction-eda;allunia;1050;4750;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jiweiliu/fast-pdf-calculation-with-correlation-matrix;fast-pdf-calculation-with-correlation-matrix;jiweiliu;950;4730;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+blackblitz/gaussian-naive-bayes;gaussian-naive-bayes;blackblitz;650;4710;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+nawidsayed/lightgbm-and-cnn-3rd-place-solution;lightgbm-and-cnn-3rd-place-solution;nawidsayed;2250;4690;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+artgor/santander-eda-fe-fs-and-models;santander-eda-fe-fs-and-models;artgor;1850;4670;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mathormad/knowledge-distillation-with-nn-rankgauss;knowledge-distillation-with-nn-rankgauss;mathormad;1650;4650;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+chocozzz/santander-lightgbm-baseline-lb-0-899;santander-lightgbm-baseline-lb-0-899;chocozzz;1150;4630;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+hjd810/keras-lgbm-aug-feature-eng-sampling-prediction;keras-lgbm-aug-feature-eng-sampling-prediction;hjd810;1950;4610;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fayzur/lgb-bayesian-parameters-finding-rank-average;lgb-bayesian-parameters-finding-rank-average;fayzur;1450;4590;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+felipemello/boosting-creativity-towards-feature-engineering;boosting-creativity-towards-feature-engineering;felipemello;950;4570;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+somang1418/tuning-hyperparameters-under-10-minutes-lgbm;tuning-hyperparameters-under-10-minutes-lgbm;somang1418;850;4550;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+darbin/hierarchical-clustering-approach;hierarchical-clustering-approach;darbin;1050;4530;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jesucristo/30-lines-starter-solution-fast;30-lines-starter-solution-fast;jesucristo;550;4510;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+titericz/giba-single-model-public-0-9245-private-0-9234;giba-single-model-public-0-9245-private-0-9234;titericz;2850;4490;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+josh24990/santander-customer-transaction-prediction;santander-customer-transaction-prediction;josh24990;1250;4470;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+gpreda/santander-fast-compact-solution;santander-fast-compact-solution;gpreda;950;4450;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+tanreinama/lightgbm-minimize-leaves-with-feature-enginering;lightgbm-minimize-leaves-with-feature-enginering;tanreinama;1150;4430;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jesucristo/top-1-in-40-lines;top-1-in-40-lines;jesucristo;750;4410;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+roydatascience/eda-pca-lgbm-santander-transactions;eda-pca-lgbm-santander-transactions;roydatascience;1450;4390;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+gpreda/santander-improved-starter-solution;santander-improved-starter-solution;gpreda;1050;4370;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+omgrodas/lightgbm-with-data-augmentation;lightgbm-with-data-augmentation;omgrodas;1350;4350;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+indranilbhattacharya/santander-xgb-lgb-starter;santander-xgb-lgb-starter;indranilbhattacharya;1250;4330;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+brandenkmurray/randomly-shuffled-data-also-works;randomly-shuffled-data-also-works;brandenkmurray;650;4310;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+super13579/pytorch-nn-cyclelr-k-fold-0-897-lightgbm-0-899;pytorch-nn-cyclelr-k-fold-0-897-lightgbm-0-899;super13579;1850;4290;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jesucristo/90-lines-solution-0-901-fast;90-lines-solution-0-901-fast;jesucristo;850;4270;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+graf10a/logistic-regression-with-new-features-feather;logistic-regression-with-new-features-feather;graf10a;950;4250;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+blackblitz/gaussian-mixture-naive-bayes;gaussian-mixture-naive-bayes;blackblitz;750;4230;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fayzur/lightgbm-customer-transaction-prediction;lightgbm-customer-transaction-prediction;fayzur;1150;4210;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+dott1718/922-in-3-minutes;922-in-3-minutes;dott1718;180;4190;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+niteshx2/beginner-explained-lgb-2-leaves-augment;beginner-explained-lgb-2-leaves-augment;niteshx2;1250;4170;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+youhanlee/yh-eda-i-want-to-see-all;yh-eda-i-want-to-see-all;youhanlee;950;4150;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sandeepkumar121995/magic-parameters;magic-parameters;sandeepkumar121995;350;4130;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+yuzusan/santander-draft-v3-eda-lgb-nn;santander-draft-v3-eda-lgb-nn;yuzusan;1650;4110;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+amrmahmoud123/1-guide-to-ensembling-methods;1-guide-to-ensembling-methods;amrmahmoud123;1050;4090;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fatihozturk/competition-points-calculation;competition-points-calculation;fatihozturk;250;4070;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+tezdhar/getting-started-santander;getting-started-santander;tezdhar;750;4050;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+felipemello/step-by-step-guide-to-the-magic-lb-0-922;step-by-step-guide-to-the-magic-lb-0-922;felipemello;1350;4030;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+darbin/principal-component-analysis-approach;principal-component-analysis-approach;darbin;1150;4010;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+yassinealouini/mystery-behind-var-68;mystery-behind-var-68;yassinealouini;850;3990;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+qitian51212/simple-magic-var-0-922;simple-magic-var-0-922;qitian51212;950;3970;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+wakamezake/starter-code-catboost-baseline;starter-code-catboost-baseline;wakamezake;1050;3950;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fl2ooo/create-data;create-data;fl2ooo;550;3930;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+faressayah/nlp-with-spacy-nltk-gensim;nlp-with-spacy-nltk-gensim;faressayah;1250;3910;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+roydatascience/santander-transaction-stacking-1-0;santander-transaction-stacking-1-0;roydatascience;1750;3890;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+frtgnn/santander-eda-prediction-augmentation;santander-eda-prediction-augmentation;frtgnn;1450;3870;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mhviraf/what-a-decision-tree-cannot-see;what-a-decision-tree-cannot-see;mhviraf;850;3850;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+ruby33421/quick-start-0-9-lgb-with-new-features;quick-start-0-9-lgb-with-new-features;ruby33421;1050;3830;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sibmike/are-vars-mixed-up-time-intervals;are-vars-mixed-up-time-intervals;sibmike;950;3810;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+brandenkmurray/weird-data-structure-random-data;weird-data-structure-random-data;brandenkmurray;750;3790;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+vinhnguyen/accelerating-xgboost-with-gpu;accelerating-xgboost-with-gpu;vinhnguyen;950;3770;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+titericz/single-model-using-only-train-counts-information;single-model-using-only-train-counts-information;titericz;1350;3750;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+b5strbal/lightgbm-naive-bayes-santander-0-900;lightgbm-naive-bayes-santander-0-900;b5strbal;1150;3730;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+dromosys/gpu-accelerated-lightgbm-full;gpu-accelerated-lightgbm-full;dromosys;1050;3710;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jiweiliu/fast-inplace-shuffle-for-augmentation;fast-inplace-shuffle-for-augmentation;jiweiliu;650;3690;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fahadmehfoooz/santader-customer-transaction-classification;santader-customer-transaction-classification;fahadmehfoooz;1250;3670;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+quanghm/fastai-1-0-tabular-learner-with-ensemble;fastai-1-0-tabular-learner-with-ensemble;quanghm;1550;3650;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+marcospcsj/kernel-cod-valid-cruzada-lgbm;kernel-cod-valid-cruzada-lgbm;marcospcsj;1350;3630;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+triplex/more-unique-values-in-train-set-than-test-set;more-unique-values-in-train-set-than-test-set;triplex;550;3610;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fdewes/lgbm-training-augmentation;lgbm-training-augmentation;fdewes;1050;3590;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+ymatioun/santander-model-one-feature-at-a-time;santander-model-one-feature-at-a-time;ymatioun;850;3570;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+arezoodahesh/santander-customer-transaction-prediction-lgbm;santander-customer-transaction-prediction-lgbm;arezoodahesh;1150;3550;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+wuliaokaola/santander-lb-0-869-no-need-to-train;santander-lb-0-869-no-need-to-train;wuliaokaola;350;3530;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jakubczakon/top-public-kernels-comparison;top-public-kernels-comparison;jakubczakon;950;3510;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mingaliev/santander-lgb-new-features-rank-mean-10-folds;santander-lgb-new-features-rank-mean-10-folds;mingaliev;1750;3490;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sibmike/subtracting-normality;subtracting-normality;sibmike;750;3470;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+tunguz/adversarial-santander;adversarial-santander;tunguz;1050;3450;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+nickycan/compress-70-of-dataset;compress-70-of-dataset;nickycan;450;3430;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+subhamsharma96/santander-augment-to-the-rescue;santander-augment-to-the-rescue;subhamsharma96;1250;3410;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mytymohan/sct-prediction-eda-smote-lgbm;sct-prediction-eda-smote-lgbm;mytymohan;1450;3390;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+zxspectrum/catboost-gpu;catboost-gpu;zxspectrum;950;3370;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+kamalchhirang/simple-lightgbm-with-good-parameters;simple-lightgbm-with-good-parameters;kamalchhirang;850;3350;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+tunguz/santander-with-h2o-automl;santander-with-h2o-automl;tunguz;1550;3330;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+fuhang/weighted-kernel-naive-bayes-with-lasso-elimination;weighted-kernel-naive-bayes-with-lasso-elimination;fuhang;1150;3310;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+gunesevitan/santander-customer-transaction-eda-fe-lgb;santander-customer-transaction-eda-fe-lgb;gunesevitan;1650;3290;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+benjibb/denoised-autoencoder-for-feature-engineering;denoised-autoencoder-for-feature-engineering;benjibb;1350;3270;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+ranjoranjan/kernel83f071aec1;kernel83f071aec1;ranjoranjan;250;3250;General Data Science;General Data Science;0;0;0;0;0;0;0;0;0;0
+silverstone1903/xgboost-baseline;xgboost-baseline;silverstone1903;950;3230;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+scirpus/weird-data-structure;weird-data-structure;scirpus;650;3210;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+vishesh17/keras-nn-with-scaling-and-regularization;keras-nn-with-scaling-and-regularization;vishesh17;1050;3190;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+ashishpatel26/feature-selection-pca-catboost;feature-selection-pca-catboost;ashishpatel26;1250;3170;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+roydatascience/blender-of-0-901-solutions;blender-of-0-901-solutions;roydatascience;1850;3150;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sandeepkumar121995/santander-customer-transaction-prediction;santander-customer-transaction-prediction;sandeepkumar121995;1150;3130;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mhviraf/santander-compact-solution-14-lines-will-do;santander-compact-solution-14-lines-will-do;mhviraf;550;3110;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+konradb/lgb-parameter-tuning;lgb-parameter-tuning;konradb;1350;3090;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sungdoo/sctp-working-lgb;sctp-working-lgb;sungdoo;950;3070;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+naraque/red-neuronal-keras;red-neuronal-keras;naraque;1050;3050;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+kwonyoung234/too-many-names-of-params-in-lgbm;too-many-names-of-params-in-lgbm;kwonyoung234;750;3030;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+psystat/simple-eda-logistic-regression-speedglm-with-r;simple-eda-logistic-regression-speedglm-with-r;psystat;950;3010;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jiazhuang/a-proof-of-synthetic-data;a-proof-of-synthetic-data;jiazhuang;650;2990;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+tilii7/old-school-linear-svm;old-school-linear-svm;tilii7;850;2970;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+ymatioun/santander-linear-model-with-additional-features;santander-linear-model-with-additional-features;ymatioun;1050;2950;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+vinhnguyen/accelerating-hyper-parameter-searching-with-gpu;accelerating-hyper-parameter-searching-with-gpu;vinhnguyen;1250;2930;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+seriousran/0-and-1-distributions-in-each-features;0-and-1-distributions-in-each-features;seriousran;550;2910;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+krithi07/logistic-to-lightgbm-for-beginners;logistic-to-lightgbm-for-beginners;krithi07;950;2890;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+qqgeogor/keras-nn-mixup;keras-nn-mixup;qqgeogor;1150;2870;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+simongrest/finding-peaks-in-the-histograms-of-the-variables;finding-peaks-in-the-histograms-of-the-variables;simongrest;850;2850;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+nroman/detecting-outliers-with-chauvenet-s-criterion;detecting-outliers-with-chauvenet-s-criterion;nroman;750;2830;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+jiazhuang/demonstrate-naive-bayes;demonstrate-naive-bayes;jiazhuang;650;2810;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mavillan/softordering1dcnn-on-sctp;softordering1dcnn-on-sctp;mavillan;1450;2790;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+deepak525/best-parameters-lb-0-900;best-parameters-lb-0-900;deepak525;1050;2770;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+philippsinger/frequency-features-without-test-data-information;frequency-features-without-test-data-information;philippsinger;950;2750;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+sarmat/eda-and-preprocessing-example;eda-and-preprocessing-example;sarmat;1150;2730;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+deepak525/sctp-lightgbm-lb-0-899;sctp-lightgbm-lb-0-899;deepak525;1050;2710;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+zfturbo/magic-feature-generator;magic-feature-generator;zfturbo;1350;2690;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+nagiss/9-solution-nagiss-part-2-2-weight-sharing-nn;9-solution-nagiss-part-2-2-weight-sharing-nn;nagiss;1750;2670;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+rajeshcv/understanding-features;understanding-features;rajeshcv;650;2650;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+plasticgrammer/santander-customer-transaction-playground;santander-customer-transaction-playground;plasticgrammer;850;2630;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+joaopmpeinado/let-s-show-some-magic-lb-0-922;let-s-show-some-magic-lb-0-922;joaopmpeinado;1250;2610;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+hatunina/no-training-challenge;no-training-challenge;hatunina;350;2590;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+aawanghui/catboost;catboost;aawanghui;950;2570;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+nholloway/comparing-resampling-techniques-and-xgboost;comparing-resampling-techniques-and-xgboost;nholloway;1150;2550;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+emrealty/santander-customer-transaction-prediction-lightgbm;santander-customer-transaction-prediction-lightgbm;emrealty;1050;2530;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+stevexyu/kfold-convolutional-neural-network;kfold-convolutional-neural-network;stevexyu;1450;2510;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+iggisv9t/autoencoder-for-data-structure-visualization;autoencoder-for-data-structure-visualization;iggisv9t;1250;2490;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mailyousufkhan/santander;santander;mailyousufkhan;550;2470;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+danielgrimshaw/sklearn-model-exploration;sklearn-model-exploration;danielgrimshaw;950;2450;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+dromosys/sctp-working-lgb;sctp-working-lgb;dromosys;850;2430;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+morenoh149/rosegold-eda-pca-and-lightgbm-baseline;rosegold-eda-pca-and-lightgbm-baseline;morenoh149;1350;2410;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+whitebird/0-923-in-n-5-aug;0-923-in-n-5-aug;whitebird;1050;2390;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mhviraf/what-a-decision-tree-cannot-see-ver-2;what-a-decision-tree-cannot-see-ver-2;mhviraf;950;2370;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+gorokhovnik/one-line-solution-what-for;one-line-solution-what-for;gorokhovnik;250;2350;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+mingaliev/simple-xgbm-899;simple-xgbm-899;mingaliev;1050;2330;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+neibyr/simple-use-mean-target-encoding;simple-use-mean-target-encoding;neibyr;850;2310;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+rsmits/cnn-1d-model;cnn-1d-model;rsmits;1150;2290;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+schock/santander-ootb-fast-ai-tabular-implementation;santander-ootb-fast-ai-tabular-implementation;schock;950;2270;Santander;Finance;0;0;0;0;0;0;0;0;0;0
+anuragraj03/santander-customer-transaction-prediction;santander-customer-transaction-prediction;;;;;;;;;;;;;;;

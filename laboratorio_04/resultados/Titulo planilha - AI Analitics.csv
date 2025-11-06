@@ -1,0 +1,239 @@
+﻿file_path;matched_keyword;tipo_de_divida
+Dados_Tabulares\house-prices-advanced-regression-techniques\a-detailed-regression-guide-with-house-pricing\a-detailed-regression-guide-with-house-pricing.ipynb;not the best;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\a-home-for-pandas-and-sklearn-beginner-how-tos\a-home-for-pandas-and-sklearn-beginner-how-tos.ipynb;Quick and Dirty;Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\a-simple-tutorial-on-exploratory-data-analysis\a-simple-tutorial-on-exploratory-data-analysis.ipynb;quick and dirty;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\advanced-reg-techniques-linear-models-top-6\advanced-reg-techniques-linear-models-top-6.ipynb;todo;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\advanced-reg-techniques-linear-models-top-6\advanced-reg-techniques-linear-models-top-6.ipynb;todo add histo and probability plot of skewed features;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\an-uncomplicated-model-top-2-or-top-1\an-uncomplicated-model-top-2-or-top-1.ipynb;not the best;Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb;todo;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb;Todo;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\automatic-hyperparameter-tuning-with-optuna\automatic-hyperparameter-tuning-with-optuna.ipynb;TODO;Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\automl-tables-tutorial-notebook\automl-tables-tutorial-notebook.ipynb;TODO;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\basic-tutorial-exploratory-data-analysis\basic-tutorial-exploratory-data-analysis.ipynb;quick and dirty;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\ensamble-methods-on-regression\ensamble-methods-on-regression.ipynb;not the best;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\exercise-intro-to-automl\exercise-intro-to-automl.ipynb;TODO;Configurable Options
+Dados_Tabulares\house-prices-advanced-regression-techniques\exploring-and-modeling-housing-prices\exploring-and-modeling-housing-prices.ipynb;not the best;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\feature-selection-and-ensemble-of-5-models\feature-selection-and-ensemble-of-5-models.ipynb;not the best;Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\filling-up-missing-values\filling-up-missing-values.ipynb;good enough for now;Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-price-regression-with-lightgbm\house-price-regression-with-lightgbm.ipynb;workaround;Scalability
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-eda-to-ml-beginner\house-prices-eda-to-ml-beginner.ipynb;TODO;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-eda-to-ml-beginner\house-prices-eda-to-ml-beginner.ipynb;TODO;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-plotly-pipelines-and-ensembles\house-prices-plotly-pipelines-and-ensembles.ipynb;ToDo;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-prediction-pyspark-guide\house-prices-prediction-pyspark-guide.ipynb;not the best;Data Dependency (Dependência de Dados)
+Dados_Tabulares\house-prices-advanced-regression-techniques\house-prices-prediction-using-tfdf\house-prices-prediction-using-tfdf.ipynb;"TODO: Replace with ""plt.bar_label()"" when available.";Code Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\houseprice-end-to-end-project\houseprice-end-to-end-project.ipynb;hack;Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\houseprice-end-to-end-project\houseprice-end-to-end-project.ipynb;todo: apparently dropping the extra columns to transform to ordinal gives problems. It has to be fixed;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb;Todo;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb;Todo;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb;Todo;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\housing-prices-prediction-with-scikit-learn\housing-prices-prediction-with-scikit-learn.ipynb;Todo;Performance
+Dados_Tabulares\house-prices-advanced-regression-techniques\model-explainability-with-shap-only-guide-u-need\model-explainability-with-shap-only-guide-u-need.ipynb;workaround;Code Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\top-5-house-price-prediction\top-5-house-price-prediction.ipynb;TODO;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\understand-and-use-a-pipeline\understand-and-use-a-pipeline.ipynb;hack;Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\write-powerful-code-w-custom-sklearn-transformers\write-powerful-code-w-custom-sklearn-transformers.ipynb;workaround;Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\0-923-in-n-5-aug\0-923-in-n-5-aug.ipynb;TODO;Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\analisis-exploratorio-de-datos-con-python\analisis-exploratorio-de-datos-con-python.ipynb;Todo;Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\asi-assessed-exercise\asi-assessed-exercise.ipynb;not the best;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\automatic-hyperparameter-tuning-with-optuna\automatic-hyperparameter-tuning-with-optuna.ipynb;TODO;Configurable Options
+Dados_Tabulares\santander-customer-transaction-prediction\catboosting-to-0-896\catboosting-to-0-896.ipynb;TODO;Readability
+Dados_Tabulares\house-prices-advanced-regression-techniques\automl-tables-tutorial-notebook\automl-tables-tutorial-notebook.ipynb;TODO;Code Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\customer-transaction-prediction-using-xgboost\customer-transaction-prediction-using-xgboost.ipynb;quick and dirty;Scalability
+Dados_Tabulares\house-prices-advanced-regression-techniques\basic-tutorial-exploratory-data-analysis\basic-tutorial-exploratory-data-analysis.ipynb;quick and dirty;Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\dnn-keras-santander\dnn-keras-santander.ipynb;TODO;Data Dependency
+Dados_Tabulares\house-prices-advanced-regression-techniques\ensamble-methods-on-regression\ensamble-methods-on-regression.ipynb;not the best;Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\dnn-keras-santander\dnn-keras-santander.ipynb;TODO;Configurable Options
+Dados_Tabulares\house-prices-advanced-regression-techniques\exercise-intro-to-automl\exercise-intro-to-automl.ipynb;TODO;Configurable Options
+Dados_Tabulares\santander-customer-transaction-prediction\feature-binning-using-bayesian-blocks\feature-binning-using-bayesian-blocks.ipynb;ToDo;Awareness
+Dados_Tabulares\house-prices-advanced-regression-techniques\exploring-and-modeling-housing-prices\exploring-and-modeling-housing-prices.ipynb;not the best;Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\how-to-oversample-for-beginners-lb-score-0-788\how-to-oversample-for-beginners-lb-score-0-788.ipynb;not the best;Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\kernel-density-estimation\kernel-density-estimation.ipynb;TODO;Performance
+Dados_Tabulares\santander-customer-transaction-prediction\radius-neighbors-naive-bayes\radius-neighbors-naive-bayes.ipynb;hack;Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\radius-neighbors-naive-bayes\radius-neighbors-naive-bayes.ipynb;hack;Performance
+Dados_Tabulares\santander-customer-transaction-prediction\rosegold-eda-pca-and-lightgbm-baseline\rosegold-eda-pca-and-lightgbm-baseline.ipynb;TODO;Awareness
+Dados_Tabulares\santander-customer-transaction-prediction\subtracting-normality\subtracting-normality.ipynb;not the best;Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\subtracting-normality\subtracting-normality.ipynb;not the best;Performance
+Dados_Tabulares\santander-customer-transaction-prediction\what-a-decision-tree-cannot-see\what-a-decision-tree-cannot-see.ipynb;workaround;Data Dependency
+Dados_Tabulares\santander-customer-transaction-prediction\yh-eda-i-want-to-see-all\yh-eda-i-want-to-see-all.ipynb;TODO;Awareness
+Dados_Tabulares\titanic\10-simple-hacks-to-speed-up-your-data-analysis\10-simple-hacks-to-speed-up-your-data-analysis.ipynb;hack;Readability
+Dados_Tabulares\titanic\10-simple-hacks-to-speed-up-your-data-analysis\10-simple-hacks-to-speed-up-your-data-analysis.ipynb;hack;Readability
+Dados_Tabulares\titanic\a-data-science-framework-to-achieve-99-accuracy\a-data-science-framework-to-achieve-99-accuracy.ipynb;quick and dirty;Data Dependency
+Dados_Tabulares\titanic\a-data-science-framework-to-achieve-99-accuracy\a-data-science-framework-to-achieve-99-accuracy.ipynb;quick and dirty;Modularity
+Dados_Tabulares\titanic\a-data-science-framework-to-achieve-99-accuracy\a-data-science-framework-to-achieve-99-accuracy.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\all-best-models\all-best-models.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\all-best-models\all-best-models.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\all-best-models\all-best-models.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\an-interactive-data-science-tutorial\an-interactive-data-science-tutorial.ipynb;XXX;Duplicate Code Elimination
+Dados_Tabulares\titanic\an-interactive-data-science-tutorial\an-interactive-data-science-tutorial.ipynb;XXX;Data Dependency
+Dados_Tabulares\titanic\data-to-destiny-titanic-survival-prediction\data-to-destiny-titanic-survival-prediction.ipynb;not the best;Awareness
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb;TODO;Readability
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb;TODO;Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb;TODO;Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb;TODO;Data Dependency
+Dados_Tabulares\titanic\exercise-arithmetic-and-variables\exercise-arithmetic-and-variables.ipynb;TODO;Data Dependency
+Dados_Tabulares\titanic\get-started-with-kaggle-legacy-guide\get-started-with-kaggle-legacy-guide.ipynb;not the best;Performance
+Dados_Tabulares\titanic\introduction-to-ensembling-stacking-in-python\introduction-to-ensembling-stacking-in-python.ipynb;hack;Modularity
+Dados_Tabulares\titanic\machine-learning-on-board-titanic-17-algothim\machine-learning-on-board-titanic-17-algothim.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\machine-learning-on-board-titanic-17-algothim\machine-learning-on-board-titanic-17-algothim.ipynb;quick and dirty;Readability
+Dados_Tabulares\titanic\model-explainability-with-shap-only-guide-u-need\model-explainability-with-shap-only-guide-u-need.ipynb;workaround;Code Dependency
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb;TODO;Awareness
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb;TODO;Awareness
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb;TODO;Data Dependency
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb;TODO;Awareness
+Dados_Tabulares\titanic\pytanic\pytanic.ipynb;TODO;Modularity
+Dados_Tabulares\titanic\python-for-data-10-reading-and-writing-data\python-for-data-10-reading-and-writing-data.ipynb;quick and dirty;Scalability
+Dados_Tabulares\titanic\python-for-data-28-logistic-regression\python-for-data-28-logistic-regression.ipynb;not the best;Performance
+Dados_Tabulares\titanic\titanic-competition-top-1\titanic-competition-top-1.ipynb;workaround;Data Dependency
+Dados_Tabulares\titanic\titanic-eda-and-feature-engineering\titanic-eda-and-feature-engineering.ipynb;not the best;Configurable Options
+Dados_Tabulares\titanic\titanic-predict-survivors\titanic-predict-survivors.ipynb;XXX;Duplicate Code Elimination
+Dados_Tabulares\titanic\titanic-survival-predictions-beginner\titanic-survival-predictions-beginner.ipynb;temporary solution;Data Dependency
+Dados_Tabulares\titanic\titanic-survival-seaborn-and-ensembles\titanic-survival-seaborn-and-ensembles.ipynb;TODO;Performance
+Dados_Tabulares\titanic\titanic-survival-seaborn-and-ensembles\titanic-survival-seaborn-and-ensembles.ipynb;TODO;Readability
+Dados_Tabulares\titanic\titanic-voting-pipeline-stack-and-guide\titanic-voting-pipeline-stack-and-guide.ipynb;not the best;Performance
+NLP\commonlitreadabilityprize\7-entrenamiento-transformer\7-entrenamiento-transformer.ipynb;todo;Data Dependency
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb;TODO;Awareness
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb;TODO;Awareness
+NLP\commonlitreadabilityprize\bert-tpus-jax-huggingface\bert-tpus-jax-huggingface.ipynb;TODO;Awareness
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb;Hack;Performance
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb;Hack;Readability
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb;Hack;Performance
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb;Hack;Performance
+NLP\commonlitreadabilityprize\clit-fails\clit-fails.ipynb;Hack;Readability
+NLP\commonlitreadabilityprize\comlit-tryst-with-han\comlit-tryst-with-han.ipynb;hack;Scalability
+NLP\commonlitreadabilityprize\comlit-tryst-with-han\comlit-tryst-with-han.ipynb;not the best;Awareness
+NLP\commonlitreadabilityprize\commonlit-3-computer-vision-inference\commonlit-3-computer-vision-inference.ipynb;hack;Readability
+NLP\commonlitreadabilityprize\commonlit-readability-prize-roberta-torch-itpt\commonlit-readability-prize-roberta-torch-itpt.ipynb;xxx;Configurable Options
+NLP\commonlitreadabilityprize\eda-bow-classical-model-with-autokeras-ensemble\eda-bow-classical-model-with-autokeras-ensemble.ipynb;quick and dirty;Performance
+NLP\commonlitreadabilityprize\ii-commonlit-bert-vs-roberta-w-b-testing\ii-commonlit-bert-vs-roberta-w-b-testing.ipynb;TODO;Configurable Options
+NLP\commonlitreadabilityprize\ii-commonlit-bert-vs-roberta-w-b-testing\ii-commonlit-bert-vs-roberta-w-b-testing.ipynb;TODO;Scalability
+NLP\commonlitreadabilityprize\linear-regression\linear-regression.ipynb;TODO;Awareness
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb;TODO;Performance
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb;TODO;Configurable Options
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb;TODO;Data Dependency
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb;TODO;Configurable Options
+NLP\commonlitreadabilityprize\readnet-implemetation\readnet-implemetation.ipynb;TODO;Data Dependency
+NLP\commonlitreadabilityprize\speeding-up-transformer-w-optimization-strategies\speeding-up-transformer-w-optimization-strategies.ipynb;Todo;Readability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\dms-korea-clean-text-glove-fasttext-keras\dms-korea-clean-text-glove-fasttext-keras.ipynb;xxx;Duplicate Code Elimination
+NLP\jigsaw-unintended-bias-in-toxicity-classification\gpt2-0-uncased\gpt2-0-uncased.ipynb;hack;Modularity
+NLP\jigsaw-unintended-bias-in-toxicity-classification\gpt2-0-uncased\gpt2-0-uncased.ipynb;hack;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\gpt2-0-uncased\gpt2-0-uncased.ipynb;hack;Readability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\introduction-to-nlp-hust\introduction-to-nlp-hust.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\jigsaw-competition-google-perspective-api\jigsaw-competition-google-perspective-api.ipynb;TODO: see if an endpoint that has valid types exists;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\jigsaw-competition-google-perspective-api\jigsaw-competition-google-perspective-api.ipynb;TODO: allow disassembly/reassembly of >3000char comments;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\jigsaw-competition-google-perspective-api\jigsaw-competition-google-perspective-api.ipynb;TODO: see if an endpoint that has valid types exists;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\jigsaw-competition-google-perspective-api\jigsaw-competition-google-perspective-api.ipynb;TODO: allow disassembly/reassembly of >3000char comments;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\lsa-lgbm-baseline-w-system-monitoring\lsa-lgbm-baseline-w-system-monitoring.ipynb;FIXME;Readability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\lsa-lgbm-baseline-w-system-monitoring\lsa-lgbm-baseline-w-system-monitoring.ipynb;TODO;Performance
+NLP\jigsaw-unintended-bias-in-toxicity-classification\lstm-cp-clip-nb-tw-tfidf-bert4x-gpt-test-best\lstm-cp-clip-nb-tw-tfidf-bert4x-gpt-test-best.ipynb;TODO;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\lstm-cp-clip-nb-tw-tfidf-berts-gpt-val2-best-r\lstm-cp-clip-nb-tw-tfidf-berts-gpt-val2-best-r.ipynb;TODO;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\multilayer-cudnnlstm-cudnngru\multilayer-cudnnlstm-cudnngru.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\mypersonality\mypersonality.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\preproccesing-and-cudnnlstm\preproccesing-and-cudnnlstm.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\public-version-text-cleaning-vocab-65\public-version-text-cleaning-vocab-65.ipynb;hack;Readability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\pytorch-bert-fast-bucket-inference-blend-individ\pytorch-bert-fast-bucket-inference-blend-individ.ipynb;TODO;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\pytorch-bert-fast-bucket-inference-blend-individ\pytorch-bert-fast-bucket-inference-blend-individ.ipynb;TODO;Modularity
+NLP\jigsaw-unintended-bias-in-toxicity-classification\pytorch-bert-fast-bucket-inference-blend-individ\pytorch-bert-fast-bucket-inference-blend-individ.ipynb;TODO;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\pytorch-bert-fast-bucket-inference-blend-individ\pytorch-bert-fast-bucket-inference-blend-individ.ipynb;TODO;Modularity
+NLP\jigsaw-unintended-bias-in-toxicity-classification\research\research.ipynb;todo;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-cudnngru-python-keras\simple-cudnngru-python-keras.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-cudnngru-python-keras\simple-cudnngru-python-keras.ipynb;xxx;Modularity
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-cudnngru-python-keras\simple-cudnngru-python-keras.ipynb;xxx;Scalability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-eda-for-jigsaw\simple-eda-for-jigsaw.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-eda-for-jigsaw\simple-eda-for-jigsaw.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-lstm-for-toxicity-classification\simple-lstm-for-toxicity-classification.ipynb;TODO;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\simple-lstm-pytorch-with-batch-loading\simple-lstm-pytorch-with-batch-loading.ipynb;TODO;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\sweet-bi-lstm-attentionwithcontext\sweet-bi-lstm-attentionwithcontext.ipynb;xxx;Data Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\sweet-bi-lstm-attentionwithcontext\sweet-bi-lstm-attentionwithcontext.ipynb;xxx;Readability
+NLP\jigsaw-unintended-bias-in-toxicity-classification\sweet-bi-lstm-attentionwithcontext\sweet-bi-lstm-attentionwithcontext.ipynb;workaround;Performance
+NLP\jigsaw-unintended-bias-in-toxicity-classification\toxicity-bias-extensive-eda-and-bi-lstm\toxicity-bias-extensive-eda-and-bi-lstm.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\toxicity-bias-extensive-eda-and-bi-lstm\toxicity-bias-extensive-eda-and-bi-lstm.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\toxicity-eda-logreg-and-nn-interpretation\toxicity-eda-logreg-and-nn-interpretation.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\toxicity-eda-logreg-and-nn-interpretation\toxicity-eda-logreg-and-nn-interpretation.ipynb;workaround;Code Dependency
+NLP\jigsaw-unintended-bias-in-toxicity-classification\tutorial-eda-for-nlp-how-to-build-a-vocabulary\tutorial-eda-for-nlp-how-to-build-a-vocabulary.ipynb;not the best;Awareness
+NLP\jigsaw-unintended-bias-in-toxicity-classification\ulmfit-fast-ai-starter\ulmfit-fast-ai-starter.ipynb;todo;Performance
+NLP\nlp-getting-started\automl-getting-started-notebook\automl-getting-started-notebook.ipynb;workaround;Code Dependency
+NLP\nlp-getting-started\basic-nlp-with-tensorflow-and-wordcloud\basic-nlp-with-tensorflow-and-wordcloud.ipynb;XXX;Data Dependency
+NLP\nlp-getting-started\bert-exposes-fake-tweets\bert-exposes-fake-tweets.ipynb;hack;Readability
+NLP\nlp-getting-started\bert-fine-tuning-with-pytorch\bert-fine-tuning-with-pytorch.ipynb;hack;Readability
+NLP\nlp-getting-started\bert-with-disaster-tweets\bert-with-disaster-tweets.ipynb;hack;Readability
+NLP\nlp-getting-started\eda-naive-bayes-bert-glove-fasttext-nn\eda-naive-bayes-bert-glove-fasttext-nn.ipynb;TODO;Data Dependency
+NLP\nlp-getting-started\full-tutoria-eda-to-ensembles-embeddings-zoo\full-tutoria-eda-to-ensembles-embeddings-zoo.ipynb;TODO;Data Dependency
+NLP\nlp-getting-started\know-about-different-automl-frameworks\know-about-different-automl-frameworks.ipynb;workaround;Code Dependency
+NLP\nlp-getting-started\ml-automl-frameworks\ml-automl-frameworks.ipynb;workaround;Code Dependency
+NLP\nlp-getting-started\pyspark-beginner-bert-with-pytorch\pyspark-beginner-bert-with-pytorch.ipynb;todo;Data Dependency
+NLP\nlp-getting-started\skip-gram-implementation-with-pytorch-step-by-step\skip-gram-implementation-with-pytorch-step-by-step.ipynb;not the best;Performance
+NLP\nlp-getting-started\top-5-winning-automl-submission\top-5-winning-automl-submission.ipynb;TODO;Configurable Options
+NLP\nlp-getting-started\transformers-from-scratch-dl\transformers-from-scratch-dl.ipynb;magic number;Configurable Options
+NLP\nlp-getting-started\xlnet-fine-tuning-with-pytorch\xlnet-fine-tuning-with-pytorch.ipynb;hack;Readability
+NLP\nlp-getting-started\your-first-nlp-competition-submission\your-first-nlp-competition-submission.ipynb;workaround;Readability
+Visão_Computacional\cassava-leaf-disease-classification\a-pytorch-template-for-experimentation\a-pytorch-template-for-experimentation.ipynb;FIXME;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-test\cassava-classification-lg-cv-2021-test.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-train\cassava-classification-lg-cv-2021-train.ipynb;TODO;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-train\cassava-classification-lg-cv-2021-train.ipynb;TODO;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-train\cassava-classification-lg-cv-2021-train.ipynb;TODO: Define some hyperparameters here.;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-train\cassava-classification-lg-cv-2021-train.ipynb;TODO;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-classification-lg-cv-2021-train\cassava-classification-lg-cv-2021-train.ipynb;TODO;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO: add configs;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO: Remove preprocess;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO: Change to effnet;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\cassava-dis-classification\cassava-dis-classification.ipynb;TODO;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classif-eda-cv-strategy\cassava-leaf-disease-classif-eda-cv-strategy.ipynb;hack;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classification\cassava-leaf-disease-classification.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classification\cassava-leaf-disease-classification.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classification\cassava-leaf-disease-classification.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classification\cassava-leaf-disease-classification.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-classification\cassava-leaf-disease-classification.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\cassava-leaf-disease-cyclegan-data-augmentation\cassava-leaf-disease-cyclegan-data-augmentation.ipynb;TODO;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\cassava-tensorflow-starter-training\cassava-tensorflow-starter-training.ipynb;hack;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\complete-and-reusable-pytorch-pipeline\complete-and-reusable-pytorch-pipeline.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\complete-and-reusable-pytorch-pipeline\complete-and-reusable-pytorch-pipeline.ipynb;hack;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\complete-and-reusable-pytorch-pipeline\complete-and-reusable-pytorch-pipeline.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\complete-and-reusable-pytorch-pipeline\complete-and-reusable-pytorch-pipeline.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\cyclegan-on-tomato-leaf-from-plant-village\cyclegan-on-tomato-leaf-from-plant-village.ipynb;TODO;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\effb5-cv-0-9007-single-model-tf\effb5-cv-0-9007-single-model-tf.ipynb;HACK;Performance
+Visão_Computacional\cassava-leaf-disease-classification\effb5-cv-0-9007-single-model-tf\effb5-cv-0-9007-single-model-tf.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\effb5-cv-0-9007-single-model-tf\effb5-cv-0-9007-single-model-tf.ipynb;HACK;Performance
+Visão_Computacional\cassava-leaf-disease-classification\efficientnet-and-cutmixup-with-tpu-train-phase\efficientnet-and-cutmixup-with-tpu-train-phase.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\efficientnet-and-cutmixup-with-tpu-train-phase\efficientnet-and-cutmixup-with-tpu-train-phase.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\efficientnet-and-cutmixup-with-tpu-train-phase\efficientnet-and-cutmixup-with-tpu-train-phase.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\efficientnetb6-512-cutmixupdropout-tpu-train\efficientnetb6-512-cutmixupdropout-tpu-train.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\efficientnetb6-512-cutmixupdropout-tpu-train\efficientnetb6-512-cutmixupdropout-tpu-train.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\efficientnetb6-512-cutmixupdropout-tpu-train\efficientnetb6-512-cutmixupdropout-tpu-train.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\efficientnetb6-512-cutmixupdropout-tpu-train\efficientnetb6-512-cutmixupdropout-tpu-train.ipynb;HACK;Performance
+Visão_Computacional\cassava-leaf-disease-classification\enb7-cv-0-901-accuracy\enb7-cv-0-901-accuracy.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\enb7-cv-0-901-accuracy\enb7-cv-0-901-accuracy.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\enb7-cv-0-901-accuracy\enb7-cv-0-901-accuracy.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\model-ensembling-with-k-fold\model-ensembling-with-k-fold.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\model-ensembling-with-k-fold\model-ensembling-with-k-fold.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\model-ensembling-with-k-fold\model-ensembling-with-k-fold.ipynb;HACK;Performance
+Visão_Computacional\cassava-leaf-disease-classification\model-ensembling-with-k-fold\model-ensembling-with-k-fold.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\pytorch-resnet50-snapmix-train-pipeline\pytorch-resnet50-snapmix-train-pipeline.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\semana-de-la-ia-fast-ai\semana-de-la-ia-fast-ai.ipynb;todo;Awareness
+Visão_Computacional\cassava-leaf-disease-classification\step-by-step-guide-to-denoising-your-labels\step-by-step-guide-to-denoising-your-labels.ipynb;as the baseline;Data Dependency
+Visão_Computacional\cassava-leaf-disease-classification\tf-keras-cassava-advanced-training-mechanism\tf-keras-cassava-advanced-training-mechanism.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\tf-keras-cassava-advanced-training-mechanism\tf-keras-cassava-advanced-training-mechanism.ipynb;HACK;Readability
+Visão_Computacional\cassava-leaf-disease-classification\torch-multi-model-trainer-amp-augmentations\torch-multi-model-trainer-amp-augmentations.ipynb;TODO;Configurable Options
+Visão_Computacional\cassava-leaf-disease-classification\tpu-visual-transformer-vit-keras-tf\tpu-visual-transformer-vit-keras-tf.ipynb;HACK;Performance
+Visão_Computacional\cassava-leaf-disease-classification\tpu-visual-transformer-vit-keras-tf\tpu-visual-transformer-vit-keras-tf.ipynb;HACK;Modularity
+Visão_Computacional\cassava-leaf-disease-classification\tpu-visual-transformer-vit-keras-tf\tpu-visual-transformer-vit-keras-tf.ipynb;HACK;Code Dependency
+Visão_Computacional\cassava-leaf-disease-classification\tutorial-on-machine-learning-metrics\tutorial-on-machine-learning-metrics.ipynb;not the best;Awareness
+Visão_Computacional\digit-recognizer\a-beginner-s-approach-to-classification\a-beginner-s-approach-to-classification.ipynb;not the best;Awareness
+Visão_Computacional\digit-recognizer\basic-neural-network-from-scratch-in-python\basic-neural-network-from-scratch-in-python.ipynb;Magic number;Data Dependency
+Visão_Computacional\digit-recognizer\basic-neural-network-from-scratch-in-python\basic-neural-network-from-scratch-in-python.ipynb;Magic number;Data Dependency
+Visão_Computacional\digit-recognizer\beginners-guide-to-mnist-with-fast-ai\beginners-guide-to-mnist-with-fast-ai.ipynb;TODO;Awareness
+Visão_Computacional\digit-recognizer\beginners-guide-to-mnist-with-fast-ai\beginners-guide-to-mnist-with-fast-ai.ipynb;TODO;Modularity
+Visão_Computacional\digit-recognizer\beginners-guide-to-mnist-with-fast-ai\beginners-guide-to-mnist-with-fast-ai.ipynb;TODO;Performance
+Visão_Computacional\digit-recognizer\convolutional-neural-nets-cnns-explained\convolutional-neural-nets-cnns-explained.ipynb;not the best;Awareness
+Visão_Computacional\digit-recognizer\digit-classification-using-cnn-0-9974-score\digit-classification-using-cnn-0-9974-score.ipynb;xxx;Duplicate Code Elimination
+Visão_Computacional\digit-recognizer\digit-classification-using-cnn-0-9974-score\digit-classification-using-cnn-0-9974-score.ipynb;xxx;Readability
+Visão_Computacional\digit-recognizer\digit-recognizer-baseline\digit-recognizer-baseline.ipynb;not the best;Awareness
+Visão_Computacional\digit-recognizer\digit-recognizer-with-scikit-learn\digit-recognizer-with-scikit-learn.ipynb;Todo;Data Dependency
+Visão_Computacional\digit-recognizer\dl-with-pytorch-mnist-classification\dl-with-pytorch-mnist-classification.ipynb;TODO;Configurable Options
+Visão_Computacional\digit-recognizer\dl-with-pytorch-mnist-classification\dl-with-pytorch-mnist-classification.ipynb;TODO;Data Dependency
+Visão_Computacional\digit-recognizer\epv-peq-aula-3-classifica-o\epv-peq-aula-3-classifica-o.ipynb;todo;Awareness
