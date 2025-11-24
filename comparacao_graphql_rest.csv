@@ -1,0 +1,6 @@
+repositorio,num_prs_solicitados,graphql_tempo_segundos,graphql_tamanho_bytes,graphql_tamanho_kb,graphql_num_prs,graphql_requisicoes,rest_tempo_segundos,rest_tamanho_bytes,rest_tamanho_kb,rest_num_prs,rest_requisicoes,diferenca_tempo_segundos,diferenca_tempo_percentual,diferenca_tamanho_bytes,diferenca_tamanho_kb,diferenca_tamanho_percentual
+facebook/react,100,8.276,43899,42.87,100,1,4.033,1669458,1630.33,100,2,-4.243,-51.27,1625559,1587.46,3702.95
+microsoft/vscode,100,9.571,37188,36.32,100,1,1.857,2010538,1963.42,100,2,-7.714,-80.6,1973350,1927.1,5306.42
+tensorflow/tensorflow,100,,,,0,0,6.786,1711834,1671.71,100,2,,,,,
+vuejs/vue,100,9.119,41959,40.98,100,1,3.139,1392773,1360.13,100,2,-5.98,-65.58,1350814,1319.15,3219.37
+angular/angular,100,10.252,37180,36.31,100,1,2.013,2021313,1973.94,100,2,-8.239,-80.36,1984133,1937.63,5336.56
