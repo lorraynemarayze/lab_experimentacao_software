@@ -1,5 +1,26 @@
 from datetime import datetime
 
+def build_simple_repo_query_graphql(owner: str, name: str):
+    """
+    Retorna a query GraphQL simples para coletar apenas dados básicos do repositório.
+    - owner: dono do repositório
+    - name: nome do repositório
+    """
+    return f"""
+    {{
+      repository(owner: "{owner}", name: "{name}") {{
+        id
+        name
+        primaryLanguage {{
+          name
+        }}
+        description
+        diskUsage
+      }}
+    }}
+    """
+
+
 def build_pr_query_graphql(owner: str, name: str, after_cursor=None, first: int = 100):
     """
     Retorna a query GraphQL para coletar PRs de um repositório específico.
@@ -19,6 +40,7 @@ def build_pr_query_graphql(owner: str, name: str, after_cursor=None, first: int 
             hasNextPage
           }}
           nodes {{
+            number
             body
             state
             createdAt
@@ -49,10 +71,10 @@ def processar_prs_graphql(response_data: dict) -> list:
     """
     prs = []
     
-    if 'data' not in response_data or 'repository' not in response_data['data']:
+    if 'repository' not in response_data:
         return prs
     
-    repo = response_data['data']['repository']
+    repo = response_data['repository']
     if not repo or 'pullRequests' not in repo:
         return prs
     
@@ -100,11 +122,43 @@ def processar_prs_graphql(response_data: dict) -> list:
     return prs
 
 
+def processar_repo_simples_graphql(response_data: dict) -> dict:
+    """
+    Processa a resposta GraphQL simples e extrai os dados básicos do repositório.
+    """
+    if 'repository' not in response_data:
+        return {}
+    
+    repo = response_data['repository']
+    if not repo:
+        return {}
+    
+    return {
+        'id': repo.get('id', ''),
+        'name': repo.get('name', ''),
+        'language': repo.get('primaryLanguage', {}).get('name', '') if repo.get('primaryLanguage') else '',
+        'description': repo.get('description', ''),
+        'size': repo.get('diskUsage', 0)
+    }
+
+
+def processar_repo_simples_rest(repo_data: dict) -> dict:
+    """
+    Processa a resposta REST simples e extrai os dados básicos do repositório.
+    """
+    return {
+        'id': str(repo_data.get('id', '')),
+        'name': repo_data.get('name', ''),
+        'language': repo_data.get('language', ''),
+        'description': repo_data.get('description', ''),
+        'size': repo_data.get('size', 0)
+    }
+
+
 def processar_prs_rest(prs_data: list) -> list:
     """
     Processa a resposta REST e extrai os dados dos PRs.
-    Nota: REST API não retorna todos os campos em uma única requisição,
-    então alguns campos podem não estar disponíveis.
+    Nota: Agora inclui dados adicionais buscados em requisições extras.
     """
     prs = []
     
@@ -127,9 +181,8 @@ def processar_prs_rest(prs_data: list) -> list:
         body = pr.get('body', '')
         num_caracteres_body = len(body) if body else 0
 
-        # Interações - REST não fornece alguns desses dados diretamente
-        # Seria necessário fazer requisições adicionais
-        num_participantes = 0  # Não disponível diretamente
+        # Interações - agora buscados em requisições adicionais
+        num_participantes = pr.get('_participants_count', 0)
         num_comentarios = pr.get('comments', 0)
         num_revisoes = pr.get('review_comments', 0)
         status = pr.get('state', '')
