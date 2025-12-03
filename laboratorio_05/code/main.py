@@ -6,8 +6,15 @@ Mede tempo de resposta e tamanho dos dados retornados
 import json
 import csv
 import sys
-from github_api import run_graphql_query, fetch_prs_rest_multiple
-from data import build_pr_query_graphql, processar_prs_graphql, processar_prs_rest
+from github_api import run_graphql_query, fetch_prs_rest_multiple, fetch_repo_rest_simple
+from data import (
+    build_pr_query_graphql, 
+    build_simple_repo_query_graphql,
+    processar_prs_graphql, 
+    processar_prs_rest,
+    processar_repo_simples_graphql,
+    processar_repo_simples_rest
+)
 
 # Configure seu token do GitHub aqui
 TOKEN = '{COLOQUE_SEU_TOKEN_AQUI}'
@@ -15,7 +22,6 @@ TOKEN = '{COLOQUE_SEU_TOKEN_AQUI}'
 # Repositórios para testar (pode adicionar mais)
 repoNameWithOwnerList = [
     "freeCodeCamp/freeCodeCamp",
-    "codecrafters-io/build-your-own-x",
     "sindresorhus/awesome",
     "EbookFoundation/free-programming-books",
     "public-apis/public-apis",
@@ -249,24 +255,91 @@ repoNameWithOwnerList = [
 
 # Converte a lista de strings "owner/name" para formato de dicionários
 REPOSITORIES = []
-for repo_string in repoNameWithOwnerList[:2]:
+for repo_string in repoNameWithOwnerList[:100]:
     owner, name = repo_string.split('/')
     REPOSITORIES.append({"owner": owner, "name": name})
 
-def comparar_apis(owner: str, name: str, token: str, num_prs: int = 100):
+def comparar_apis_simples(owner: str, name: str, token: str):
     """
-    Compara GraphQL vs REST para buscar PRs de um repositório.
+    Compara GraphQL vs REST para buscar dados básicos do repositório (consulta simples).
     Retorna dicionário com métricas de comparação.
     """
-
-    print(f"\nAnalisando: {owner}/{name}")
+    print(f"\n[TESTE SIMPLES] Analisando: {owner}/{name}")
     
     resultado = {
+        'tipo_teste': 'simples',
+        'repositorio': f"{owner}/{name}",
+    }
+    
+    print("  [GraphQL] Executando query simples...")
+    try:
+        query = build_simple_repo_query_graphql(owner, name)
+        graphql_result = run_graphql_query(query, token)
+        
+        repo_data = processar_repo_simples_graphql(graphql_result['data'])
+        
+        resultado['graphql_tempo_segundos'] = round(graphql_result['time'], 3)
+        resultado['graphql_tamanho_bytes'] = graphql_result['size']
+        resultado['graphql_tamanho_kb'] = round(graphql_result['size'] / 1024, 2)
+        resultado['graphql_requisicoes'] = 1
+        resultado['repo_id'] = repo_data.get('id', '')
+        resultado['repo_name'] = repo_data.get('name', '')
+        resultado['repo_language'] = repo_data.get('language', '')
+        resultado['repo_size'] = repo_data.get('size', 0)
+        
+    except Exception as e:
+        print(f"    ✗ Erro no GraphQL: {e}")
+    
+    print("  [REST] Executando query simples...")
+    try:
+        rest_result = fetch_repo_rest_simple(owner, name, token)
+        
+        repo_data = processar_repo_simples_rest(rest_result['data'])
+        
+        resultado['rest_tempo_segundos'] = round(rest_result['time'], 3)
+        resultado['rest_tamanho_bytes'] = rest_result['size']
+        resultado['rest_tamanho_kb'] = round(rest_result['size'] / 1024, 2)
+        resultado['rest_requisicoes'] = rest_result['requests']
+        
+    except Exception as e:
+        print(f"    ✗ Erro no REST: {e}")
+    
+    # Calcular diferenças
+    if resultado.get('graphql_tempo_segundos') and resultado.get('rest_tempo_segundos'):
+        resultado['diferenca_tempo_segundos'] = round(
+            resultado['rest_tempo_segundos'] - resultado['graphql_tempo_segundos'], 3
+        )
+        resultado['diferenca_tempo_percentual'] = round(
+            ((resultado['rest_tempo_segundos'] / resultado['graphql_tempo_segundos']) - 1) * 100, 2
+        )
+        
+        resultado['diferenca_tamanho_bytes'] = (
+            resultado['rest_tamanho_bytes'] - resultado['graphql_tamanho_bytes']
+        )
+        resultado['diferenca_tamanho_kb'] = round(
+            resultado['diferenca_tamanho_bytes'] / 1024, 2
+        )
+        resultado['diferenca_tamanho_percentual'] = round(
+            ((resultado['rest_tamanho_bytes'] / resultado['graphql_tamanho_bytes']) - 1) * 100, 2
+        )
+    
+    return resultado
+
+
+def comparar_apis_complexas(owner: str, name: str, token: str, num_prs: int = 100):
+    """
+    Compara GraphQL vs REST para buscar PRs de um repositório (consulta complexa).
+    Retorna dicionário com métricas de comparação.
+    """
+    print(f"\n[TESTE COMPLEXO] Analisando: {owner}/{name}")
+    
+    resultado = {
+        'tipo_teste': 'complexo',
         'repositorio': f"{owner}/{name}",
         'num_prs_solicitados': num_prs,
     }
     
-    print("[GraphQL] Executando query...")
+    print("  [GraphQL] Executando query complexa...")
     try:
         query = build_pr_query_graphql(owner, name, first=num_prs)
         graphql_result = run_graphql_query(query, token)
@@ -280,10 +353,10 @@ def comparar_apis(owner: str, name: str, token: str, num_prs: int = 100):
         resultado['graphql_requisicoes'] = 1
         
     except Exception as e:
-        print(f"  ✗ Erro no GraphQL: {e}")
+        print(f"    ✗ Erro no GraphQL: {e}")
     
     
-    print("[REST] Executando queries...")
+    print("  [REST] Executando queries complexas...")
     try:
         # Calcular quantas páginas precisamos (REST limita 100 por página)
         max_pages = (num_prs + 99) // 100  # arredonda para cima
@@ -299,8 +372,9 @@ def comparar_apis(owner: str, name: str, token: str, num_prs: int = 100):
         resultado['rest_requisicoes'] = rest_result['requests']
         
     except Exception as e:
-        print(f"  ✗ Erro no REST: {e}")
+        print(f"    ✗ Erro no REST: {e}")
     
+    # Calcular diferenças
     if resultado.get('graphql_tempo_segundos') and resultado.get('rest_tempo_segundos'):
         resultado['diferenca_tempo_segundos'] = round(
             resultado['rest_tempo_segundos'] - resultado['graphql_tempo_segundos'], 3
@@ -332,6 +406,7 @@ def exportar_csv(resultados: list, filename: str = "comparacao_graphql_rest.csv"
         return
     
     fieldnames = [
+        'tipo_teste',
         'repositorio',
         'num_prs_solicitados',
         'graphql_tempo_segundos',
@@ -349,6 +424,10 @@ def exportar_csv(resultados: list, filename: str = "comparacao_graphql_rest.csv"
         'diferenca_tamanho_bytes',
         'diferenca_tamanho_kb',
         'diferenca_tamanho_percentual',
+        'repo_id',
+        'repo_name',
+        'repo_language',
+        'repo_size'
     ]
     
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
@@ -373,33 +452,65 @@ def exportar_json(resultados: list, filename: str = "comparacao_graphql_rest.jso
 def main():
     """
     Função principal que executa a comparação para todos os repositórios.
+    Executa tanto o teste simples quanto o teste complexo.
     """
     if TOKEN == '{COLOQUE_SEU_TOKEN_AQUI}':
         print("ERRO: Configure seu token do GitHub na variável TOKEN")
         print("Gere um token em: https://github.com/settings/tokens")
         sys.exit(1)
     
+    print("="*60)
+    print("EXPERIMENTO: GraphQL vs REST")
+    print("="*60)
     print(f"Total de repositórios para analisar: {len(REPOSITORIES)}")
-    print(f"PRs por repositório: 100")
+    print(f"Testes por repositório: 2 (simples + complexo)")
+    print(f"PRs por repositório (teste complexo): 100")
+    print("="*60)
     
     resultados = []
     
     for repo in REPOSITORIES:
         try:
-            resultado = comparar_apis(
+            # Teste 1: Consulta SIMPLES (apenas dados básicos do repositório)
+            resultado_simples = comparar_apis_simples(
+                owner=repo['owner'],
+                name=repo['name'],
+                token=TOKEN
+            )
+            resultados.append(resultado_simples)
+            
+            # Teste 2: Consulta COMPLEXA (PRs com dados detalhados)
+            resultado_complexo = comparar_apis_complexas(
                 owner=repo['owner'],
                 name=repo['name'],
                 token=TOKEN,
                 num_prs=100
             )
-            resultados.append(resultado)
+            resultados.append(resultado_complexo)
+            
         except Exception as e:
-            print(f"\nErro ao processar {repo['owner']}/{repo['name']}: {e}")
+            print(f"\n✗ Erro ao processar {repo['owner']}/{repo['name']}: {e}")
             continue
     
     # Exportar resultados
+    print("\n" + "="*60)
+    print("EXPORTANDO RESULTADOS")
+    print("="*60)
     exportar_csv(resultados)
     exportar_json(resultados)
+    
+    # Resumo
+    print("\n" + "="*60)
+    print("RESUMO")
+    print("="*60)
+    print(f"Total de testes realizados: {len(resultados)}")
+    
+    simples = [r for r in resultados if r.get('tipo_teste') == 'simples']
+    complexos = [r for r in resultados if r.get('tipo_teste') == 'complexo']
+    
+    print(f"  - Testes simples: {len(simples)}")
+    print(f"  - Testes complexos: {len(complexos)}")
+    print("="*60)
     
 
 if __name__ == "__main__":
