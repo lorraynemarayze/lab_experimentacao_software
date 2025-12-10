@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard GraphQL vs REST</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: hsl(220, 90%, 56%);
+            --primary-dark: hsl(220, 90%, 46%);
+            --secondary: hsl(280, 70%, 60%);
+            --success: hsl(142, 71%, 45%);
+            --danger: hsl(0, 84%, 60%);
+            --warning: hsl(45, 93%, 47%);
+            --bg-dark: hsl(220, 20%, 10%);
+            --bg-card: hsl(220, 20%, 14%);
+            --bg-card-hover: hsl(220, 20%, 18%);
+            --text-primary: hsl(0, 0%, 95%);
+            --text-secondary: hsl(0, 0%, 70%);
+            --border: hsl(220, 20%, 25%);
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.4);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, hsl(220, 25%, 8%) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(100%);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        select,
+        input {
+            padding: 0.75rem 1rem;
+            background: var(--bg-dark);
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        select:hover,
+        input:hover {
+            border-color: var(--primary);
+        }
+
+        select:focus,
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-hover) 100%);
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-detail {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-container {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .chart-container:hover {
+            border-color: var(--primary);
+        }
+
+        .chart-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .table-container {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg-dark);
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .positive {
+            color: var(--success);
+        }
+
+        .negative {
+            color: var(--danger);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            border: 4px solid var(--border);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-wrapper {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Dashboard GraphQL vs REST</h1>
+            <p class="subtitle">Análise Comparativa de Performance e Tamanho de Respostas</p>
+        </header>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            Carregando dados...
+        </div>
+
+        <div id="dashboard" style="display: none;">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="testTypeFilter">Tipo de Teste</label>
+                    <select id="testTypeFilter">
+                        <option value="all">Todos</option>
+                        <option value="simples">Simples</option>
+                        <option value="complexo">Complexo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="repoFilter">Repositório</label>
+                    <select id="repoFilter">
+                        <option value="all">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="searchRepo">Buscar Repositório</label>
+                    <input type="text" id="searchRepo" placeholder="Digite para filtrar...">
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">RQ1: Tempo Médio GraphQL</div>
+                    <div class="stat-value" id="avgGraphQLTime">-</div>
+                    <div class="stat-detail">segundos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">RQ1: Tempo Médio REST</div>
+                    <div class="stat-value" id="avgRESTTime">-</div>
+                    <div class="stat-detail">segundos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">RQ1: Diferença Tempo (%)</div>
+                    <div class="stat-value" id="avgTimeDiff">-</div>
+                    <div class="stat-detail" id="timeWinner">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">RQ2: Tamanho Médio GraphQL</div>
+                    <div class="stat-value" id="avgGraphQLSize">-</div>
+                    <div class="stat-detail">KB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">RQ2: Tamanho Médio REST</div>
+                    <div class="stat-value" id="avgRESTSize">-</div>
+                    <div class="stat-detail">KB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">RQ2: Diferença Tamanho (%)</div>
+                    <div class="stat-value" id="avgSizeDiff">-</div>
+                    <div class="stat-detail" id="sizeWinner">-</div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">RQ1: Comparação de Tempo de Resposta</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="timeComparisonChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">RQ2: Comparação de Tamanho de Resposta</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="sizeComparisonChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container full-width">
+                    <h3 class="chart-title">RQ1: Distribuição de Diferença de Tempo (%)</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="timeDiffDistributionChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container full-width">
+                    <h3 class="chart-title">RQ2: Distribuição de Diferença de Tamanho (%)</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="sizeDiffDistributionChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">RQ1: Tempo por Tipo de Teste</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="timeByTypeChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">RQ2: Tamanho por Tipo de Teste</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="sizeByTypeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3 class="chart-title">Dados Detalhados</h3>
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Repositório</th>
+                            <th>Tipo</th>
+                            <th>GraphQL Tempo (s)</th>
+                            <th>REST Tempo (s)</th>
+                            <th>Diff Tempo (%)</th>
+                            <th>GraphQL Tamanho (KB)</th>
+                            <th>REST Tamanho (KB)</th>
+                            <th>Diff Tamanho (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let filteredData = [];
+        let charts = {};
+
+        // Embedded CSV data to avoid CORS issues
+        const csvData = `tipo_teste,repositorio,num_prs_solicitados,graphql_tempo_segundos,graphql_tamanho_bytes,graphql_tamanho_kb,graphql_num_prs,graphql_requisicoes,rest_tempo_segundos,rest_tamanho_bytes,rest_tamanho_kb,rest_num_prs,rest_requisicoes,diferenca_tempo_segundos,diferenca_tempo_percentual,diferenca_tamanho_bytes,diferenca_tamanho_kb,diferenca_tamanho_percentual,repo_id,repo_name,repo_language,repo_size
+simples,freeCodeCamp/freeCodeCamp,,0.54,274,0.27,,1,0.512,6977,6.81,,1,-0.028,-5.19,6703,6.55,2446.35,,,,0
+complexo,freeCodeCamp/freeCodeCamp,100,5.018,35500,34.67,0,1,57.249,2585218,2524.63,100,101,52.231,1040.87,2549718,2489.96,7182.3,,,,
+simples,sindresorhus/awesome,,0.61,195,0.19,,1,0.509,5455,5.33,,1,-0.101,-16.56,5260,5.14,2697.44,,,,0
+complexo,sindresorhus/awesome,100,5.53,28101,27.44,0,1,65.245,2735866,2671.74,100,101,59.715,1079.84,2707765,2644.3,9635.83,,,,
+simples,EbookFoundation/free-programming-books,,0.608,210,0.21,,1,0.819,7444,7.27,,1,0.211,34.7,7234,7.06,3444.76,,,,0
+complexo,EbookFoundation/free-programming-books,100,5.946,28740,28.07,0,1,57.056,2330302,2275.69,100,101,51.11,859.57,2301562,2247.62,8008.22,,,,
+simples,public-apis/public-apis,,0.836,186,0.18,,1,1.524,6739,6.58,,1,0.688,82.3,6553,6.4,3523.12,,,,0
+complexo,public-apis/public-apis,100,41.073,27186,26.55,0,1,53.062,1788854,1746.93,100,101,11.989,29.19,1761668,1720.38,6480.06,,,,
+simples,kamranahmedse/developer-roadmap,,0.405,268,0.26,,1,0.516,6215,6.07,,1,0.111,27.41,5947,5.81,2219.03,,,,0
+complexo,kamranahmedse/developer-roadmap,100,27.688,38403,37.5,0,1,53.051,2409173,2352.71,100,101,25.363,91.6,2370770,2315.21,6173.4,,,,
+simples,jwasham/coding-interview-university,,0.507,229,0.22,,1,0.508,6273,6.13,,1,0.001,0.2,6044,5.9,2639.3,,,,0
+complexo,jwasham/coding-interview-university,100,38.127,31794,31.05,0,1,53.977,2102779,2053.5,100,101,15.85,41.57,2070985,2022.45,6513.76,,,,
+simples,donnemartin/system-design-primer,,0.406,271,0.26,,1,0.6,6086,5.94,,1,0.194,47.78,5815,5.68,2145.76,,,,0
+complexo,donnemartin/system-design-primer,100,16.127,31586,30.85,0,1,57.888,2074214,2025.6,100,101,41.761,258.95,2042628,1994.75,6466.88,,,,
+simples,996icu/996.ICU,,0.506,229,0.22,,1,0.508,5068,4.95,,1,0.002,0.4,4839,4.73,2113.1,,,,0
+complexo,996icu/996.ICU,100,19.404,29262,28.58,0,1,50.702,1798731,1756.57,100,101,31.298,161.3,1769469,1728.0,6046.99,,,,
+simples,vinta/awesome-python,,0.711,243,0.24,,1,0.512,5408,5.28,,1,-0.199,-27.99,5165,5.04,2125.51,,,,0
+complexo,vinta/awesome-python,100,15.92,29268,28.58,0,1,57.047,2138026,2087.92,100,101,41.127,258.34,2108758,2059.33,7205.0,,,,
+simples,awesome-selfhosted/awesome-selfhosted,,0.607,252,0.25,,1,0.612,7457,7.28,,1,0.005,0.82,7205,7.04,2859.13,,,,0
+complexo,awesome-selfhosted/awesome-selfhosted,100,16.537,29369,28.68,0,1,66.467,2755094,2690.52,100,101,49.93,301.93,2725725,2661.84,9280.96,,,,
+simples,practical-tutorials/project-based-learning,,0.506,192,0.19,,1,0.508,7635,7.46,,1,0.002,0.4,7443,7.27,3876.56,,,,0
+complexo,practical-tutorials/project-based-learning,100,10.344,29179,28.5,0,1,51.727,1983629,1937.14,100,101,41.383,400.07,1954450,1908.64,6698.14,,,,
+simples,facebook/react,,0.61,204,0.2,,1,0.511,6134,5.99,,1,-0.099,-16.23,5930,5.79,2906.86,,,,0
+complexo,facebook/react,100,20.807,45118,44.06,0,1,78.571,3134392,3060.93,100,101,57.764,277.62,3089274,3016.87,6847.1,,,,
+simples,vuejs/vue,,0.408,227,0.22,,1,0.51,5865,5.73,,1,0.102,25.0,5638,5.51,2483.7,,,,0
+complexo,vuejs/vue,100,22.199,43256,42.24,0,1,52.823,1564679,1528.01,100,101,30.624,137.95,1521423,1485.76,3517.25,,,,
+simples,TheAlgorithms/Python,,0.609,188,0.18,,1,0.612,6671,6.51,,1,0.003,0.49,6483,6.33,3448.4,,,,0
+complexo,TheAlgorithms/Python,100,10.139,33212,32.43,0,1,56.53,2568925,2508.72,100,101,46.391,457.55,2535713,2476.28,7634.93,,,,
+simples,torvalds/linux,,0.506,168,0.16,,1,0.521,4994,4.88,,1,0.015,2.96,4826,4.71,2872.62,,,,0
+complexo,torvalds/linux,100,,,,,,49.621,2419182,2362.48,100,101,,,,,,,,,
+simples,ossu/computer-science,,0.507,221,0.22,,1,0.613,6351,6.2,,1,0.106,20.91,6130,5.99,2773.76,,,,0
+complexo,ossu/computer-science,100,27.997,34090,33.29,0,1,52.75,1966778,1920.68,100,101,24.753,88.41,1932688,1887.39,5669.37,,,,
+simples,trekhleb/javascript-algorithms,,0.614,280,0.27,,1,0.819,5963,5.82,,1,0.205,33.39,5683,5.55,2029.64,,,,0
+complexo,trekhleb/javascript-algorithms,100,17.458,33308,32.53,0,1,52.642,1956591,1910.73,100,101,35.184,201.54,1923283,1878.21,5774.24,,,,
+simples,tensorflow/tensorflow,,0.51,209,0.2,,1,0.512,6667,6.51,,1,0.002,0.39,6458,6.31,3089.95,,,,0
+complexo,tensorflow/tensorflow,100,28.947,43081,42.07,0,1,64.128,2667065,2604.56,100,101,35.181,121.54,2623984,2562.48,6090.81,,,,
+simples,trimstray/the-book-of-secret-knowledge,,0.506,264,0.26,,1,0.51,6398,6.25,,1,0.004,0.79,6134,5.99,2323.48,,,,0
+complexo,trimstray/the-book-of-secret-knowledge,100,20.941,30927,30.2,0,1,50.799,2391016,2334.98,100,101,29.858,142.58,2360089,2304.77,7631.16,,,,
+simples,getify/You-Dont-Know-JS,,0.606,205,0.2,,1,0.513,5601,5.47,,1,-0.093,-15.35,5396,5.27,2632.2,,,,0
+complexo,getify/You-Dont-Know-JS,100,17.557,30937,30.21,0,1,62.338,2273908,2220.61,100,101,44.781,255.06,2242971,2190.4,7250.12,,,,
+simples,CyC2018/CS-Notes,,0.51,248,0.24,,1,0.717,5181,5.06,,1,0.207,40.59,4933,4.82,1989.11,,,,0
+complexo,CyC2018/CS-Notes,100,9.833,28309,27.65,0,1,51.733,1607458,1569.78,100,101,41.9,426.12,1579149,1542.14,5578.26,,,,
+simples,ohmyzsh/ohmyzsh,,0.609,493,0.48,,1,0.511,6577,6.42,,1,-0.098,-16.09,6084,5.94,1234.08,,,,0
+complexo,ohmyzsh/ohmyzsh,100,9.854,44254,43.22,0,1,58.855,3367678,3288.75,100,101,49.001,497.27,3323424,3245.53,7509.88,,,,
+simples,Significant-Gravitas/AutoGPT,,1.837,286,0.28,,1,0.51,7088,6.92,,1,-1.327,-72.24,6802,6.64,2378.32,,,,0
+complexo,Significant-Gravitas/AutoGPT,100,16.97,48535,47.4,0,1,63.438,6715889,6558.49,100,101,46.468,273.82,6667354,6511.09,13737.21,,,,
+simples,microsoft/vscode,,0.811,176,0.17,,1,0.511,6433,6.28,,1,-0.3,-36.99,6257,6.11,3555.11,,,,0
+complexo,microsoft/vscode,100,28.001,38482,37.58,0,1,60.396,3823849,3734.23,100,101,32.395,115.69,3785367,3696.65,9836.72,,,,
+simples,twbs/bootstrap,,0.507,262,0.26,,1,0.61,6121,5.98,,1,0.103,20.32,5859,5.72,2236.26,,,,0
+complexo,twbs/bootstrap,100,39.166,41948,40.96,0,1,78.3,3586336,3502.28,100,101,39.134,99.92,3544388,3461.32,8449.48,,,,
+simples,flutter/flutter,,0.507,228,0.22,,1,0.61,6500,6.35,,1,0.103,20.32,6272,6.12,2750.88,,,,0
+complexo,flutter/flutter,100,20.734,37100,36.23,0,1,65.782,3498947,3416.94,100,101,45.048,217.27,3461847,3380.71,9331.12,,,,
+simples,jackfrued/Python-100-Days,,0.504,205,0.2,,1,0.509,5430,5.3,,1,0.005,0.99,5225,5.1,2548.78,,,,0
+complexo,jackfrued/Python-100-Days,100,16.947,30130,29.42,0,1,48.734,1667663,1628.58,100,101,31.787,187.57,1637533,1599.15,5434.89,,,,
+simples,github/gitignore,,0.43,180,0.18,,1,0.511,6330,6.18,,1,0.081,18.84,6150,6.01,3416.67,,,,0
+complexo,github/gitignore,100,10.131,32703,31.94,0,1,57.054,2336709,2281.94,100,101,46.923,463.16,2304006,2250.01,7045.24,,,,
+simples,jlevy/the-art-of-command-line,,0.403,191,0.19,,1,0.612,5604,5.47,,1,0.209,51.86,5413,5.29,2834.03,,,,0
+complexo,jlevy/the-art-of-command-line,100,38.814,32800,32.03,0,1,62.697,1970486,1924.3,100,101,23.883,61.53,1937686,1892.27,5907.58,,,,
+simples,AUTOMATIC1111/stable-diffusion-webui,,0.51,171,0.17,,1,0.612,6263,6.12,,1,0.102,20.0,6092,5.95,3562.57,,,,0
+complexo,AUTOMATIC1111/stable-diffusion-webui,100,16.254,54519,53.24,0,1,51.189,2586057,2525.45,100,101,34.935,214.93,2531538,2472.21,4643.41,,,,
+simples,avelino/awesome-go,,0.513,215,0.21,,1,0.506,5316,5.19,,1,-0.007,-1.36,5101,4.98,2372.56,,,,0
+complexo,avelino/awesome-go,100,9.217,28652,27.98,0,1,54.267,4042094,3947.36,100,101,45.05,488.77,4013442,3919.38,14007.55,,,,
+simples,ollama/ollama,,0.507,206,0.2,,1,0.51,6112,5.97,,1,0.003,0.59,5906,5.77,2866.99,,,,0
+complexo,ollama/ollama,100,9.216,38614,37.71,0,1,53.987,2331443,2276.8,100,101,44.771,485.8,2292829,2239.09,5937.82,,,,
+simples,Snailclimb/JavaGuide,,0.608,292,0.29,,1,0.412,5577,5.45,,1,-0.196,-32.24,5285,5.16,1809.93,,,,0
+complexo,Snailclimb/JavaGuide,100,9.93,31956,31.21,0,1,50.085,1937966,1892.54,100,101,40.155,404.38,1906010,1861.34,5964.48,,,,
+simples,huggingface/transformers,,0.61,334,0.33,,1,0.511,7019,6.85,,1,-0.099,-16.23,6685,6.53,2001.5,,,,0
+complexo,huggingface/transformers,100,40.401,48858,47.71,0,1,55.992,2694815,2631.66,100,101,15.591,38.59,2645957,2583.94,5415.61,,,,
+simples,airbnb/javascript,,0.506,177,0.17,,1,0.51,6284,6.14,,1,0.004,0.79,6107,5.96,3450.28,,,,0
+complexo,airbnb/javascript,100,16.737,35639,34.8,0,1,51.847,1909872,1865.11,100,101,35.11,209.77,1874233,1830.31,5258.94,,,,
+simples,n8n-io/n8n,,0.506,302,0.29,,1,0.509,6184,6.04,,1,0.003,0.59,5882,5.74,1947.68,,,,0
+complexo,n8n-io/n8n,100,28.616,61068,59.64,0,1,52.724,3078988,3006.82,100,101,24.108,84.25,3017920,2947.19,4941.9,,,,
+simples,ytdl-org/youtube-dl,,0.506,230,0.22,,1,0.509,6375,6.23,,1,0.003,0.59,6145,6.0,2671.74,,,,0
+complexo,ytdl-org/youtube-dl,100,15.948,58587,57.21,0,1,52.918,2218926,2166.92,100,101,36.97,231.82,2160339,2109.71,3687.4,,,,
+simples,vercel/next.js,,0.508,178,0.17,,1,0.507,6175,6.03,,1,-0.001,-0.2,5997,5.86,3369.1,,,,0
+complexo,vercel/next.js,100,16.875,49583,48.42,0,1,57.835,2823577,2757.4,100,101,40.96,242.73,2773994,2708.98,5594.65,,,,
+simples,f/awesome-chatgpt-prompts,,0.71,237,0.23,,1,0.44,5591,5.46,,1,-0.27,-38.03,5354,5.23,2259.07,,,,0
+complexo,f/awesome-chatgpt-prompts,100,28.888,57695,56.34,0,1,55.093,2093581,2044.51,100,101,26.205,90.71,2035886,1988.17,3528.7,,,,
+simples,yangshun/tech-interview-handbook,,0.404,247,0.24,,1,1.127,6117,5.97,,1,0.723,178.96,5870,5.73,2376.52,,,,0
+complexo,yangshun/tech-interview-handbook,100,39.172,73450,71.73,0,1,50.673,2311360,2257.19,100,101,11.501,29.36,2237910,2185.46,3046.85,,,,
+simples,golang/go,,0.511,172,0.17,,1,0.509,5968,5.83,,1,-0.002,-0.39,5796,5.66,3369.77,,,,0
+complexo,golang/go,100,17.297,31767,31.02,0,1,54.086,2066151,2017.73,100,101,36.789,212.69,2034384,1986.7,6404.08,,,,
+simples,labuladong/fucking-algorithm,,0.623,291,0.28,,1,0.496,5830,5.69,,1,-0.127,-20.39,5539,5.41,1903.44,,,,0
+complexo,labuladong/fucking-algorithm,100,29.22,57042,55.71,0,1,55.931,1871991,1828.12,100,101,26.711,91.41,1814949,1772.41,3181.78,,,,
+simples,Genymobile/scrcpy,,0.508,185,0.18,,1,0.511,6332,6.18,,1,0.003,0.59,6147,6.0,3322.7,,,,0
+complexo,Genymobile/scrcpy,100,18.172,43104,42.09,0,1,53.867,2548982,2489.24,100,101,35.695,196.43,2505878,2447.15,5813.56,,,,
+simples,yt-dlp/yt-dlp,,0.506,202,0.2,,1,0.611,6119,5.98,,1,0.105,20.75,5917,5.78,2929.21,,,,0
+complexo,yt-dlp/yt-dlp,100,17.729,174914,170.81,0,1,54.825,2603855,2542.83,100,101,37.096,209.24,2428941,2372.01,1388.65,,,,
+simples,Chalarangelo/30-seconds-of-code,,1.532,220,0.21,,1,0.51,6090,5.95,,1,-1.022,-66.71,5870,5.73,2668.18,,,,0
+complexo,Chalarangelo/30-seconds-of-code,100,10.24,33760,32.97,0,1,58.063,3224004,3148.44,100,101,47.823,467.02,3190244,3115.47,9449.77,,,,
+simples,langflow-ai/langflow,,0.408,222,0.22,,1,0.511,6524,6.37,,1,0.103,25.25,6302,6.15,2838.74,,,,0
+complexo,langflow-ai/langflow,100,27.998,34888,34.07,0,1,57.431,4911002,4795.9,100,101,29.433,105.13,4876114,4761.83,13976.48,,,,
+simples,facebook/react-native,,0.615,212,0.21,,1,0.507,6488,6.34,,1,-0.108,-17.56,6276,6.13,2960.38,,,,0
+complexo,facebook/react-native,100,9.848,51263,50.06,0,1,60.809,3627379,3542.36,100,101,50.961,517.48,3576116,3492.3,6976.02,,,,
+simples,microsoft/PowerToys,,0.851,262,0.26,,1,0.475,6708,6.55,,1,-0.376,-44.18,6446,6.29,2460.31,,,,0
+complexo,microsoft/PowerToys,100,28.098,76027,74.25,0,1,55.622,2883277,2815.7,100,101,27.524,97.96,2807250,2741.46,3692.44,,,,
+simples,electron/electron,,0.622,223,0.22,,1,0.634,6480,6.33,,1,0.012,1.93,6257,6.11,2805.83,,,,0
+complexo,electron/electron,100,15.58,40962,40.0,0,1,65.517,3440227,3359.6,100,101,49.937,320.52,3399265,3319.59,8298.58,,,,
+simples,kubernetes/kubernetes,,0.518,206,0.2,,1,0.511,6516,6.36,,1,-0.007,-1.35,6310,6.16,3063.11,,,,0
+complexo,kubernetes/kubernetes,100,9.32,30961,30.24,0,1,66.474,6757938,6599.55,100,101,57.154,613.24,6726977,6569.31,21727.26,,,,
+simples,krahets/hello-algo,,0.578,368,0.36,,1,0.703,5529,5.4,,1,0.125,21.63,5161,5.04,1402.45,,,,0
+complexo,krahets/hello-algo,100,49.67,37811,36.92,0,1,57.967,2152758,2102.3,100,101,8.297,16.7,2114947,2065.38,5593.47,,,,
+simples,langchain-ai/langchain,,0.505,178,0.17,,1,0.613,6722,6.56,,1,0.108,21.39,6544,6.39,3676.4,,,,0
+complexo,langchain-ai/langchain,100,20.737,28986,28.31,0,1,55.405,3422343,3342.13,100,101,34.668,167.18,3393357,3313.83,11706.88,,,,
+simples,justjavac/free-programming-books-zh_CN,,0.507,222,0.22,,1,0.508,6316,6.17,,1,0.001,0.2,6094,5.95,2745.05,,,,0
+complexo,justjavac/free-programming-books-zh_CN,100,21.341,27213,26.58,0,1,51.517,1811359,1768.91,100,101,30.176,141.4,1784146,1742.33,6556.23,,,,
+simples,langgenius/dify,,1.023,194,0.19,,1,0.512,6307,6.16,,1,-0.511,-49.95,6113,5.97,3151.03,,,,0
+complexo,langgenius/dify,100,8.907,28306,27.64,0,1,54.051,3622019,3537.13,100,101,45.144,506.84,3593713,3509.49,12695.94,,,,
+simples,nodejs/node,,0.523,197,0.19,,1,0.511,5953,5.81,,1,-0.012,-2.29,5756,5.62,2921.83,,,,0
+complexo,nodejs/node,100,17.0,50665,49.48,0,1,63.913,4240034,4140.66,100,101,46.913,275.96,4189369,4091.18,8268.76,,,,
+simples,ripienaar/free-for-dev,,0.416,250,0.24,,1,0.386,5394,5.27,,1,-0.03,-7.21,5144,5.02,2057.6,,,,0
+complexo,ripienaar/free-for-dev,100,29.294,26584,25.96,0,1,51.068,1935948,1890.57,100,101,21.774,74.33,1909364,1864.61,7182.38,,,,
+simples,d3/d3,,0.511,232,0.23,,1,0.507,5643,5.51,,1,-0.004,-0.78,5411,5.28,2332.33,,,,0
+complexo,d3/d3,100,9.347,46212,45.13,0,1,53.843,1935295,1889.94,100,101,44.496,476.05,1889083,1844.81,4087.86,,,,
+simples,open-webui/open-webui,,0.507,198,0.19,,1,0.508,6506,6.35,,1,0.001,0.2,6308,6.16,3185.86,,,,0
+complexo,open-webui/open-webui,100,28.102,30554,29.84,0,1,53.358,2768266,2703.38,100,101,25.256,89.87,2737712,2673.55,8960.24,,,,
+simples,mrdoob/three.js,,0.508,178,0.17,,1,0.509,5186,5.06,,1,0.001,0.2,5008,4.89,2813.48,,,,0
+complexo,mrdoob/three.js,100,10.062,52701,51.47,0,1,52.936,2228834,2176.6,100,101,42.874,426.1,2176133,2125.13,4129.21,,,,
+simples,axios/axios,,0.507,208,0.2,,1,0.43,5960,5.82,,1,-0.077,-15.19,5752,5.62,2765.38,,,,0
+complexo,axios/axios,100,18.283,45575,44.51,0,1,63.87,3550414,3467.2,100,101,45.587,249.34,3504839,3422.69,7690.27,,,,
+simples,excalidraw/excalidraw,,0.507,217,0.21,,1,0.51,6551,6.4,,1,0.003,0.59,6334,6.19,2918.89,,,,0
+complexo,excalidraw/excalidraw,100,26.998,45203,44.14,0,1,53.439,3030678,2959.65,100,101,26.441,97.94,2985475,2915.5,6604.59,,,,
+simples,rust-lang/rust,,0.405,206,0.2,,1,0.512,6180,6.04,,1,0.107,26.42,5974,5.83,2900.0,,,,0
+complexo,rust-lang/rust,100,15.328,41907,40.92,0,1,54.748,4773623,4661.74,100,101,39.42,257.18,4731716,4620.82,11290.99,,,,
+simples,microsoft/TypeScript,,1.12,242,0.24,,1,0.613,6683,6.53,,1,-0.507,-45.27,6441,6.29,2661.57,,,,0
+complexo,microsoft/TypeScript,100,9.343,42648,41.65,0,1,56.706,4255801,4156.06,100,101,47.363,506.94,4213153,4114.41,9878.9,,,,
+simples,denoland/deno,,0.506,196,0.19,,1,0.51,6077,5.93,,1,0.004,0.79,5881,5.74,3000.51,,,,0
+complexo,denoland/deno,100,27.386,41858,40.88,0,1,62.675,2718961,2655.24,100,101,35.289,128.86,2677103,2614.36,6395.68,,,,
+simples,goldbergyoni/nodebestpractices,,0.505,230,0.22,,1,0.409,6127,5.98,,1,-0.096,-19.01,5897,5.76,2563.91,,,,0
+complexo,goldbergyoni/nodebestpractices,100,27.381,31921,31.17,0,1,54.089,2529005,2469.73,100,101,26.708,97.54,2497084,2438.56,7822.7,,,,
+simples,facebook/create-react-app,,0.608,213,0.21,,1,0.614,6608,6.45,,1,0.006,0.99,6395,6.25,3002.35,,,,0
+complexo,facebook/create-react-app,100,28.253,51698,50.49,0,1,55.049,2035050,1987.35,100,101,26.796,94.84,1983352,1936.87,3836.42,,,,
+simples,godotengine/godot,,1.228,203,0.2,,1,0.511,6395,6.25,,1,-0.717,-58.39,6192,6.05,3050.25,,,,0
+complexo,godotengine/godot,100,10.164,44082,43.05,0,1,59.051,3633732,3548.57,100,101,48.887,480.98,3589650,3505.52,8143.12,,,,
+simples,microsoft/terminal,,0.407,238,0.23,,1,0.512,6635,6.48,,1,0.105,25.8,6397,6.25,2687.82,,,,0
+complexo,microsoft/terminal,100,28.819,40667,39.71,0,1,56.115,2655093,2592.86,100,101,27.296,94.72,2614426,2553.15,6428.86,,,,
+simples,deepseek-ai/DeepSeek-V3,,0.505,138,0.13,,1,0.511,6432,6.28,,1,0.006,1.19,6294,6.15,4560.87,,,,0
+complexo,deepseek-ai/DeepSeek-V3,100,16.986,52301,51.08,0,1,54.453,1808920,1766.52,100,101,37.467,220.58,1756619,1715.45,3358.67,,,,
+simples,microsoft/generative-ai-for-beginners,,0.408,217,0.21,,1,0.412,7458,7.28,,1,0.004,0.98,7241,7.07,3336.87,,,,0
+complexo,microsoft/generative-ai-for-beginners,100,41.015,213822,208.81,0,1,55.816,4008129,3914.19,100,101,14.801,36.09,3794307,3705.38,1774.52,,,,
+simples,fatedier/frp,,0.569,241,0.24,,1,0.409,5125,5.0,,1,-0.16,-28.12,4884,4.77,2026.56,,,,0
+complexo,fatedier/frp,100,10.138,29729,29.03,0,1,49.885,2063090,2014.74,100,101,39.747,392.06,2033361,1985.7,6839.65,,,,
+simples,rustdesk/rustdesk,,0.812,253,0.25,,1,0.729,5488,5.36,,1,-0.083,-10.22,5235,5.11,2069.17,,,,0
+complexo,rustdesk/rustdesk,100,27.88,44245,43.21,0,1,47.531,2260513,2207.53,100,101,19.651,70.48,2216268,2164.32,5009.08,,,,
+simples,angular/angular,,0.508,195,0.19,,1,0.616,6315,6.17,,1,0.108,21.26,6120,5.98,3138.46,,,,0
+complexo,angular/angular,100,9.831,38450,37.55,0,1,61.435,3763452,3675.25,100,101,51.604,524.91,3725002,3637.7,9687.91,,,,
+simples,papers-we-love/papers-we-love,,0.506,223,0.22,,1,0.508,6861,6.7,,1,0.002,0.4,6638,6.48,2976.68,,,,0
+complexo,papers-we-love/papers-we-love,100,17.484,38999,38.08,0,1,57.537,2111315,2061.83,100,101,40.053,229.08,2072316,2023.75,5313.77,,,,
+simples,Hack-with-Github/Awesome-Hacking,,0.509,232,0.23,,1,0.508,7244,7.07,,1,-0.001,-0.2,7012,6.85,3022.41,,,,0
+complexo,Hack-with-Github/Awesome-Hacking,100,28.719,27463,26.82,0,1,59.608,2181388,2130.26,100,101,30.889,107.56,2153925,2103.44,7843.01,,,,
+simples,iptv-org/iptv,,0.507,226,0.22,,1,0.509,6138,5.99,,1,0.002,0.39,5912,5.77,2615.93,,,,0
+complexo,iptv-org/iptv,100,9.012,27710,27.06,0,1,53.762,2498539,2439.98,100,101,44.75,496.56,2470829,2412.92,8916.74,,,,
+simples,tauri-apps/tauri,,0.505,241,0.24,,1,0.411,6375,6.23,,1,-0.094,-18.61,6134,5.99,2545.23,,,,0
+complexo,tauri-apps/tauri,100,15.96,199183,194.51,0,1,56.864,3439592,3358.98,100,101,40.904,256.29,3240409,3164.46,1626.85,,,,
+simples,mui/material-ui,,0.534,268,0.26,,1,0.511,6163,6.02,,1,-0.023,-4.31,5895,5.76,2199.63,,,,0
+complexo,mui/material-ui,100,28.439,40189,39.25,0,1,57.826,2557517,2497.58,100,101,29.387,103.33,2517328,2458.33,6263.72,,,,
+simples,ant-design/ant-design,,0.408,220,0.21,,1,0.41,6533,6.38,,1,0.002,0.49,6313,6.17,2869.55,,,,0
+complexo,ant-design/ant-design,100,9.831,29260,28.57,0,1,54.378,3249320,3173.16,100,101,44.547,453.13,3220060,3144.59,11004.99,,,,
+simples,shadcn-ui/ui,,0.506,279,0.27,,1,0.509,6140,6.0,,1,0.003,0.59,5861,5.72,2100.72,,,,0
+complexo,shadcn-ui/ui,100,20.123,41999,41.01,0,1,57.042,2418715,2362.03,100,101,36.919,183.47,2376716,2321.01,5658.98,,,,
+simples,Anduin2017/HowToCook,,0.506,267,0.26,,1,0.51,5500,5.37,,1,0.004,0.79,5233,5.11,1959.93,,,,0
+complexo,Anduin2017/HowToCook,100,28.307,29886,29.19,0,1,53.259,1858093,1814.54,100,101,24.952,88.15,1828207,1785.36,6117.27,,,,
+simples,nvbn/thefuck,,0.591,213,0.21,,1,0.431,4946,4.83,,1,-0.16,-27.07,4733,4.62,2222.07,,,,0
+complexo,nvbn/thefuck,100,10.243,37471,36.59,0,1,49.958,2126488,2076.65,100,101,39.715,387.73,2089017,2040.06,5575.02,,,,
+simples,ryanmcdermott/clean-code-javascript,,0.535,211,0.21,,1,0.512,6133,5.99,,1,-0.023,-4.3,5922,5.78,2806.64,,,,0
+complexo,ryanmcdermott/clean-code-javascript,100,16.741,42613,41.61,0,1,49.773,1836924,1793.87,100,101,33.032,197.31,1794311,1752.26,4210.71,,,,
+simples,neovim/neovim,,0.507,204,0.2,,1,0.508,6014,5.87,,1,0.001,0.2,5810,5.67,2848.04,,,,0
+complexo,neovim/neovim,100,29.648,41115,40.15,0,1,60.202,3011794,2941.21,100,101,30.554,103.06,2970679,2901.05,7225.29,,,,
+simples,iluwatar/java-design-patterns,,0.508,199,0.19,,1,0.508,5821,5.68,,1,0.0,0.0,5622,5.49,2825.13,,,,0
+complexo,iluwatar/java-design-patterns,100,20.832,37419,36.54,0,1,60.005,2878338,2810.88,100,101,39.173,188.04,2840919,2774.33,7592.18,,,,
+simples,mtdvio/every-programmer-should-know,,0.609,243,0.24,,1,0.51,7087,6.92,,1,-0.099,-16.26,6844,6.68,2816.46,,,,0
+complexo,mtdvio/every-programmer-should-know,100,28.51,31697,30.95,0,1,52.948,1949212,1903.53,100,101,24.438,85.72,1917515,1872.57,6049.52,,,,
+simples,puppeteer/puppeteer,,0.508,198,0.19,,1,0.611,6519,6.37,,1,0.103,20.28,6321,6.17,3192.42,,,,0
+complexo,puppeteer/puppeteer,100,8.704,33435,32.65,0,1,70.054,3130352,3056.98,100,101,61.35,704.85,3096917,3024.33,9262.5,,,,
+simples,microsoft/Web-Dev-For-Beginners,,0.507,225,0.22,,1,0.508,7123,6.96,,1,0.001,0.2,6898,6.74,3065.78,,,,0
+complexo,microsoft/Web-Dev-For-Beginners,100,16.538,35896,35.05,0,1,53.36,2270878,2217.65,100,101,36.822,222.65,2234982,2182.6,6226.27,,,,
+simples,tailwindlabs/tailwindcss,,0.508,217,0.21,,1,0.509,6723,6.57,,1,0.001,0.2,6506,6.35,2998.16,,,,0
+complexo,tailwindlabs/tailwindcss,100,17.073,51359,50.16,0,1,52.923,2956327,2887.04,100,101,35.85,209.98,2904968,2836.88,5656.2,,,,
+simples,PanJiaChen/vue-element-admin,,0.506,296,0.29,,1,0.508,5979,5.84,,1,0.002,0.4,5683,5.55,1919.93,,,,0
+complexo,PanJiaChen/vue-element-admin,100,26.873,30836,30.11,0,1,49.78,2000909,1954.01,100,101,22.907,85.24,1970073,1923.9,6388.87,,,,
+simples,fastapi/fastapi,,0.608,239,0.23,,1,0.512,6314,6.17,,1,-0.096,-15.79,6075,5.93,2541.84,,,,0
+complexo,fastapi/fastapi,100,16.867,50253,49.08,0,1,57.738,2470305,2412.41,100,101,40.871,242.31,2420052,2363.33,4815.74,,,,
+simples,comfyanonymous/ComfyUI,,0.506,229,0.22,,1,0.508,5611,5.48,,1,0.002,0.4,5382,5.26,2350.22,,,,0
+complexo,comfyanonymous/ComfyUI,100,19.341,64970,63.45,0,1,57.317,2576104,2515.73,100,101,37.976,196.35,2511134,2452.28,3865.07,,,,
+simples,supabase/supabase,,0.507,291,0.28,,1,0.509,6533,6.38,,1,0.002,0.39,6242,6.1,2145.02,,,,0
+complexo,supabase/supabase,100,21.432,551706,538.78,0,1,56.759,2617248,2555.91,100,101,35.327,164.83,2065542,2017.13,374.39,,,,
+simples,jaywcjlove/awesome-mac,,0.508,275,0.27,,1,0.509,5768,5.63,,1,0.001,0.2,5493,5.36,1997.45,,,,0
+complexo,jaywcjlove/awesome-mac,100,38.642,31949,31.2,0,1,53.354,2058795,2010.54,100,101,14.712,38.07,2026846,1979.34,6344.0,,,,
+simples,openai/whisper,,0.508,191,0.19,,1,0.611,6021,5.88,,1,0.103,20.28,5830,5.69,3052.36,,,,0
+complexo,openai/whisper,100,38.765,44663,43.62,0,1,55.177,2090709,2041.71,100,101,16.412,42.34,2046046,1998.09,4581.08,,,,
+simples,storybookjs/storybook,,0.608,270,0.26,,1,0.511,6753,6.59,,1,-0.097,-15.95,6483,6.33,2401.11,,,,0
+complexo,storybookjs/storybook,100,31.722,44696,43.65,0,1,56.383,4021614,3927.36,100,101,24.661,77.74,3976918,3883.71,8897.7,,,,
+simples,2dust/v2rayN,,0.713,227,0.22,,1,0.511,5110,4.99,,1,-0.202,-28.33,4883,4.77,2151.1,,,,0
+complexo,2dust/v2rayN,100,16.594,50243,49.07,0,1,51.245,2183020,2131.86,100,101,34.651,208.82,2132777,2082.79,4244.92,,,,
+simples,nvm-sh/nvm,,0.507,236,0.23,,1,0.611,6002,5.86,,1,0.104,20.51,5766,5.63,2443.22,,,,0
+complexo,nvm-sh/nvm,100,27.974,48860,47.71,0,1,55.219,2303218,2249.24,100,101,27.245,97.39,2254358,2201.52,4613.91,,,,
+simples,ggml-org/llama.cpp,,0.508,155,0.15,,1,0.509,6165,6.02,,1,0.001,0.2,6010,5.87,3877.42,,,,0
+complexo,ggml-org/llama.cpp,100,37.842,54417,53.14,0,1,56.63,3225651,3150.05,100,101,18.788,49.65,3171234,3096.91,5827.65,,,,
+simples,gin-gonic/gin,,0.476,402,0.39,,1,0.51,6335,6.19,,1,0.034,7.14,5933,5.79,1475.87,,,,0
+complexo,gin-gonic/gin,100,16.33,41413,40.44,0,1,54.788,2890536,2822.79,100,101,38.458,235.51,2849123,2782.35,6879.78,,,,
+`;
+
+        // Parse embedded CSV data
+        Papa.parse(csvData, {
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+                allData = results.data.filter(row =>
+                    row.graphql_tempo_segundos &&
+                    row.rest_tempo_segundos &&
+                    row.graphql_tempo_segundos !== '' &&
+                    row.rest_tempo_segundos !== ''
+                );
+
+                populateFilters();
+                filteredData = [...allData];
+                updateDashboard();
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'block';
+            }
+        });
+
+        function populateFilters() {
+            const repos = [...new Set(allData.map(row => row.repositorio))].sort();
+            const repoFilter = document.getElementById('repoFilter');
+
+            repos.forEach(repo => {
+                const option = document.createElement('option');
+                option.value = repo;
+                option.textContent = repo;
+                repoFilter.appendChild(option);
+            });
+        }
+
+        function applyFilters() {
+            const testType = document.getElementById('testTypeFilter').value;
+            const repo = document.getElementById('repoFilter').value;
+            const search = document.getElementById('searchRepo').value.toLowerCase();
+
+            filteredData = allData.filter(row => {
+                const matchTestType = testType === 'all' || row.tipo_teste === testType;
+                const matchRepo = repo === 'all' || row.repositorio === repo;
+                const matchSearch = search === '' || row.repositorio.toLowerCase().includes(search);
+                return matchTestType && matchRepo && matchSearch;
+            });
+
+            updateDashboard();
+        }
+
+        document.getElementById('testTypeFilter').addEventListener('change', applyFilters);
+        document.getElementById('repoFilter').addEventListener('change', applyFilters);
+        document.getElementById('searchRepo').addEventListener('input', applyFilters);
+
+        function updateDashboard() {
+            updateStats();
+            updateCharts();
+            updateTable();
+        }
+
+        function updateStats() {
+            const graphqlTimes = filteredData.map(r => parseFloat(r.graphql_tempo_segundos));
+            const restTimes = filteredData.map(r => parseFloat(r.rest_tempo_segundos));
+            const graphqlSizes = filteredData.map(r => parseFloat(r.graphql_tamanho_kb));
+            const restSizes = filteredData.map(r => parseFloat(r.rest_tamanho_kb));
+            const timeDiffs = filteredData.map(r => parseFloat(r.diferenca_tempo_percentual));
+            const sizeDiffs = filteredData.map(r => parseFloat(r.diferenca_tamanho_percentual));
+
+            const avgGraphQLTime = average(graphqlTimes);
+            const avgRESTTime = average(restTimes);
+            const avgTimeDiff = average(timeDiffs);
+            const avgGraphQLSize = average(graphqlSizes);
+            const avgRESTSize = average(restSizes);
+            const avgSizeDiff = average(sizeDiffs);
+
+            document.getElementById('avgGraphQLTime').textContent = avgGraphQLTime.toFixed(2);
+            document.getElementById('avgRESTTime').textContent = avgRESTTime.toFixed(2);
+            document.getElementById('avgTimeDiff').textContent = avgTimeDiff.toFixed(2) + '%';
+            document.getElementById('avgGraphQLSize').textContent = avgGraphQLSize.toFixed(2);
+            document.getElementById('avgRESTSize').textContent = avgRESTSize.toFixed(2);
+            document.getElementById('avgSizeDiff').textContent = avgSizeDiff.toFixed(2) + '%';
+
+            // Determine winners
+            const timeWinner = avgGraphQLTime < avgRESTTime ? 'GraphQL é mais rápido' : 'REST é mais rápido';
+            const sizeWinner = avgGraphQLSize < avgRESTSize ? 'GraphQL é menor' : 'REST é menor';
+
+            document.getElementById('timeWinner').textContent = timeWinner;
+            document.getElementById('sizeWinner').textContent = sizeWinner;
+        }
+
+        function average(arr) {
+            return arr.reduce((a, b) => a + b, 0) / arr.length;
+        }
+
+        function updateCharts() {
+            // Destroy existing charts
+            Object.values(charts).forEach(chart => chart.destroy());
+            charts = {};
+
+            // Time Comparison Chart
+            const timeData = filteredData.slice(0, 20).map(row => ({
+                repo: row.repositorio.split('/')[1] || row.repositorio,
+                graphql: parseFloat(row.graphql_tempo_segundos),
+                rest: parseFloat(row.rest_tempo_segundos)
+            }));
+
+            charts.timeComparison = new Chart(document.getElementById('timeComparisonChart'), {
+                type: 'bar',
+                data: {
+                    labels: timeData.map(d => d.repo),
+                    datasets: [{
+                        label: 'GraphQL',
+                        data: timeData.map(d => d.graphql),
+                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2
+                    }, {
+                        label: 'REST',
+                        data: timeData.map(d => d.rest),
+                        backgroundColor: 'rgba(168, 85, 247, 0.7)',
+                        borderColor: 'rgba(168, 85, 247, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: getChartOptions('Tempo (segundos)')
+            });
+
+            // Size Comparison Chart
+            const sizeData = filteredData.slice(0, 20).map(row => ({
+                repo: row.repositorio.split('/')[1] || row.repositorio,
+                graphql: parseFloat(row.graphql_tamanho_kb),
+                rest: parseFloat(row.rest_tamanho_kb)
+            }));
+
+            charts.sizeComparison = new Chart(document.getElementById('sizeComparisonChart'), {
+                type: 'bar',
+                data: {
+                    labels: sizeData.map(d => d.repo),
+                    datasets: [{
+                        label: 'GraphQL',
+                        data: sizeData.map(d => d.graphql),
+                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2
+                    }, {
+                        label: 'REST',
+                        data: sizeData.map(d => d.rest),
+                        backgroundColor: 'rgba(168, 85, 247, 0.7)',
+                        borderColor: 'rgba(168, 85, 247, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: getChartOptions('Tamanho (KB)')
+            });
+
+            // Time Difference Distribution
+            const timeDiffs = filteredData.map(r => parseFloat(r.diferenca_tempo_percentual));
+            charts.timeDiffDistribution = new Chart(document.getElementById('timeDiffDistributionChart'), {
+                type: 'line',
+                data: {
+                    labels: filteredData.map((r, i) => i + 1),
+                    datasets: [{
+                        label: 'Diferença de Tempo (%)',
+                        data: timeDiffs,
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: getChartOptions('Diferença (%)', true)
+            });
+
+            // Size Difference Distribution
+            const sizeDiffs = filteredData.map(r => parseFloat(r.diferenca_tamanho_percentual));
+            charts.sizeDiffDistribution = new Chart(document.getElementById('sizeDiffDistributionChart'), {
+                type: 'line',
+                data: {
+                    labels: filteredData.map((r, i) => i + 1),
+                    datasets: [{
+                        label: 'Diferença de Tamanho (%)',
+                        data: sizeDiffs,
+                        backgroundColor: 'rgba(168, 85, 247, 0.2)',
+                        borderColor: 'rgba(168, 85, 247, 1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: getChartOptions('Diferença (%)', true)
+            });
+
+            // Time by Type
+            const simpleData = filteredData.filter(r => r.tipo_teste === 'simples');
+            const complexData = filteredData.filter(r => r.tipo_teste === 'complexo');
+
+            charts.timeByType = new Chart(document.getElementById('timeByTypeChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['GraphQL Simples', 'REST Simples', 'GraphQL Complexo', 'REST Complexo'],
+                    datasets: [{
+                        data: [
+                            average(simpleData.map(r => parseFloat(r.graphql_tempo_segundos))),
+                            average(simpleData.map(r => parseFloat(r.rest_tempo_segundos))),
+                            average(complexData.map(r => parseFloat(r.graphql_tempo_segundos))),
+                            average(complexData.map(r => parseFloat(r.rest_tempo_segundos)))
+                        ],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(34, 197, 94, 0.8)',
+                            'rgba(239, 68, 68, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(168, 85, 247, 1)',
+                            'rgba(34, 197, 94, 1)',
+                            'rgba(239, 68, 68, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#e5e5e5', font: { size: 12 } }
+                        }
+                    }
+                }
+            });
+
+            // Size by Type
+            charts.sizeByType = new Chart(document.getElementById('sizeByTypeChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['GraphQL Simples', 'REST Simples', 'GraphQL Complexo', 'REST Complexo'],
+                    datasets: [{
+                        data: [
+                            average(simpleData.map(r => parseFloat(r.graphql_tamanho_kb))),
+                            average(simpleData.map(r => parseFloat(r.rest_tamanho_kb))),
+                            average(complexData.map(r => parseFloat(r.graphql_tamanho_kb))),
+                            average(complexData.map(r => parseFloat(r.rest_tamanho_kb)))
+                        ],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(34, 197, 94, 0.8)',
+                            'rgba(239, 68, 68, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(168, 85, 247, 1)',
+                            'rgba(34, 197, 94, 1)',
+                            'rgba(239, 68, 68, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#e5e5e5', font: { size: 12 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function getChartOptions(yAxisLabel, showZeroLine = false) {
+            return {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#e5e5e5', font: { size: 12 } }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: '#a3a3a3',
+                            maxRotation: 45,
+                            minRotation: 45
+                        },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    },
+                    y: {
+                        ticks: { color: '#a3a3a3' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        title: {
+                            display: true,
+                            text: yAxisLabel,
+                            color: '#e5e5e5'
+                        }
+                    }
+                }
+            };
+        }
+
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            filteredData.forEach(row => {
+                const tr = document.createElement('tr');
+
+                const timeDiff = parseFloat(row.diferenca_tempo_percentual);
+                const sizeDiff = parseFloat(row.diferenca_tamanho_percentual);
+
+                tr.innerHTML = `
+                    <td>${row.repositorio}</td>
+                    <td>${row.tipo_teste}</td>
+                    <td>${parseFloat(row.graphql_tempo_segundos).toFixed(3)}</td>
+                    <td>${parseFloat(row.rest_tempo_segundos).toFixed(3)}</td>
+                    <td class="${timeDiff < 0 ? 'positive' : 'negative'}">${timeDiff.toFixed(2)}%</td>
+                    <td>${parseFloat(row.graphql_tamanho_kb).toFixed(2)}</td>
+                    <td>${parseFloat(row.rest_tamanho_kb).toFixed(2)}</td>
+                    <td class="${sizeDiff < 0 ? 'positive' : 'negative'}">${sizeDiff.toFixed(2)}%</td>
+                `;
+
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+
+</html>
